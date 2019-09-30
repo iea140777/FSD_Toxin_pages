@@ -1,0 +1,26 @@
+block config
+  include ./src/includes/config.pug
+  -var myTitle = "UIkit_1"
+block head
+  include ./src/includes/block_head.pug
+
+body
+  include ./src/includes/logo/logo.pug
+  block Content
+    div.colors_type
+      
+      div.colors
+        include ./src/includes/ulkit_colors/ulkit_colors.pug
+      div.fonts
+        include ./src/includes/ulkit_fonts/ulkit_fonts.pug
+            
+    div.form_elements
+
+    div.cards
+
+    div.headers_footers       
+    
+  
+  block scripts
+      script(src='./src/index.js')
+        

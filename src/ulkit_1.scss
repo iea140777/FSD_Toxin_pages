@@ -1,0 +1,32 @@
+.colors_type {
+max-width: 1440px;
+min-width: 320px;
+height: 900px;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+padding-left: 150px;
+padding-top: 145px;
+padding-right: 191px;
+margin: 0;
+}
+
+.colors {
+height: 610px;
+width: 270px;
+}
+
+.fonts {
+height: 321px;
+width: 410px;
+padding-left: 420px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .spaceholder {
+  height: 30px;
+  }

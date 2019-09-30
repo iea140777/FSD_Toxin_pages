@@ -1,0 +1,37 @@
+.dropdown_container {
+margin: 0;
+  padding: 0; 
+  width: 320px;
+  height: 60px;
+  }
+
+.text_field {
+    margin: 0;
+    padding: 0; 
+    text-align: left;
+    height:67px;
+    }
+  
+  .text_field__form {
+      margin: 0px;
+      padding: 0px; 
+      width: 320px;
+      height: 44px;
+      background: #FFFFFF;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding-left: 15px;
+      color: rgba(31, 32, 65, 0.75);
+      font-family: 'Conv_Montserrat-Regular';
+      font-size: 14px;
+      }
+      .dropdown_option {
+        font-family: 'Conv_Montserrat-Bold', 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        color: #1F2041;
+        text-transform: uppercase; 
+      }

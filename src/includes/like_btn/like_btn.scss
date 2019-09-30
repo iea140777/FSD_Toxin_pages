@@ -1,0 +1,50 @@
+.like_btn_container{
+
+margin: 0;
+padding: 0; 
+width: 110px;
+height: 70px;
+}
+
+.like_btn {
+    padding:0;
+    margin:0;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background-color: white;
+    box-shadow: rgba(31, 32, 65, 0.25);
+    padding-left: 3px;
+}
+
+.like_btn:last-child{
+    margin-left: 10px;
+}
+
+.favorite_icon {
+    font-size: 10px;
+    line-height: 9px;
+    text-align: center;
+}
+
+.favorite_icon__checked {
+color: #BC9CFF;
+}
+
+.favorite_icon__unchecked {
+color: white;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: rgba(31, 32, 65, 0.25);
+}
+
+.like_counter {
+font-size: 10px;
+line-height: 12px;
+text-align: center;
+margin-left: 5px;
+}

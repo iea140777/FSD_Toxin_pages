@@ -1,0 +1,65 @@
+.exp_checkbox_container {
+    margin: 0;
+    padding: 0; 
+    width: 270px;
+    height: 280px;
+    // h3:after {content: <i class="material-icons">expand_more</i> };  
+    }
+    
+.exp_checkbox_btn   {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: white;
+    width: 270px;
+    height: 44px;
+    box-sizing: border-box;    
+}
+
+.exp_checkbox_title {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: center;
+}
+
+.open_icon {
+    position: relative;
+    top: 7px;   
+    left: 37px; 
+    }
+
+.close_icon {
+transform: rotate(180deg);
+}
+    
+.exp_checkbox_list {
+    position: relative;
+    left: 0;
+    top: -5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    }
+
+.exp_checkbox_listitem {
+    list-style: none;
+    font-style:normal;
+    color:rgba(31, 32, 65, 0.5);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 6px; 
+}
+
+    
+.sub-menu {
+position: absolute;
+display: none;
+}
+    
+    // .sub-menu_show {
+    // display: block;
+    // }
+
+    

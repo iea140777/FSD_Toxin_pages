@@ -1,0 +1,42 @@
+.review_container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 715px;
+  height: 135px;
+}
+
+.review_photo {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -10px;
+  left: -20px;
+}
+
+.review_container .like_btn {
+  position: absolute;
+  top: 60px;
+  left: 6px;
+}
+
+.review_body {
+  margin-left: 58px;
+}
+
+.review_author {
+  display: block;
+}
+
+.review_date {
+  display: block;
+  line-height: 24px;
+}
+
+.review_text {
+  display: inline-block;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=/review.85666842.css.map */

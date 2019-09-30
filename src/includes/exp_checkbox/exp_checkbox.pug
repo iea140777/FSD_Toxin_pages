@@ -1,0 +1,18 @@
+
+div.exp_checkbox_container
+    div.exp_checkbox_btn
+        h3.exp_checkbox_title Expandable checkbox list 
+            span.material-icons.open_icon expand_more 
+    ul#exp.exp_checkbox_list
+        li.exp_checkbox_listitem: +checkbox("Завтрак", '2')
+        li.exp_checkbox_listitem: +checkbox("Письменный стол",'3' )
+        li.exp_checkbox_listitem: +checkbox("Стул для кормления", '4')
+        li.exp_checkbox_listitem: +checkbox("Кроватка", '5')
+        li.exp_checkbox_listitem: +checkbox("Телевизор",'6')
+        li.exp_checkbox_listitem: +checkbox("Шампунь",'7')
+        li.exp_checkbox_listitem: +checkbox("Телевизор",'8')
+        li.exp_checkbox_listitem: +checkbox("Шампунь",'9')
+          
+
+//- script
+//-     $('.exp_checkbox_btn').click(function(){$('.sub-menu').toggle(); });     

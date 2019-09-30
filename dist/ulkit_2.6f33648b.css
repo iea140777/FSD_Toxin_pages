@@ -1,0 +1,24 @@
+.form_elements_container {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 22px;
+  padding-top: 48px;
+}
+
+.form_elements_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 125px;
+}
+
+.form_elements_col:last-child {
+  margin-right: 120px;
+}
+
+.spaceholder {
+  height: 30px;
+}
+
+/*# sourceMappingURL=/ulkit_2.6f33648b.css.map */

@@ -1,0 +1,61 @@
+.ulkit_colors_container {
+  display: flex;
+  width: 270px;
+  height: 610px;
+}
+
+.ulkit_colors_view {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ulkit_colors_view > div {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+
+.ulkit_colors_view_1 {
+  background-color: #1F2041;
+}
+
+.ulkit_colors_view_2 {
+  background-color: rgba(31, 32, 65, 0.75);
+}
+
+.ulkit_colors_view_3 {
+  background-color: rgba(31, 32, 65, 0.5);
+}
+
+.ulkit_colors_view_4 {
+  background-color: rgba(31, 32, 65, 0.25);
+}
+
+.ulkit_colors_view_5 {
+  background-color: rgba(31, 32, 65, 0.05);
+}
+
+.ulkit_colors_view_6 {
+  background-color: #BC9CFF;
+}
+
+.ulkit_colors_view_7 {
+  background-color: #6FCF97;
+}
+
+.ulkit_colors_descr {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-left: 37px;
+}
+
+.ulkit_colors_descr > div {
+  height: 70px;
+}
+
+/*# sourceMappingURL=/ulkit_colors.7af07a58.css.map */
