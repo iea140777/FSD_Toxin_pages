@@ -1,0 +1,24 @@
+.button_container{
+margin: 0;
+padding: 0;
+}
+
+@mixin button__base ($btn_background, $btn_width, $btn_border, $btn_color) {
+height: 44px;
+text-align: center;
+text-decoration: none;
+border-radius: 22px;
+border: $btn_border;
+background: $btn_background;
+width: $btn_width;
+    .button_text{
+    color: $btn_color;
+    };
+    &:hover{
+   opacity: 0.5;
+        }   
+}
+
+
+
+

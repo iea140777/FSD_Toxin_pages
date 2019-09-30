@@ -1,0 +1,88 @@
+.button_container {
+  margin: 0;
+  padding: 0;
+}
+
+.form_buttons_container {
+  border: 0;
+  padding: 0;
+  width: 320px;
+  height: 250px;
+}
+
+.buttons_header {
+  margin-bottom: 10px;
+}
+
+.buttons_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 240px;
+}
+
+.button__colored {
+  height: 44px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 22px;
+  border: none;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  width: 99px;
+}
+.button__colored .button_text {
+  color: white;
+}
+.button__colored:hover {
+  opacity: 0.5;
+}
+
+.button__bordered {
+  height: 44px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 22px;
+  border: 2px solid #BC9CFF;
+  background: white;
+  width: 99px;
+}
+.button__bordered .button_text {
+  color: #BC9CFF;
+}
+.button__bordered:hover {
+  opacity: 0.5;
+}
+
+.button__text {
+  height: 44px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 22px;
+  border: white;
+  background: white;
+  width: 99px;
+}
+.button__text .button_text {
+  color: #BC9CFF;
+}
+.button__text:hover {
+  opacity: 0.5;
+}
+
+.button__long {
+  height: 44px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 22px;
+  border: none;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  width: 320px;
+}
+.button__long .button_text {
+  color: white;
+}
+.button__long:hover {
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=/buttons.46335c5f.css.map */

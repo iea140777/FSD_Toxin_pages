@@ -4,7 +4,9 @@ include ./src/mixins/checkbox_text_adv/checkbox_text_adv.pug
 include ./src/includes/config.pug
 - var lang="en"
 - var myTitle = "UIkit_2"
+include ./src/mixins/button/button.pug
 include ./src/includes/block_head.pug
+
 
 body
   include ./src/includes/logo/logo.pug
@@ -49,7 +51,10 @@ body
     div.form_elements_col
       include ./src/includes/range_slider/range_slider.pug
       div.clearfix.spaceholder
-      include ./src/includes/masked_text_field/masked_text_field.pug 
+      include ./src/includes/masked_text_field/masked_text_field.pug
+      div.clearfix.spaceholder
+      include ./src/includes/buttons/buttons.pug
+
   include ./src/includes/review/review.pug 
       
          
@@ -68,5 +73,4 @@ body
     script(src="./src/scripts/air-datepicker/dist/js/datepicker.min.js")
     script(src="./src/includes/date_dropdown/date_dropdown.js")
     script(src="./src/includes/masked_text_field/masked_text_field.js")
-    
     

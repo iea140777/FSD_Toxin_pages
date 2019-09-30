@@ -184,7 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/includes/rate_btn/rate_btn.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/mixins/button/button.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -393,4 +393,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/rate_btn.d445fd97.js.map
+//# sourceMappingURL=/button.c739a977.js.map
