@@ -1,8 +1,14 @@
 div.form_buttons_container
     h3.buttons_header Buttons
     div.buttons_container
-        +button("click me", "button__colored")
-        +button("click me", "button__bordered")
-        +button("click me", "button__text")
-        +button("Перейти к оплате", "button__long")
+        div.buttons_container_buttons_colored
+            +button("click me", "button__colored")
+            +button("click me", "button__colored__focus")
+        div.buttons_container_buttons_bordered
+            +button("click me", "button__bordered")
+            +button("click me", "button__bordered__focus")
+        div.buttons_container_buttons_text
+            +button("click me", "button__text")
+            +button("click me", "button__text__focus")
+        +button("Перейти к оплате", "button__long", "button_container__long")
             

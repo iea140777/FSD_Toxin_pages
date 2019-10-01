@@ -1,6 +1,7 @@
-.button_container{
+@mixin button_container($width: '99px') {
 margin: 0;
 padding: 0;
+width: $width;
 }
 
 @mixin button__base ($btn_background, $btn_width, $btn_border, $btn_color) {
@@ -11,13 +12,14 @@ border-radius: 22px;
 border: $btn_border;
 background: $btn_background;
 width: $btn_width;
+box-sizing: border-box;
     .button_text{
     color: $btn_color;
     };
     &:hover{
    opacity: 0.5;
-        }   
-}
+        } 
+    }
 
 
 

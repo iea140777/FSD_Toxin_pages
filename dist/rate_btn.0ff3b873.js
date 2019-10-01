@@ -118,16 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"src/includes/rate_btn/rate_btn.js":[function(require,module,exports) {
-$(".rate_icon__unchecked").click(function () {
-  $(this).toggle(function () {
-    $(this).replaceWith("<i class='material-icons rate_icon rate_icon__checked'>star</i>");
-  });
-});
-$(".rate_icon__checked").click(function () {
-  $(this).toggle(function () {
-    $(this).replaceWith("<i class='material-icons rate_icon rate_icon__unchecked'>star_border</i>");
-  });
-});
+
 },{}],"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -156,7 +147,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62400" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56442" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

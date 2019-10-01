@@ -129,6 +129,9 @@ $('#start_one').datepicker({
   prevHtml: '<i class="material-icons arrow_back">arrow_back</i>',
   nextHtml: '<i class="material-icons arrow_forward">arrow_forward</i>'
 });
+$("#start_one").click(function () {
+  $(".open_icon").toggleClass("close_icon");
+});
 },{}],"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -157,7 +160,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62400" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56442" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

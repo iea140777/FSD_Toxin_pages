@@ -13,5 +13,7 @@ $('#start_one').datepicker({
        
   });
  
-  
+  $("#start_one").click(function(){
+        $(".open_icon").toggleClass("close_icon");
+});
  

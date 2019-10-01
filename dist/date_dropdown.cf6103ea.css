@@ -257,6 +257,7 @@
   font-weight: bold;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   opacity: 0.25;
+  z-index: -1;
   color: rgba(31, 32, 65, 0.75);
 }
 

@@ -17,18 +17,48 @@ justify-content: space-between;
 height: 240px;
 }
 
+.button_container {
+    @include button_container (99px);
+}
+
+.button_container__long {
+    @include button_container(320px);
+}
+
+.buttons_container_buttons_colored, .buttons_container_buttons_bordered, .buttons_container_buttons_text {
+    display: flex;
+    width: 218px;
+    justify-content: space-between;
+}
+
 .button__colored { 
  @include button__base(linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%), 99px, none, white);
 }
+.button__colored__focus { 
+    @extend .button__colored;
+    opacity: 0.5;
+   }
 
 .button__bordered {
 @include button__base(white, 99px, 2px solid #BC9CFF, #BC9CFF);
 }
 
+.button__bordered__focus { 
+    @extend .button__bordered;
+    opacity: 0.5;
+   }
+
 .button__text {
 @include button__base(white, 99px, white, #BC9CFF);  
 }
+
+.button__text__focus { 
+    @extend .button__text;
+    opacity: 0.5;
+}
+
 .button__long {
 @include button__base(linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%), 320px, none, white);
+   
 }
 
