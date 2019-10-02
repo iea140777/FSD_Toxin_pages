@@ -1,7 +1,7 @@
-mixin textfield(title, placeholder, add_mask_class, icon_name)
+mixin textfield(title, placeholder, add_class)
     div.text_field_container
         form.text_field.clearfix
             label.text_field__label(for='text')
                 h3=title
-            input#text.text_field__form(type='text' name='text' autocomplete="off" placeholder=placeholder class=add_mask_class)
+            input#text.text_field__form(type='text' name='text' autocomplete="off" placeholder=placeholder class=add_class)
             

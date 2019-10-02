@@ -23,6 +23,7 @@ height: 240px;
 
 .button_container__long {
     @include button_container(320px);
+    position: relative;
 }
 
 .buttons_container_buttons_colored, .buttons_container_buttons_bordered, .buttons_container_buttons_text {
@@ -62,3 +63,9 @@ height: 240px;
    
 }
 
+.button_arrow_forward{
+position: absolute;
+right: 10px;
+top: 10px;
+color: white;
+}

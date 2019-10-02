@@ -22,7 +22,7 @@ body
       div.clearfix.spaceholder
       include ./src/includes/filter_date_dropdown/filter_date_dropdown.pug
       div.clearfix.spaceholder
-      +textfield('Subcription textfield', 'Email', '')
+      include ./src/includes/subscription_textfield/subscription_textfield.pug
       div.clearfix.spaceholder
       include ./src/includes/exp_checkbox/exp_checkbox.pug
       div.clearfix.spaceholder
@@ -82,4 +82,6 @@ body
     //- script(src="./src/includes/masked_text_field/masked_text_field.js")
     //- script(src="./src/scripts/pagination/jquery.simplePagination.js")
     //- script(src="./src/includes/pagination/pagination.js")
+    script(src="./src/includes/buttons/buttons.js")
+    script(src="./src/includes/subscription_textfield/subscription_textfield.js")
   

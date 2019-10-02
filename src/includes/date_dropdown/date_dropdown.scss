@@ -21,8 +21,14 @@ margin-left: 20px;
 
   .text-field__form_narrow {
     width: 150px;
-  }
+     }
  
+  .date_dropdown_arrow{
+    position: absolute;
+    right: 10px;
+    top: 41px;
+  }
+
 // datepicker style:
 
 .datepicker {

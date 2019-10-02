@@ -16,4 +16,6 @@ $('#start_one').datepicker({
   $("#start_one").click(function(){
         $(".open_icon").toggleClass("close_icon");
 });
+
+$( '<i class="material-icons date_dropdown_arrow">expand_more</i>' ).insertAfter( ".text-field__form_narrow" );
  

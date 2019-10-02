@@ -10,12 +10,13 @@
       padding: 0; 
       text-align: left;
       height:67px;
+      position: relative;
       }
     
     .filter_date_dropdow_input {
         margin: 0px;
         padding: 0px; 
-        width: 320px;
+        width: 267px;
         height: 44px;
         background: #FFFFFF;
         border: 1px solid rgba(31, 32, 65, 0.25);
@@ -50,13 +51,9 @@
     height:15px;
      }
   
-//     .text_field_button {
-//       border: none;
-//       height: 59px;
-//       width: 59px;
-//   background-color: yellow;
-//   color: rgba (31, 32, 65, 0.5);
-//   position: absolute;
-//   top: -15px;
-//   right: -40px;
-//      }
+     .filter_date_dropdown_arrow{
+      position: absolute;
+      right: 63px;
+      top: 42px;
+       
+    }

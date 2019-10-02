@@ -1,0 +1,19 @@
+button.subscription_textfield_button{
+    border: none;
+    position: absolute;
+    right: 57px;
+    top: 40px;
+    background: white;
+}
+.subscription_textfield_arrow_forward{
+color:  #BC9CFF;
+}
+
+.subscription_textfield{
+width: 267px;
+}
+
+button.subscription_textfield_button:active{
+  border: none;
+  opacity: 0.5;  
+}

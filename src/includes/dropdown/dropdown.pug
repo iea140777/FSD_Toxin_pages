@@ -1,11 +1,26 @@
+-var dropdown_final_text = 'Сколько гостей' 
+
 div.dropdown_container
-  label.text_field__label(for='select')
-    h3 Dropdown
-  select.text_field__form.textfield_dropdown (name="select" id="select")
-    option.dropdown_option Сколько гостей
-    option.dropdown_option Взрослые
-    option.dropdown_option Дети
-    option.dropdown_option Младенцы
+  h3.dropdown_title Dropdown
+  div.dropdown_field.text_field__form=dropdown_final_text 
+  ul.dropdown_list
+    li.dropdown_list_item
+    
+
+    li.dropdown_list_item
+    li.dropdown_list_item
+  
+//- div.text_field_container
+//-         form.text_field.clearfix
+//-             label.text_field__label(for='text')
+//-                 h3=title
+//-             input#text.text_field__form(type='text' name='text' autocomplete="off" placeholder=placeholder class=add_mask_class)
+
+  //- select.text_field__form.textfield_dropdown (name="select" id="select")
+  //-   option.dropdown_option Сколько гостей
+  //-   option.dropdown_option Взрослые
+  //-   option.dropdown_option Дети
+  //-   option.dropdown_option Младенцы
   
      
     
