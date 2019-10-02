@@ -5,14 +5,13 @@ div.date_dropdown_container
   form.text_field.clearfix.text_field_narrow
     label.text_field__label(for='start_one')
       h3=title
-    input#start_one.text_field__form.text-field__form_narrow.datepicker-here(type='text' data-range="true" placeholder="ДД.ММ.ГГГГ")
+    input#start_one.text_field__form.text-field__form_narrow.datepicker-here(type='text' data-range="true" placeholder="ДД.ММ.ГГГГ" data-multiple-dates-separator=" - ")
       
 
 
   form.text_field.clearfix.text_field_narrow
     label.text_field__label(for='end_one')
       h3=title
-        span.material-icons.open_icon expand_more
     input#end_one.text_field__form.text-field__form_narrow(type='text' placeholder="19.08.2019")
 
 

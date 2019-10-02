@@ -6,6 +6,10 @@
  
 }
 
+.text-field__form_narrow::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
 .text_field_narrow:last-child {
 margin-left: 20px;
 }

@@ -1,0 +1,62 @@
+.filter_date_dropdown_container{
+    margin: 0;
+    padding: 0; 
+    width: 320px;
+    height: 60px;
+    }
+  
+  .filter_date_dropdow {
+      margin: 0;
+      padding: 0; 
+      text-align: left;
+      height:67px;
+      }
+    
+    .filter_date_dropdow_input {
+        margin: 0px;
+        padding: 0px; 
+        width: 320px;
+        height: 44px;
+        background: #FFFFFF;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding-left: 15px;
+        color: rgba(31, 32, 65, 0.75);
+        font-family: 'Conv_Montserrat-Regular';
+        font-size: 14px;
+        position: relative;
+        display: inline-block;
+        }
+        
+        .filter_date_dropdow_input:hover {
+          border-color: 0;  
+          border: 1px solid rgba(31, 32, 65, 0.5);
+          color: rgba(31, 32, 65, 0.75);
+          }
+          .filter_date_dropdow_input:focus {
+            border-color: 0;   
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            color: rgba(31, 32, 65, 0.75);
+            }
+  
+      .filter_date_dropdow_input::placeholder {
+        color: rgba(31, 32, 65, 0.75);
+      }
+    .filter_date_dropdow_label{
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+    height:15px;
+     }
+  
+//     .text_field_button {
+//       border: none;
+//       height: 59px;
+//       width: 59px;
+//   background-color: yellow;
+//   color: rgba (31, 32, 65, 0.5);
+//   position: absolute;
+//   top: -15px;
+//   right: -40px;
+//      }

@@ -1,0 +1,10 @@
+mixin bullet_list_item (text)
+    li.bullet_list_item=text
+
+
+div.bullet_list_container
+    h3.bullet_list_title Bullet list
+    ul.bullet_list
+        +bullet_list_item('Нельзя с питомцами')
+        +bullet_list_item('Без вечеринок и мероприятий')
+        +bullet_list_item('Время прибытия — после 13:00, а выезд до 12:00')

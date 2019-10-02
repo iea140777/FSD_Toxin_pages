@@ -25,6 +25,8 @@
       color: rgba(31, 32, 65, 0.75);
       font-family: 'Conv_Montserrat-Regular';
       font-size: 14px;
+      position: relative;
+      display: inline-block;
       }
       
       .text_field__form:hover {
@@ -47,4 +49,14 @@
   margin: 0;
   height:15px;
    }
-    
+
+  .text_field_button {
+    border: none;
+    height: 59px;
+    width: 59px;
+background-color: yellow;
+color: rgba (31, 32, 65, 0.5);
+position: absolute;
+top: -15px;
+right: -40px;
+   }
