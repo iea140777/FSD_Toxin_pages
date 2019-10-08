@@ -22,7 +22,7 @@ $('#start_one').datepicker({
 
 $( '<i class="material-icons date_dropdown_arrow">expand_more</i>' ).insertAfter( ".text-field__form_narrow" );
 
-$('.datepicker--buttons').append('<span class="datepicker--button -apply">Применить</span>');
+// $('.datepicker--buttons').append('<span class="datepicker--button -apply">Применить</span>');
  
 
 
