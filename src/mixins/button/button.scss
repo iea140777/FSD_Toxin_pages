@@ -5,6 +5,7 @@ width: $width;
 }
 
 @mixin button__base ($btn_background, $btn_width, $btn_border, $btn_color) {
+outline: none ;
 height: 44px;
 text-align: center;
 text-decoration: none;
@@ -23,7 +24,3 @@ box-sizing: border-box;
     opacity: 0.25;   
     } 
     }
-
-
-
-
