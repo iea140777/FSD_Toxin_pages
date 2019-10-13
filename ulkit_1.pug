@@ -1,26 +1,18 @@
-block config
-  include ./src/includes/config.pug
-  -var myTitle = "UIkit_1"
-block head
-  include ./src/includes/block_head.pug
+extends ./src/templates/layout.pug
+prepend head
+  - var lang="en"
+  - var myTitle = "Ui_Kit_colors&types"
+  - var myDesc = "Toxin_hotel_search"
+append links
+  link(href="./src/ulkit_1.scss" rel ="stylesheet")
+  link(href="./src/includes/logo/logo.scss" rel ="stylesheet")
+  link(href="./src/includes/ulkit_fonts/ulkit_fonts.scss" rel ="stylesheet")
+  link(href="./src/includes/ulkit_colors/ulkit_colors.scss" rel ="stylesheet")
 
-body
+block main
   include ./src/includes/logo/logo.pug
-  block Content
-    div.colors_type
-      
-      div.colors
-        include ./src/includes/ulkit_colors/ulkit_colors.pug
-      div.fonts
-        include ./src/includes/ulkit_fonts/ulkit_fonts.pug
-            
-    div.form_elements
-
-    div.cards
-
-    div.headers_footers       
-    
-  
-  block scripts
-      script(src='./src/index.js')
-        
+  div.colors_type
+    div.colors
+      include ./src/includes/ulkit_colors/ulkit_colors.pug
+    div.fonts
+      include ./src/includes/ulkit_fonts/ulkit_fonts.pug

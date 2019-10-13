@@ -1,0 +1,20 @@
+doctype html
+html    
+    block head
+        head(lang=lang)
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            meta(name="description" content=myDesc)
+            title #{myTitle}
+            block links
+                link(href="./src/includes/fonts/fontstyle.scss" rel ="stylesheet")
+        
+    body
+        block main
+        block scripts
+            script(src='./src/scripts/jquery-3.4.1.js' type="text/javascript")
+            script(src='./src/index.js')
+            script(src="./src/scripts/jquery-ui-1.12.1/jquery-ui.js" type="text/javascript")
+    
+        

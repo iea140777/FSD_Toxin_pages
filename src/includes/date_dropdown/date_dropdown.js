@@ -21,22 +21,3 @@ $('#start_one').datepicker({
   
 
 $( '<i class="material-icons date_dropdown_arrow">expand_more</i>' ).insertAfter( ".text-field__form_narrow" );
-
-// $('.datepicker--buttons').append('<span class="datepicker--button -apply">Применить</span>');
- 
-
-
-    // var template = '' +
-    //     '<div class="datepicker--nav-action" data-action="prev">#{prevHtml}</div>' +
-    //     '<div class="datepicker--nav-title">#{title}</div>' +
-    //     '<div class="datepicker--nav-action" data-action="next">#{nextHtml}</div>',
-    //     buttonsContainerTemplate = '<div class="datepicker--buttons"></div>',
-    //     button = '<span class="datepicker--button" data-action="#{action}">#{label}</span>' +
-    //     button = '<span class="datepicker--button -apply">Применить</span>',
-    //     datepicker = $.fn.datepicker,
-    //     dp = datepicker.Constructor,
-
- 
-  //   $("#start_one").click(function(){
-  //         $(".date_dropdown_arrow").toggleClass("close_icon");
-  // });
