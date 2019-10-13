@@ -1,11 +1,13 @@
-$( '<i class="material-icons dropdown_arrow">expand_more</i>' ).insertAfter(".dropdown_input");
+$( '<button class="dropdown_expand_button", type="button", formaction="#"><i class="material-icons dropdown_arrow">expand_more</i></button>' ).insertAfter(".dropdown_input");
 
-$(".dropdown_input").click(function(){
+$(".dropdown_expand_button").click(function(){
     $(".dropdown_list").toggle();
+    $(".dropdown_expand_button").toggleClass("close_icon");
 });
 
 $(function(){
-    $("#counter1").htmlNumberSpinner(); 
+    $("#counter1").htmlNumberSpinner();
+
 });
 
 $(function(){
@@ -15,8 +17,15 @@ $(function(){
 $(function(){
     $("#counter3").htmlNumberSpinner(); 
 });   
-  
 
-
-// $( '<button class="subscription_textfield_button", type="button", formaction="#"><i class="material-icons subscription_textfield_arrow_forward">arrow_forward</i></button>' ).insertAfter( ".subscription_textfield" );
-// $( '<i class="material-icons filter_date_dropdown_arrow">expand_more</i>' ).insertAfter( ".filter_date_dropdown_input" );
+$(document).ready(
+$(function(){
+var counter1 = $("#counter1 .number-input");
+var counter2 = $("#counter2 .number-input");
+var counter3 = $("#counter3 .number-input");
+console.log(typeof counter3);
+var InputText = counter1.val() + counter2.val() + counter3.val() + " гостей";
+console.log(InputText);
+$(".dropdown_input").val(InputText);
+}),
+)

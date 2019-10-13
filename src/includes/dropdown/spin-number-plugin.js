@@ -64,6 +64,8 @@
         inputValue = minAttributeValue ? minAttributeValue: defaultValue;
         numberInput$.val(inputValue);
 
+        
+
         /* incrementer functionality */
         incrementerEl$.click(function () {
             var parentEl = $(this).parent();
@@ -98,6 +100,7 @@
             }
             inputValue = parentEl.find('.number-input').val();
             parentEl.find('.number-input').val(--inputValue);
+           
         })
 
         numberInput$.change(function () {
@@ -111,12 +114,21 @@
                 $(this).val(minAttributeValue)
                 return;
             }
+            
         })
 
     };
 
     $.fn.getSpinnerValue = function () {
         return $(this).find('.number-input').val();
-    }
-
+    };
+    
+    // if((parentEl.find('.number-input').val(0));{
+    //     decrementerEl$.css({"opacity": "0.38"})
+    // };
+        // else {decrementerEl$.css({"opacity": "0"})   };
+    // if ($.fn.getSpinnerValue =0){
+    //     decrementerEl$.css({"opacity": "0.38"})
+    // };
+        
 }(jQuery));

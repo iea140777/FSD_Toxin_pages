@@ -1,4 +1,4 @@
--var dropdown_final_text = 'Сколько гостей' 
+//- -var dropdown_final_text = 'Сколько гостей' 
 
 
 mixin dropdown_list_item (item_title, id)
@@ -9,16 +9,16 @@ mixin dropdown_list_item (item_title, id)
 
 //- mixin dropdown
 div.dropdown_container
-  +textfield('Dropdown', dropdown_final_text, '.dropdown_input')
+  h3 Dropdown
+  input.dropdown_input(type='text' name='guests' autocomplete="off" placeholder="Сколько гостей" readonly)
   ul.dropdown_list
     + dropdown_list_item('Взрослые', 'counter1')
     + dropdown_list_item('Дети', 'counter2')
     + dropdown_list_item('Младенцы', 'counter3')
     li.dropdown_list_item.dropdown_buttons
-      span.dropdown_button
-        h3.dropdown_button__clear Очистить
-      span.dropdown_button
-        h3.dropdown_button__apply Применить
+      input.dropdown_button.dropdown_button__clear(type='button' value='Очистить')
+      input.dropdown_button.dropdown_button__apply(type='button' value='Применить')
+        
 
   
 //- div.text_field_container
