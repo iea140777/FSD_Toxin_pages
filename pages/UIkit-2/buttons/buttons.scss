@@ -1,0 +1,40 @@
+@import "../../../src/includes/button/button.scss";
+
+.buttons__container1{
+border: 0;
+padding: 0;
+width: 320px;
+height: 250px;
+}
+
+.buttons__header{
+    margin-bottom: 10px;
+}
+
+.buttons__container2{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 240px;
+}
+
+.buttons__container3 {
+    display: flex;
+    width: 218px;
+    justify-content: space-between;
+}
+.button_bordered_focus { 
+    @extend .button_bordered;
+    opacity: 0.5;
+ }
+    
+ .button_colored_focus { 
+     @extend .button_colored;
+     opacity: 0.5;
+  }
+    
+ .button_text_focus {
+   @extend .button_text; 
+   opacity: 0.5;
+ }
+    

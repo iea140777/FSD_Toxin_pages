@@ -1,0 +1,15 @@
+
+.bullet-list {
+list-style-position: outside;
+list-style-image:url('Ellipse.png');
+margin: 0;
+padding: 0;
+padding-left: 19px;
+}
+
+.bullet-list__item {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    padding-left: 2px;
+} 

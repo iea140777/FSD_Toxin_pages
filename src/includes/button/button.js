@@ -1,0 +1,1 @@
+$( '<i class="material-icons button__arrow-forward">arrow_forward</i>' ).insertAfter( ".button_long" );

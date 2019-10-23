@@ -1,0 +1,15 @@
+include ../../../src/includes/button/button.pug
+div.buttons__container1
+    h3.buttons__header Buttons
+    div.buttons__container2
+        div.buttons__container3
+            +button("click me", "button_colored", "button__container_short")
+            +button("click me", "button_colored_focus", "button__container_short")
+        div.buttons__container3
+            +button("click me", "button_bordered", "button__container_short")
+            +button("click me", "button_bordered_focus")
+        div.buttons__container3
+            +button("click me", "button_text", "button__container_short")
+            +button("click me", "button_text_focus", "button__container_short")
+        +button("Перейти к оплате", "button_long", "button__container_long")
+               

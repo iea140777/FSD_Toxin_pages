@@ -2,7 +2,7 @@
   "name": "my_project",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "pages/template/index.js",
   "scripts": {
     "start": "parcel index.pug",
     "build": "parcel build index.pug"
@@ -22,8 +22,8 @@
     "nouislider": "^14.0.2",
     
     "pug": "^2.0.4",
-    "sass": "^1.22.12",
-    "tiny-date-picker": "^3.2.8"
+    "sass": "^1.22.12"
+    
   },
   "devDependencies": {
     "cssnano": "^4.1.10"

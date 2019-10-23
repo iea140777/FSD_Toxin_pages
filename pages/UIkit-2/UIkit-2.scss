@@ -1,3 +1,4 @@
+
 .form_elements_container {
 width: 100%;
 display: flex;
@@ -36,3 +37,14 @@ margin-left: 50px;
     align-items: flex-start;
 }
 
+.form-elements__bullet-list {
+    margin: 0;
+    padding: 0; 
+    width: 260px;
+    height: 150px;
+}
+.form-elements__title__bullet-list{
+    margin: 0;
+    padding: 0;
+}
+@import "buttons/buttons.scss";
