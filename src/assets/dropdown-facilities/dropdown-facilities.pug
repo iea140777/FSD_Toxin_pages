@@ -1,0 +1,25 @@
+//- -var dropdown_final_text = 'Сколько гостей' 
+
+
+mixin dropdown__list-item (item_title, id)
+  li.dropdown__list-item
+    div.dropdown__list-item__title
+      h3=item_title
+    div.dropdown__counter(id=id, min="0", max="20", step="1")
+
+
+//- mixin dropdown
+div.dropdown2__container
+  h3 Dropdown
+  input.dropdown2__input(type='text' name='facilities' autocomplete="off" placeholder="" readonly)
+  ul.dropdown2__list
+    + dropdown__list-item('Спальни', 'counter1')
+    + dropdown__list-item('Кровати', 'counter2')
+    + dropdown__list-item('Ванные комнаты', 'counter3')
+    
+
+  
+     
+    
+
+    

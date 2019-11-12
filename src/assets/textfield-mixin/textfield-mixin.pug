@@ -1,0 +1,13 @@
+//- div.textfield-email__container
+//-   form.textfield-email(name="textfield-email")
+//-     label.textfield-email__label(for='email')
+//-       h3 Text field
+//-     input#email.textfield-email__input(type='email' name='email' autocomplete="off" placeholder="Email")
+
+mixin textfield(title, id, inputType, placeholder, maskclass)
+  div.textfield__container
+    form.textfield(name="textfield")
+      label.textfield__label(for=id)
+        h3=title
+      input.textfield__input(id=id type=inputType name='textfield-input' autocomplete="off" placeholder=placeholder class=maskclass)
+            
