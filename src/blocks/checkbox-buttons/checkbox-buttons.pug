@@ -1,0 +1,8 @@
+include ../../mixins/checkbox-mixin/checkbox-mixin.pug
+div.checkbox-buttons__container
+    h3 Checkbox buttons 
+    ul.checkbox-buttons__list
+        li.checkbox-buttons__list-item: +checkbox("Можно курить", '10')
+        li.checkbox-buttons__list-item: +checkbox("Можно с питомцами",'11' )
+        li.checkbox-buttons__list-item: +checkbox-twoline("Можно пригласить гостей", "(до 10 человек)", '12')
+          

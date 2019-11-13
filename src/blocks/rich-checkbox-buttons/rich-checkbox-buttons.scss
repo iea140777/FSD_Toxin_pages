@@ -1,0 +1,48 @@
+@import '../../mixins/checkbox-mixin/checkbox-mixin.scss';
+.rich-checkbox-buttons__container {
+    margin: 0;
+    padding: 0; 
+    width: 260px;
+    height: 155px;
+}
+
+.rich-checkbox-buttons__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 14px;
+}
+
+.rich-checkbox-buttons__list-item{
+    list-style: none;
+    font-style:normal;
+    color:rgba(31, 32, 65, 0.5);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 6px; 
+}
+
+.rich-checkbox-buttons__list-item .checkbox__label__text1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color:rgba(31, 32, 65, 0.75);
+    
+}   
+
+.rich-checkbox-buttons__list-item .checkbox__label__text2 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    margin-top: 5px;
+    vertical-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    color:rgba(31, 32, 65, 0.5);
+    }   
+
+

@@ -2,7 +2,7 @@
   "name": "my_project",
   "version": "1.0.0",
   "description": "",
-  "main": "/pages/template/index.pug",
+  "main": "index.pug",
   "scripts": {
     "start": "parcel index.pug",
     "build": "parcel build index.pug"

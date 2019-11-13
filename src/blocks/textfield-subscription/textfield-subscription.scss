@@ -1,0 +1,29 @@
+@import "../../mixins/textfield-mixin/textfield-mixin.scss";
+
+.textfield-subscription__container {
+  margin: 0;
+  padding: 0; 
+  width: 267px;
+  height: 67px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.textfield-subscription__button{
+  border: none;
+  position: absolute;
+  right: 4px;
+  top: 39px;
+  background: white;
+  outline: none; 
+  cursor: pointer;
+}
+.textfield-subscription__arrow-forward{
+  color:  #BC9CFF;
+}
+
+.textfield-subscription__button:active{
+  outline: none;
+  border: none;
+  opacity: 0.5;  
+}

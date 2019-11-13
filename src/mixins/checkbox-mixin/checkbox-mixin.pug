@@ -1,0 +1,11 @@
+mixin checkbox (checkbox__item, id)
+  div.checkbox
+    input(type="checkbox" id=id)
+    label.checkbox__label(for=id) #{checkbox__item}
+
+mixin checkbox-twoline (text1, text2, id)
+  div.checkbox
+    input(type="checkbox" id=id)
+    label.checkbox__label(for=id)
+      span.checkbox__label__text1 #{text1} <br>
+      span.checkbox__label__text2 #{text2}
