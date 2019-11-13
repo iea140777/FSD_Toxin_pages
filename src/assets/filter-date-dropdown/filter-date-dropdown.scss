@@ -1,0 +1,59 @@
+.filter-date-dropdown__container{
+  margin: 0;
+  padding: 0; 
+  width: 266px;
+  height: 60px;
+}
+  
+.filter-date-dropdown__form {
+  margin: 0;
+  padding: 0; 
+  text-align: left;
+  position: relative;
+  width: 100%;
+}
+    
+.filter-date-dropdown__input {
+  margin: 0px;
+  padding: 0px; 
+  outline: none;
+  height: 44px;
+  cursor: pointer;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 15px;
+  color: rgba(31, 32, 65, 0.75);
+  font-family: 'Conv_Montserrat-Regular';
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+        
+.filter-date-dropdown__input:hover { 
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  color: rgba(31, 32, 65, 0.75);
+}
+.filter-date-dropdown__input:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  color: rgba(31, 32, 65, 0.75);
+}
+  
+.filter-date-dropdown__input::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.filter-date-dropdown__label{
+  display:inline-block;
+  padding: 0;
+  margin: 0;
+  height:15px;
+}
+  
+.filter-date-dropdown__arrow{
+  position: absolute;
+  right: 10px;
+  top: 41px;
+}

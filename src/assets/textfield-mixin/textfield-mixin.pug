@@ -4,10 +4,10 @@
 //-       h3 Text field
 //-     input#email.textfield-email__input(type='email' name='email' autocomplete="off" placeholder="Email")
 
-mixin textfield(title, id, inputType, placeholder, maskclass)
+mixin textfield(title, id, inputType, placeholder, addclass)
   div.textfield__container
-    form.textfield(name="textfield")
+    form.textfield__form(name="textfield")
       label.textfield__label(for=id)
         h3=title
-      input.textfield__input(id=id type=inputType name='textfield-input' autocomplete="off" placeholder=placeholder class=maskclass)
+      input.textfield__input(id=id type=inputType name='textfield-input' autocomplete="off" placeholder=placeholder class=addclass)
             

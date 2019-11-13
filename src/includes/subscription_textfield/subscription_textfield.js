@@ -1,1 +1,0 @@
-$( '<button class="subscription_textfield_button", type="button", formaction="#"><i class="material-icons subscription_textfield_arrow_forward">arrow_forward</i></button>' ).insertAfter( ".subscription_textfield" );

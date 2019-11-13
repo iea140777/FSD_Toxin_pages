@@ -1,19 +1,22 @@
 extends ../template/layout.pug
 prepend head
   - var lang="en"
-  - var myTitle = "Ui_Kit_form_elements"
-  - var myDesc = "Toxin_hotel_search"
+  - var myTitle = "Ui Kit form elements"
+  - var myDesc = "Toxin Hotel Search"
 append links
   link(href="../../src/assets/logo/logo.scss" rel ="stylesheet")
   link(href="../../src/includes/ulkit_fonts/ulkit_fonts.scss" rel ="stylesheet")
   link(href="../../src/includes/ulkit_colors/ulkit_colors.scss" rel ="stylesheet")
   link(href="UIkit-2.scss" rel ="stylesheet")
   link(href="../../src/assets/textfield-email/textfield-email.scss" rel ="stylesheet")
-  link(href="../../src/scripts/air-datepicker/dist/css/datepicker.min.css" rel ="stylesheet")
-  link(href="../../src/includes/datepicker/datepicker.scss" rel ="stylesheet")
+  link(href="../../src/assets/textfield-masked/textfield-masked.scss" rel ="stylesheet")
+  link(href="../../src/assets/datepicker/air-datepicker/dist/css/datepicker.min.css" rel ="stylesheet")
+  link(href="../../src/assets/datepicker/datepicker.scss" rel ="stylesheet")
+  link(href="../../src/assets/date-dropdown/date-dropdown.scss" rel ="stylesheet")
+  link(href="../../src/assets/filter-date-dropdown/filter-date-dropdown.scss" rel ="stylesheet")
   link(href="../../src/assets/dropdown-guests/dropdown-guests.scss" rel ="stylesheet")
   link(href="../../src/assets/dropdown-facilities/dropdown-facilities.scss" rel ="stylesheet")
-  link(href="../../src/includes/date_dropdown/date_dropdown.scss" rel ="stylesheet")
+  link(href="../../src/assets/textfield-subscription/textfield-subscription.scss" rel ="stylesheet")
   link(href="../../src/mixins/checkbox/checkbox.scss" rel ="stylesheet")
   link(href="../../src/includes/exp_checkbox/exp_checkbox.scss" rel ="stylesheet")
   link(href="../../src/includes/comfort_icons/comfort_icons.scss" rel ="stylesheet")
@@ -29,17 +32,13 @@ append links
   link(href="../../src/includes/range_slider/range_slider.scss" rel ="stylesheet")
   link(href="../../src/includes/buttons/buttons.scss" rel ="stylesheet")
   link(href="../../src/includes/pagination/pagination.scss" rel ="stylesheet")
-  link(href="../../src/includes/filter_date_dropdown/filter_date_dropdown.scss" rel ="stylesheet")
   link(href="../../src/includes/bullet_list/bullet_list.scss" rel ="stylesheet")
-  link(href="../../src/includes/subscription_textfield/subscription_textfield.scss" rel ="stylesheet")
- 
-
+  
 block main
   include ../../src/mixins/checkbox/checkbox.pug
   include ../../src/mixins/checkbox_text_adv/checkbox_text_adv.pug
   include ../../src/mixins/button/button.pug
-  include ../../src/assets/textfield-mixin/textfield-mixin.pug
-  
+    
   include ../../src/assets/logo/logo.pug
   div.form_elements_container
     div.form_elements_col
@@ -51,11 +50,11 @@ block main
       div.clearfix.spaceholder
       include ../../src/assets/textfield-masked/textfield-masked.pug
       div.clearfix.spaceholder
-      include ../../src/includes/date_dropdown/date_dropdown.pug
+      include ../../src/assets/date-dropdown/date-dropdown.pug
       div.clearfix.spaceholder
-      include ../../src/includes/filter_date_dropdown/filter_date_dropdown.pug
+      include ../../src/assets/filter-date-dropdown/filter-date-dropdown.pug
       div.clearfix.spaceholder
-      include ../../src/includes/subscription_textfield/subscription_textfield.pug
+      include ../../src/assets/textfield-subscription/textfield-subscription.pug
       div.clearfix.spaceholder
     div.form_elements_col
       include ../../src/includes/checkbox_btn/checkbox_btn.pug
@@ -95,15 +94,15 @@ block main
 append scripts
   script(src="../../src/includes/exp_checkbox/exp_checkbox.js") 
   script(src="../../src/includes/range_slider/range_slider.js")
-  script(src="../../src/scripts/air-datepicker/dist/js/datepicker.min.js")
-  script(src="../../src/includes/date_dropdown/date_dropdown.js")
-  script(src="../../src/includes/filter_date_dropdown/filter_date_dropdown.js")
-  script(src="../../src/includes/datepicker/datepicker.js")
+  script(src="../../src/assets/datepicker/air-datepicker/dist/js/datepicker.min.js")
+  script(src="../../src/assets/datepicker/datepicker.js")
+  script(src="../../src/assets/date-dropdown/date-dropdown.js")
+  script(src="../../src/assets/filter-date-dropdown/filter-date-dropdown.js")
   script(src="../../src/includes/buttons/buttons.js")
-  script(src="../../src/includes/subscription_textfield/subscription_textfield.js")
+  script(src="../../src/assets/textfield-subscription/textfield-subscription.js")
   script(src="../../src/assets/dropdown-guests/spin-number-plugin.js")
   script(src="../../src/assets/dropdown-guests/dropdown-guests.js")
   script(src="../../src/assets/dropdown-facilities/dropdown-facilities.js")
   script(src="../../src/assets/textfield-masked/jquery.maskedinput.js")
   script(src="../../src/assets/textfield-masked/textfield-masked.js")
-  
+

@@ -1,5 +1,5 @@
 
-$('#date_range').datepicker(
+$('#date-range').datepicker(
 {
     clearButton: true,
     autoClose: false,
@@ -17,6 +17,6 @@ $('#date_range').datepicker(
     }
 });
 
-$( '<i class="material-icons filter_date_dropdown_arrow">expand_more</i>' ).insertAfter( ".filter_date_dropdown_input" );
+$('<i class="material-icons filter-date-dropdown__arrow">expand_more</i>').insertAfter(".filter-date-dropdown__input");
 
 // $('.datepicker--buttons').append('<span class="datepicker--button -apply">Применить</span>');

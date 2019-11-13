@@ -15,9 +15,10 @@ $('#start_one').datepicker({
     navTitles: {
       days: 'MM <i>yyyy</i>',
       months: 'yyyy',
-      years: 'yyyy1 - yyyy2'
-  }, 
+      years: 'yyyy1 - yyyy2',
+    },
 });
-  
 
-$( '<i class="material-icons date_dropdown_arrow">expand_more</i>' ).insertAfter( ".text-field__form_narrow" );
+$('.datepicker--buttons').append('<span class="datepicker--button -apply">Применить</span>');
+
+$( '<i class="material-icons date-dropdown__arrow">expand_more</i>' ).insertAfter(".date-dropdown__input");

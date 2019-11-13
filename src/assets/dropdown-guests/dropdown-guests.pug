@@ -10,7 +10,7 @@ mixin dropdown__list-item (item_title, id)
 
 //- mixin dropdown
 div.dropdown__container
-  h3 Dropdown
+  h3.dropdown-guests__label Dropdown
   input.dropdown__input(type='text' name='guests' autocomplete="off" placeholder="Сколько гостей" readonly)
   ul.dropdown__list
     + dropdown__list-item('Взрослые', 'counter4')
