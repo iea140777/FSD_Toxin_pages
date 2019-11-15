@@ -24,7 +24,6 @@ append links
   link(href="../../src/blocks/toggle/toggle.scss" rel ="stylesheet")
   link(href="../../src/blocks/like-button/like-button.scss" rel ="stylesheet")
   link(href="../../src/includes/rate_btn/rate_btn.scss" rel ="stylesheet")
-  //- link(href="../../src/mixins/checkbox_text_adv/checkbox_text_adv.scss" rel ="stylesheet")
   link(href="../../src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.scss" rel ="stylesheet")
   link(href="../../src/includes/review/review.scss" rel ="stylesheet")
   link(href="../../src/scripts/jquery-ui-1.12.1/jquery-ui.css" rel ="stylesheet")
@@ -34,8 +33,7 @@ append links
   link(href="../../src/includes/bullet_list/bullet_list.scss" rel ="stylesheet")
   
 block main
-  //- include ../../src/mixins/checkbox-mixin/checkbox-mixin.pug 
-  //- include ../../src/mixins/checkbox_text_adv/checkbox_text_adv.pug
+  
   include ../../src/mixins/button/button.pug
     
   include ../../src/blocks/logo/logo.pug
@@ -62,7 +60,7 @@ block main
       div.clearfix.spaceholder
       include ../../src/blocks/toggle/toggle.pug
       div.clearfix.spaceholder
-      //- include ../../src/blocks/like-button/like-button.pug
+      include ../../src/blocks/like-button/like-button.pug
       div.clearfix.spaceholder
       include ../../src/includes/rate_btn/rate_btn.pug
       div.clearfix.spaceholder
@@ -89,7 +87,7 @@ block main
       include ../../src/includes/comfort_icons/comfort_icons.pug
       div.clearfix.spaceholder
       include ../../src/includes/review/review.pug
-    
+ 
 append scripts
   script(src="../../src/blocks/exp-checkbox/exp-checkbox.js") 
   script(src="../../src/includes/range_slider/range_slider.js")
@@ -104,5 +102,4 @@ append scripts
   script(src="../../src/blocks/dropdown-facilities/dropdown-facilities.js")
   script(src="../../src/blocks/textfield-masked/jquery.maskedinput.js")
   script(src="../../src/blocks/textfield-masked/textfield-masked.js")
-  //- script(src="../../src/blocks/like-button/like-button.js")
-
+  script(src="../../src/mixins/like-button-mixin/like-button-mixin.js")

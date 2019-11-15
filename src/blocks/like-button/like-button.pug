@@ -1,10 +1,10 @@
-- var like-button__counter='5'
+include ../../mixins/like-button-mixin/like-button-mixin.pug
+//- -var status = 'checked'
 
+h3 Like button
 div.like-button__container
-    h3 Like button
-    div.like-button
-        <i class="material-icons favorite-icon favorite-icon_unchecked">favorite_border</i> 
-        span.like-button__counter #{like-button__counter}
-    div.like-button
-        <i class="material-icons favorite-icon favorite-icon_checked">favorite</i> 
-        span.like-button__counter 12
+  +like-button('5', 'unchecked')
+  +like-button('12', 'checked')
+
+
+

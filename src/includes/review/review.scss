@@ -1,3 +1,4 @@
+@import '../../mixins/like-button-mixin/like-button-mixin.scss';
 .review_container{
 position: relative;
 margin:0;
@@ -15,7 +16,7 @@ left: -20px;
 
 }
 
-.review_container .like_btn{
+.review__like-button-container{
 position: absolute;
 top: 60px;
 left: 6px;

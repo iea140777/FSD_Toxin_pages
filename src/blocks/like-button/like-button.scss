@@ -1,48 +1,9 @@
+@import '../../mixins/like-button-mixin/like-button-mixin.scss';
 .like-button__container{
     margin: 0;
     padding: 0; 
-    width: 110px;
-    height: 70px;
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.like-button {
-    padding:0;
-    margin:0;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    box-sizing: border-box;
-    width: 40px;
-    height: 20px;
-    border-radius: 10px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    background-color: white;
-    box-shadow: rgba(31, 32, 65, 0.25);
-    padding-left: 3px;
-    cursor: pointer;
-}
-
-.like-button:last-child{
-    margin-left: 10px;
-}
-
-.favorite-icon {
-    font-size: 10px;
-    line-height: 9px;
-    text-align: center;
-}
-
-.favorite-icon_checked {
-color: #BC9CFF;
-}
-
-.favorite-icon_unchecked {
-    color: rgba(31, 32, 65, 0.25);
-}
-
-.like-button__counter {
-font-size: 10px;
-line-height: 12px;
-text-align: center;
-margin-left: 5px;
-}
