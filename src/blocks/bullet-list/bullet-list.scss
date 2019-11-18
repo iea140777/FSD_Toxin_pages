@@ -1,0 +1,26 @@
+.bullet-list__container {
+    margin: 0;
+    padding: 0; 
+    width: 295px;
+    height: 150px;
+}
+
+.bullet-list__title{
+    margin: 0;
+    padding: 0;
+}
+
+.bullet-list__list {
+    list-style-position: outside;
+    list-style-image:url('Ellipse.png');
+    margin: 0;
+    padding: 0;
+    padding-left: 19px;
+}
+
+.bullet-list__list__item {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    padding-left: 2px;
+} 

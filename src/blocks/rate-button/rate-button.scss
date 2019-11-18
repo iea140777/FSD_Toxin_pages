@@ -1,0 +1,9 @@
+@import '../../mixins/rate-button-mixin/rate-button-mixin.scss';
+.rate-buttons__UIcontainer{
+margin: 0;
+padding: 0; 
+width: 256px;
+height: 24px;
+display: flex;
+justify-content: space-between;
+}

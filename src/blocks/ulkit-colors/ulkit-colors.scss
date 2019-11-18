@@ -1,0 +1,40 @@
+.ulkit-colors__container{
+display:flex;
+width: 270px;
+height: 610px;
+}
+
+.ulkit-colors__view {
+width: 70px;
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.ulkit-colors__view > div {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px; 
+}
+
+.ulkit-colors__view1 {background-color: #1F2041;}
+.ulkit-colors__view2 {background-color:  rgba(31, 32, 65, 0.75)}
+.ulkit-colors__view3 {background-color:  rgba(31, 32, 65, 0.5)}
+.ulkit-colors__view4 {background-color:  rgba(31, 32, 65, 0.25)}
+.ulkit-colors__view5 {background-color:  rgba(31, 32, 65, 0.05)}
+.ulkit-colors__view6 {background-color: #BC9CFF}
+.ulkit-colors__view7 {background-color:  #6FCF97}
+
+.ulkit-colors__descr{
+width: 200px;
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+padding-bottom: 10px;
+padding-left: 37px;
+}
+
+.ulkit-colors__descr > div{
+    height: 70px;
+}
+

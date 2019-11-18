@@ -1,0 +1,47 @@
+mixin rate-button(starRate)
+  - var starRate = starRate
+  case starRate
+    when '0'
+      div.rate-button__container
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i> 
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>
+    when '1'
+      div.rate-button__container
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i> 
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>
+    when '2'
+      div.rate-button__container
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i>
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>
+    when '3'
+      div.rate-button__container
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i> 
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>
+    when '4'
+      div.rate-button__container
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i> 
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_unchecked">star_border</i>
+    when '5'
+      div.rate-button__container
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i> 
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i>  
+        <i class="material-icons rate-button__icon rate-button__icon_checked">star</i>
+
+

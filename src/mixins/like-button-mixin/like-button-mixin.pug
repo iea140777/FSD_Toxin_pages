@@ -5,10 +5,10 @@ mixin like-button(likeCounter, status)
       div.like-button.like-button_unchecked
         div.like-button__border
           <i class="material-icons like-button__favorite-icon like-button__favorite-icon_unchecked">favorite_border</i> 
-          input.like-button__counter.like-button__counter_unchecked(value=likeCounter)
+          input.like-button__counter.like-button__counter_unchecked(value=likeCounter readonly)
     when 'checked'
       div.like-button.like-button_checked
         div.like-button__border
           <i class="material-icons like-button__favorite-icon like-button__favorite-icon_checked">favorite</i> 
-          input.like-button__counter.like-button__counter_checked(value=likeCounter)
+          input.like-button__counter.like-button__counter_checked(value=likeCounter readonly)
 

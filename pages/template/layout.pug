@@ -8,7 +8,8 @@ html
             meta(name="description" content=myDesc)
             title #{myTitle}
             block links
-                link(href="../../src/includes/fonts/fontstyle.scss" rel ="stylesheet")
+                link(href="../template/fonts/fontstyle.scss" rel ="stylesheet") 
+                link(href="../template/variables.scss" rel ="stylesheet")
         
     body
         block main
@@ -17,6 +18,6 @@ html
             script(src="../template/jquery-migrate-1.4.1.js")
             script(src="../template/jquery-migrate-3.1.0.js")
             script(src='../template/index.js')
-            //- script(src="../../src/scripts/jquery-ui-1.12.1/jquery-ui.js" type="text/javascript")
+            
     
         
