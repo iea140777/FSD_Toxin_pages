@@ -14,19 +14,19 @@ append links
   link(href="../../src/blocks/dropdown-facilities/dropdown-facilities.scss" rel ="stylesheet")
   link(href="../../src/blocks/textfield-subscription/textfield-subscription.scss" rel ="stylesheet")
   link(href="../../src/blocks/exp-checkbox/exp-checkbox.scss" rel ="stylesheet")
-  link(href="../../src/includes/comfort_icons/comfort_icons.scss" rel ="stylesheet")
+  link(href="../../src/blocks/comfort-icons/comfort-icons.scss" rel ="stylesheet")
   link(href="../../src/blocks/checkbox-buttons/checkbox-buttons.scss" rel ="stylesheet")
   link(href="../../src/blocks/radio-button/radio-button.scss" rel ="stylesheet")
   link(href="../../src/blocks/toggle/toggle.scss" rel ="stylesheet")
   link(href="../../src/blocks/like-button/like-button.scss" rel ="stylesheet")
   link(href="../../src/blocks/rate-button/rate-button.scss" rel ="stylesheet")
   link(href="../../src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.scss" rel ="stylesheet")
-  link(href="../../src/includes/review/review.scss" rel ="stylesheet")
+  link(href="../../src/blocks/review/review.scss" rel ="stylesheet")
   link(href="../../src/blocks/range-slider/range-slider.scss" rel ="stylesheet")
   link(href="../../src/blocks/buttons/buttons.scss" rel ="stylesheet")
-  link(href="../../src/includes/pagination/pagination.scss" rel ="stylesheet")
+  link(href="../../src/blocks/pagination/pagination.scss" rel ="stylesheet")
   link(href="../../src/blocks/bullet-list/bullet-list.scss" rel ="stylesheet")
-  
+   
 block main
        
   include ../../src/blocks/logo/logo.pug
@@ -63,7 +63,7 @@ block main
       include ../../src/blocks/buttons/buttons.pug
       div.clearfix.spaceholder
       div.clearfix.spaceholder
-      include ../../src/includes/pagination/pagination.pug
+      include ../../src/blocks/pagination/pagination.pug
       div.clearfix.spaceholder     
   div.form_elements_container.form_elements_container_horisontal
     div.form_elements_col.form_elements_col_horisontal
@@ -77,9 +77,9 @@ block main
       include ../../src/blocks/bullet-list/bullet-list.pug
       div.clearfix.spaceholder
     div.form_elements_col.form_elements_col_horisontal
-      include ../../src/includes/comfort_icons/comfort_icons.pug
+      include ../../src/blocks/comfort-icons/comfort-icons.pug
       div.clearfix.spaceholder
-      include ../../src/includes/review/review.pug
+    include ../../src/blocks/review/review.pug
  
 append scripts
   script(src="../../src/blocks/exp-checkbox/exp-checkbox.js") 

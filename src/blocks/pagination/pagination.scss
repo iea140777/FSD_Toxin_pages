@@ -5,7 +5,7 @@
     height: 106px;
 }
 
-.pagination_list_container{
+.pagination__list-container{
     padding: 0;
     margin: 0;
     display: flex;
@@ -17,7 +17,7 @@
     margin-top: 15px;
 }
 
-a.pagination_list_item {
+a.pagination__list-item {
     padding: 0;
     margin: 0;
     display: inline-block;
@@ -34,26 +34,26 @@ a.pagination_list_item {
     line-height: 40px;
      }
 
- a.pagination_list_item:first-child{
+ a.pagination__list-item:first-child{
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
         color: white;
         font-weight: bold;
     }
 
- a.pagination_list_item:last-child{
+ a.pagination__list-item:last-child{
         background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); 
         color: white;
     }
 
 
-.arrow_forward_pagination {
+.pagination__arrow-forward {
     padding: 0;
     margin: 0;
     font-size: 24px;
     line-height: 40px;
 }
 
-.pagination_text {
+.pagination__text {
 margin-top: 7px;
 padding-left: 7px;    
 }

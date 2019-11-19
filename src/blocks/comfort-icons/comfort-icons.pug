@@ -1,0 +1,14 @@
+mixin comfort-icon-mixin(icon, title, description)
+  div.comfort-icon
+    i.material-icons.comfort-icon__icon #{icon}
+    div.comfort-icon__text
+      span.comfort-icon__title #{title} <br>
+      span #{description}
+
+div.comfort-icons__container
+  +comfort-icon-mixin('mood', 'Комфорт', 'Шумопоглощающие стены')
+  +comfort-icon-mixin('location_city', 'Удобство', 'Окно в каждой из спален')    
+
+
+
+    

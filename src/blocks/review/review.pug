@@ -1,0 +1,17 @@
+include ../../mixins/like-button-mixin/like-button-mixin.pug
+
+mixin review(imageUrl, likeAmount, likeStatus, author, date, message)
+  div.review__container
+    img.review__photo(src=imageUrl alt="photo")
+    div.review__like-button-container    
+      +like-button(likeAmount, likeStatus)
+    div.review__text
+        span.review__author
+            strong #{author}
+        span.review__date #{date}
+        span.review__message #{message}
+
+div.UI__review-container
+  +review('../../src/blocks/review/images/photo1.png', '12', 'checked', 'Мурад Сарафанов', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+
+    
