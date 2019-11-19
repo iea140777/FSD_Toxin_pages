@@ -1,0 +1,26 @@
+include ../../mixins/button-mixin/button-mixin.pug
+//- include ../../mixins/button/button.pug
+div.buttons__UI-container
+  h3.buttons__header Buttons
+  div.buttons__container
+    div.buttons__colored-button-container
+      div.UI__button
+        +button("colored", "click me")
+      div.UI__button
+        +button("colored", "click me")
+    div.buttons__bordered-button-container
+      div.UI__button
+        +button("bordered", "click me")
+      div.UI__button
+        +button("bordered", "click me")
+    div.buttons__text-button-container
+      div.UI__button
+        +button("text", "click me")
+      div.UI__button
+        +button("text", "click me")
+    div.buttons__text-button-container
+      div.UI__button_long
+        +button("arrow", "Перейти к оплате")
+  
+        
+            

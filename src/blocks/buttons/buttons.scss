@@ -1,0 +1,87 @@
+// @import "./src/mixins/button/button.scss";
+@import "./src/mixins/button-mixin/button-mixin.scss";
+
+.buttons__UI-container{
+margin: 0;
+padding: 0;
+width: 320px;
+}
+.buttons__header{
+    margin-bottom: 10px;
+}
+
+.buttons__container{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.UI__button {
+    margin: 0;
+    padding: 0;
+    width: 99px;
+}
+
+.UI__button_long{
+    margin: 0;
+    padding: 0;
+    width: 320px;
+}
+
+.buttons__colored-button-container, .buttons__bordered-button-container, .buttons__text-button-container {
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    justify-content: space-between;
+    margin-top: 30px;
+    // padding: 5px;
+}
+
+// .button_container {
+//     @include button_container (99px);
+// }
+
+// .button_container__long {
+//     @include button_container(320px);
+//     position: relative;
+// }
+
+
+
+// .button__colored { 
+//  @include button__base(linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%), 99px, none, white);
+// }
+// .button__colored__focus { 
+//     @extend .button__colored;
+//     opacity: 0.5;
+//    }
+
+// .button__bordered {
+// @include button__base(white, 99px, 2px solid #BC9CFF, #BC9CFF);
+// }
+
+// .button__bordered__focus { 
+//     @extend .button__bordered;
+//     opacity: 0.5;
+//    }
+
+// .button__text {
+// @include button__base(white, 99px, white, #BC9CFF);  
+// }
+
+// .button__text__focus { 
+//     @extend .button__text;
+//     opacity: 0.5;
+// }
+
+// .button__long {
+// @include button__base(linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%), 320px, none, white);
+   
+// }
+
+// .button_arrow_forward{
+// position: absolute;
+// right: 10px;
+// top: 10px;
+// color: white;
+// }

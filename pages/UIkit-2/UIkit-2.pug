@@ -8,8 +8,6 @@ append links
   link(href="UIkit-2.scss" rel ="stylesheet")
   link(href="../../src/blocks/textfield-email/textfield-email.scss" rel ="stylesheet")
   link(href="../../src/blocks/textfield-masked/textfield-masked.scss" rel ="stylesheet")
-  link(href="../../src/blocks/datepicker/air-datepicker/dist/css/datepicker.min.css" rel ="stylesheet")
-  link(href="../../src/blocks/datepicker/datepicker.scss" rel ="stylesheet")
   link(href="../../src/blocks/date-dropdown/date-dropdown.scss" rel ="stylesheet")
   link(href="../../src/blocks/filter-date-dropdown/filter-date-dropdown.scss" rel ="stylesheet")
   link(href="../../src/blocks/dropdown-guests/dropdown-guests.scss" rel ="stylesheet")
@@ -24,16 +22,13 @@ append links
   link(href="../../src/blocks/rate-button/rate-button.scss" rel ="stylesheet")
   link(href="../../src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.scss" rel ="stylesheet")
   link(href="../../src/includes/review/review.scss" rel ="stylesheet")
-  //- link(href="../../src/blocks/range_slider/jquery-ui-1.12.1/jquery-ui.min.css" rel ="stylesheet")
   link(href="../../src/blocks/range-slider/range-slider.scss" rel ="stylesheet")
-  link(href="../../src/includes/buttons/buttons.scss" rel ="stylesheet")
+  link(href="../../src/blocks/buttons/buttons.scss" rel ="stylesheet")
   link(href="../../src/includes/pagination/pagination.scss" rel ="stylesheet")
   link(href="../../src/blocks/bullet-list/bullet-list.scss" rel ="stylesheet")
   
 block main
-  
-  include ../../src/mixins/button/button.pug
-    
+       
   include ../../src/blocks/logo/logo.pug
   div.form_elements_container
     div.form_elements_col
@@ -65,7 +60,7 @@ block main
     div.form_elements_col
       include ../../src/blocks/range-slider/range-slider.pug
       div.clearfix.spaceholder
-      include ../../src/includes/buttons/buttons.pug
+      include ../../src/blocks/buttons/buttons.pug
       div.clearfix.spaceholder
       div.clearfix.spaceholder
       include ../../src/includes/pagination/pagination.pug
@@ -90,10 +85,8 @@ append scripts
   script(src="../../src/blocks/exp-checkbox/exp-checkbox.js") 
   script(src="../../src/blocks/range-slider/range-slider.js")
   script(src="../../src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
-  script(src="../../src/blocks/datepicker/datepicker.js")
   script(src="../../src/blocks/date-dropdown/date-dropdown.js")
   script(src="../../src/blocks/filter-date-dropdown/filter-date-dropdown.js")
-  script(src="../../src/includes/buttons/buttons.js")
   script(src="../../src/blocks/textfield-subscription/textfield-subscription.js")
   script(src="../../src/blocks/dropdown-guests/spin-number-plugin.js")
   script(src="../../src/blocks/dropdown-guests/dropdown-guests.js")
@@ -102,3 +95,5 @@ append scripts
   script(src="../../src/blocks/textfield-masked/textfield-masked.js")
   script(src="../../src/mixins/like-button-mixin/like-button-mixin.js")
   script(src="../../src/blocks/range-slider/jquery-ui-1.12.1/jquery-ui.min.js")
+  script(src="../../src/mixins/button-mixin/button-mixin.js")
+  script(src="../../src/blocks/buttons/buttons.js")

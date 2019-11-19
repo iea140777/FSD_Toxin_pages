@@ -1,0 +1,92 @@
+@import "./pages/template/variables.scss";
+
+.button__container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 44px;
+    box-sizing: border-box; 
+    border: 0;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__container_bordered {
+    background: $gradient_primary;
+    padding: 2px;
+    border-radius: 22px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button__container_text{
+    height: 15px;
+}
+
+.button {
+    height: 100%;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 22px;
+    box-sizing: border-box;  
+    position: relative;  
+    cursor: pointer;
+    .button__label{
+        line-height: 15px;
+        vertical-align: middle;
+        };
+
+    }
+
+.button_colored { 
+    background: $gradient_primary;
+    border: none;
+    .button__label{
+        color: #ffffff;
+    };
+    &:hover{
+        opacity: 0.5;
+    };
+    &:active{
+        opacity: 0.25;   
+    }; 
+}
+
+.button_bordered {
+    background: white;
+    border: none;
+    .button__label{
+    color: $color__purple;
+    };
+}    
+
+.button_text {
+    background: white;
+    border: none;
+    height: 20px;
+    .button__label{
+    color: $color__purple;
+    &:hover{
+        color: $color__dark-shade50;
+    };
+    };
+}   
+
+.button__arrow-forward{
+position: absolute;
+right: 10px;
+top: 10px;
+color: white;
+}
+
+
+
+

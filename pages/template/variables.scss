@@ -8,10 +8,10 @@ $color__purple: #BC9CFF;
 $color__green: #6FCF97;
 
 
-$gradient__primary: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-$gradient__secondary: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-$gradient__orange: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
-$gradient__dark: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+$gradient_primary: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+$gradient_secondary: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+$gradient_orange: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+$gradient_dark: linear-gradient(180deg, #919191 0%, #3D4975 100%);
 
 $shadow__light: 0px 10px 20px $color__dark-shade5;
 $shadow__dark: 0px 0px 25px rgba(0, 0, 0, 0.2);
