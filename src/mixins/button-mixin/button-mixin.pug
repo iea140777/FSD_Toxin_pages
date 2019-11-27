@@ -3,19 +3,19 @@ mixin button(style, title)
   case style
     when 'colored'
       form.button__container
-        button.button.button_colored(type="button", formaction="#")
+        button.button.button_colored(type="submit", formaction="#")
           h3.button__label=title
     when 'bordered'
       form.button__container.button__container_bordered
-        button.button.button_bordered(type="button", formaction="#")
+        button.button.button_bordered(type="submit", formaction="#")
           h3.button__label=title  
     when 'text'
       form.button__container.button__container_text
-        button.button.button_text(type="button", formaction="#")
+        button.button.button_text(type="submit", formaction="#")
           h3.button__label=title  
     when 'arrow'
       form.button__container
-        button.button.button_colored.button_arrow(type="button", formaction="#")
+        button.button.button_colored.button_arrow(type="submit", formaction="#")
           h3.button__label=title
             i.material-icons.button__arrow-forward arrow_forward
     

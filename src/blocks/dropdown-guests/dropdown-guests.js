@@ -1,8 +1,8 @@
-$( '<button class="dropdown__expand-button", type="button", formaction="#"><i class="material-icons dropdown_arrow">expand_more</i></button>' ).insertAfter(".dropdown__input");
+$( '<button class="dropdown-guests__expand-button", type="button", formaction="#"><i class="material-icons dropdown-guests_arrow">expand_more</i></button>' ).insertAfter(".dropdown-guests__input");
 
-$(".dropdown__expand-button").click(function(){
-    $(".dropdown__list").toggle();
-    $(".dropdown__expand-button").toggleClass("dropdown__close-icon");
+$(".dropdown-guests__expand-button").click(function(){
+    $(".dropdown-guests__list").toggle();
+    $(".dropdown-guests__expand-button").toggleClass("dropdown-guests__close-icon");
 });
 
 $(function(){
@@ -21,20 +21,20 @@ $(function(){
               else if (GuestsNumber==0 || GuestsNumber>=5){var Guest=' гостей';}
           var InputText = GuestsNumber + Guest;
           console.log(InputText);
-          $(".dropdown__input").val(InputText);
+          $(".dropdown-guests__input").val(InputText);
           if(GuestsNumber>0) {$('.dropdown__button_clear').removeClass("invisible");}
           else if (GuestsNumber<1) {$('.dropdown__button_clear').addClass("invisible");}
   });
 });
 
 $('.dropdown__button_apply').click(function(){
-    $(".dropdown__list").toggle();
-    $(".dropdown__expand-button").toggleClass("dropdown__close-icon"); 
+    $(".dropdown-guests__list").toggle();
+    $(".dropdown-guests__expand-button").toggleClass("dropdown-guests__close-icon"); 
 });
 
 
 $('.dropdown__button_clear').click(function(){
-    $(".dropdown__input").val("Сколько гостей");
+    $(".dropdown-guests__input").val("Сколько гостей");
     $("#counter4 .number-input").val(0);
     $("#counter5 .number-input").val(0);
     $("#counter6 .number-input").val(0);

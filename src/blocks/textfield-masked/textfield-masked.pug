@@ -1,9 +1,6 @@
 include ../../mixins/textfield-mixin/textfield-mixin.pug
 div.textfield-masked__container
-  +textfield('Masked Text field', 'mask', 'text', '', 'date')
-
-//- div.textfield-email__container
-//-   form.textfield-email(name="textfield-email")
-//-     label.textfield-email__label(for='mask')
-//-       h3 Masked Text Field
-//-     input#mask.textfield-email__input(class="date" type="text" name="textfield-masked" autocomplete="off" )
+  form.textfield-masked__form(name="masked-text")
+    label.textfield-masked__label
+      h3 Masked text field
+      +textfield('masked-text', 'ДД.ММ.ГГГГ', 'date')

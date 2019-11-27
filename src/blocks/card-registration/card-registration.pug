@@ -1,0 +1,33 @@
+include ../../mixins/textfield-mixin/textfield-mixin.pug
+include ../../mixins/button-mixin/button-mixin.pug
+
+div.card-registration__container
+  h1.card-registration__header Регистрация аккаунта
+  form.card-registration__form(name="Registration" autocomplete="off" action="#")
+    fieldset.card-registration__name(name="userName")
+      div.card-registration__user-first-name-container
+        +textfield('userFirstName', 'Имя')
+      div.card-registration__user-last-name-container
+        +textfield('userLastName', 'Фамилия')
+      div.card-registration__user-gender-container
+        include ../../blocks/radio-button/radio-button.pug
+    fieldset.card-registration__birthday(name="userBirthday")
+      legend.card-registration__birthday__label
+        h3.card-registration__birthday__label-text Дата рождения
+      div.card-registration__user-birthday-container
+        +textfield('userBirthday', 'ДД.ММ.ГГГГ', "date")
+    fieldset.card-registration__entry-data(name="userEntryData")
+      legend.card-registration__entry-data__label
+        h3.card-registration__entry-data__label-text Данные для входа в сервис
+      div.card-registration__user-email-container
+        +textfield('userEmail', 'Email')
+      div.card-registration__user-password-container
+        +textfield('userPassword', 'Пароль')
+      div.card-registration__subscribe-container
+        include ../../blocks/toggle/toggle.pug
+  div.card-registration__button-topay-container
+    +button('arrow', 'Перейти к оплате')
+  div.card-registration__bottom-section-container  
+    span Уже есть аккаунт на Toxin
+    div.card-registration__button-enter-container
+      +button('bordered', 'Войти')

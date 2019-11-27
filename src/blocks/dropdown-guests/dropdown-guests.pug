@@ -1,27 +1,11 @@
-//- -var dropdown_final_text = 'Сколько гостей' 
+include ../../mixins/dropdown-list-item-mixin/dropdown-list-item-mixin.pug
 
-
-mixin dropdown__list-item (item_title, id)
-  li.dropdown__list-item
-    div.dropdown__list-item__title
-      h3=item_title
-    div.dropdown__counter(id=id, min="0", max="20", step="1")
-
-
-//- mixin dropdown
-div.dropdown__container
-  h3.dropdown-guests__label Dropdown
-  input.dropdown__input(type='text' name='guests' autocomplete="off" placeholder="Сколько гостей" readonly)
-  ul.dropdown__list
+div.dropdown-guests__container
+  input.dropdown-guests__input(type='text' name='guests' autocomplete="off" placeholder="Сколько гостей" readonly)
+  ul.dropdown-guests__list
     + dropdown__list-item('Взрослые', 'counter4')
     + dropdown__list-item('Дети', 'counter5')
     + dropdown__list-item('Младенцы', 'counter6')
     li.dropdown__list-item.dropdown__buttons
       input.dropdown__button.dropdown__button_clear(type='button' value='Очистить' class='invisible')
-      input.dropdown__button.dropdown__button_apply(type='button' value='Применить')
-
-  
-     
-    
-
-    
+      input.dropdown__button.dropdown__button_apply(type='button' value='Применить') 

@@ -1,14 +1,8 @@
-- var title='Date dropdown'
-
-
 div.date-dropdown__container
   form.date-dropdown__form
     label.date-dropdown__label(for='start_one')
-      h3=title
-    input#start_one.date-dropdown__input.datepicker-here(type='text' data-range="true" placeholder="ДД.ММ.ГГГГ" readonly data-multiple-dates-separator=" - ")
-  form.date-dropdown__form
+      h3.date-dropdown__label-text Прибытие
+      input#start_one.date-dropdown__input.datepicker-here(type='text' data-range="true" placeholder="ДД.ММ.ГГГГ" readonly data-multiple-dates-separator=" - ")
     label.date-dropdown__label(for='end_one')
-      h3=title
-    input#end_one.date-dropdown__input(type='text' placeholder="ДД.ММ.ГГГГ" readonly)
-
-
+      h3.date-dropdown__label-text Выезд
+      input#end_one.date-dropdown__input(type='text' placeholder='ДД.ММ.ГГГГ' readonly)

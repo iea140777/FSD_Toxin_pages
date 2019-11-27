@@ -31,6 +31,22 @@
 }
 
 @font-face {
+	font-family: 'Open Sans';
+	src: url('OpenSans-Regular.ttf');
+	src: local('☺'), url('OpenSans-Regular.ttf') format('truetype'); 
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Bold';
+	src: url('OpenSans-Bold.ttf');
+	src: local('☺'), url('OpenSans-Bold.ttf') format('truetype'); 
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
     font-family: 'Material Icons';
      src: url('MaterialIcons-Regular.eot'); 
     src: local('☺'),  url('MaterialIcons-Regular.woff') format('woff'),
@@ -49,7 +65,7 @@ body {
 }
 
 h1 {
-    font-family: 'Conv_Quicksand-Bold', 'Open Sans', sans-serif;
+    font-family: 'Conv_Quicksand-Bold', 'Open Sans Bold', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;

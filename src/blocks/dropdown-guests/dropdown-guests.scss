@@ -1,9 +1,10 @@
+@import '../../mixins/dropdown-list-item-mixin/dropdown-list-item-mixin.scss';
 
-.dropdown__container {
-margin: 0;
+.dropdown-guests__container {
+  margin: 0;
   padding: 0; 
   width: 320px;
-  height: 230px;
+  height: 44px;
   position: relative
 }
 
@@ -16,7 +17,7 @@ margin: 0;
   line-height: 10px;
 }
 
-.dropdown__input{
+.dropdown-guests__input{
   outline: none; 
   margin: 0px;
   padding: 0px; 
@@ -34,118 +35,119 @@ margin: 0;
   display: inline-block;    
 }
 
-.dropdown__input:hover{
+.dropdown-guests__input:hover{
   border: 1px solid rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.75);
 }
 
-.dropdown__input:focus{
+.dropdown-guests__input:focus{
   border: 1px solid rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.75);
 }
 
-.dropdown__input::placeholder {
+.dropdown-guests__input::placeholder {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.dropdown__expand-button{
+.dropdown-guests__expand-button{
   border: none;
   background: none;
   position: absolute;
   left: 280px;
-  top: 35px;
+  top: 11px;
   z-index: 10;
   cursor: pointer;
   outline: none;
   color: rgba(31, 32, 65, 0.5);
   }
 
-  .dropdown__close-icon {
+.dropdown-guests__close-icon {
     transform: rotate(180deg);
   }
 
-.dropdown__list {
+.dropdown-guests__list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: none;
   position: absolute;
   padding-top: 10px;
-  top: 65px;
+  top: 41px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-top: none;
   border-radius: 2px;
   width: 100%;
   box-sizing: border-box;
+  z-index: 100;
 }
 .dropdown_list__hidden{
   display: none;
 }
 
-.dropdown__list-item{
-  padding: 0;
-  margin: 0;
-  width: 318px;
-  height: 37px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 14px;
-  padding-right: 6px;
-  box-sizing:  border-box;
-}
+// .dropdown__list-item{
+//   padding: 0;
+//   margin: 0;
+//   width: 318px;
+//   height: 37px;
+//   list-style: none;
+//   display: flex;
+//   justify-content: space-between;
+//   padding-left: 14px;
+//   padding-right: 6px;
+//   box-sizing:  border-box;
+// }
 
-.dropdown__list-item__title{
-display: inline-block;
-}
+// .dropdown__list-item__title{
+// display: inline-block;
+// }
 
-.dropdown__counter{
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 42px;
-}
+// .dropdown__counter{
+// display: flex;
+// justify-content: space-between;
+// align-items: center;
+// height: 42px;
+// }
 
-.number-input{
-  font-family: 'Conv_Montserrat-Bold', 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 14px;
-  color: #1F2041;
-  text-transform: uppercase;
-  text-align: center;
-  outline: none;
-  border: none;
-  width: 32px;
-  display: inline-block;
-  background: none;
-}
- .incrementer, .decrementer {
-width: 30px;
-height: 30px;
-font-family: 'Conv_Montserrat-Bold', 'Open Sans', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 26px;
-display: inline-block;
-text-align: center;
-vertical-align: bottom;
-color: rgba(31, 32, 65, 0.5);
-border: 1px solid rgba(31, 32, 65, 0.25);
-box-sizing: border-box;
-border-radius: 22px;
-background-color: white;
-cursor: pointer;
-outline: none;
-}
-.decrementer_disabled{
-  opacity: 0.38;
-  &:focus, &:hover{
-    opacity: 0.38;
-  }
-}
+// .number-input{
+//   font-family: 'Conv_Montserrat-Bold', 'Open Sans', sans-serif;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 12px;
+//   line-height: 14px;
+//   color: #1F2041;
+//   text-transform: uppercase;
+//   text-align: center;
+//   outline: none;
+//   border: none;
+//   width: 32px;
+//   display: inline-block;
+//   background: none;
+// }
+//  .incrementer, .decrementer {
+// width: 30px;
+// height: 30px;
+// font-family: 'Conv_Montserrat-Bold', 'Open Sans', sans-serif;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 18px;
+// line-height: 26px;
+// display: inline-block;
+// text-align: center;
+// vertical-align: bottom;
+// color: rgba(31, 32, 65, 0.5);
+// border: 1px solid rgba(31, 32, 65, 0.25);
+// box-sizing: border-box;
+// border-radius: 22px;
+// background-color: white;
+// cursor: pointer;
+// outline: none;
+// }
+// .decrementer_disabled{
+//   opacity: 0.38;
+//   &:focus, &:hover{
+//     opacity: 0.38;
+//   }
+// }
 
 .dropdown__buttons{
 padding-top: 16px;

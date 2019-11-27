@@ -1,0 +1,11 @@
+include ../../mixins/button-mixin/button-mixin.pug
+
+div.card-search__container
+  h1.card-search__header Найдем номера под ваши пожелания
+  div.card-search__date-dropdown-container
+    include ../../blocks/date-dropdown/date-dropdown.pug
+  div.card-search__dropdown-guests-container
+    h3.card-search__block-title Гости
+    include ../../blocks/dropdown-guests/dropdown-guests-mixin.pug
+  div.card-search__button-container
+    +button('arrow', 'Подобрать номер')

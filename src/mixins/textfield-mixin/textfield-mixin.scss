@@ -6,14 +6,6 @@
   display: block;
   box-sizing: border-box;
 }
-
-.textfield__form {
-  margin: 0;
-  padding: 0; 
-  text-align: left;
-  height:67px;
-  position:relative;
-}
   
 .textfield__input {
   outline: none; 
@@ -55,22 +47,4 @@
   color: rgba(31, 32, 65, 0.25);
 }
 
-.textfield__label{
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 5px;
-  height: 5px;
-  line-height: 5px;
-}
 
-// .text_field_button {
-//     border: none;
-//     height: 59px;
-//     width: 59px;
-// background-color: yellow;
-// color: rgba (31, 32, 65, 0.5);
-// position: absolute;
-// top: -15px;
-// right: -40px;
-//    }
