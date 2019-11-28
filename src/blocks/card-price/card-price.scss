@@ -1,0 +1,180 @@
+@import '../../mixins/button-mixin/button-mixin.scss';
+@import '../../blocks/card-search/card-search.scss';
+
+.card-price__container{
+    margin:0;
+    padding: 0;
+    width: 381px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 40px 29px 30px 30px;
+    height: 511px;
+}
+
+.card-price__room-details__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-price__room-details{
+    margin: 0;
+    padding: 0;
+}
+    
+.card-price__room-details__symbol {
+   font-weight: bold;
+   line-height: 30px;
+}
+    
+.card-price__room-details__number {
+    font-family: 'Open Sans Bold';
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+}
+    
+.card-price__room-details__category {
+    color: $color__purple;
+    font-weight: bold;
+    font-family: 'Conv_Montserrat-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-left: 6px;
+}
+     
+.card-price__room-price{
+    margin: 0;
+    padding: 0;
+}
+    
+.card-price__room-price__price {
+    font-family: 'Conv_Montserrat-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.card-price__room-price__period {
+    font-size: 12px;
+}
+
+.card-price__date-dropdown-container{
+    margin-top: 15px;
+}
+
+.card-price__dropdown-guests-container{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.card-price__block-title{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+.card-price__price-details-table{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    line-height: 100%;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+.card-price__price-details-table tr td {
+    margin: 0;
+    padding: 0; 
+    padding-bottom: 10px;
+    line-height: 24px;
+}
+
+.card-price__price-details-table tr:nth-child(2) td {
+    margin: 0;
+    padding: 0; 
+    padding-bottom: 13px;
+}
+
+.card-price__price-details__cell-col1{
+    width: 175px;
+    text-align: left;
+    vertical-align: top;
+}
+
+tr:nth-child(3) td{
+    line-height: 18px;
+}
+
+.card-price__price-details__cell-col2{
+    margin: 0;
+    padding: 0;
+    width: 21px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.card-price__price-details__cell-col3{
+    margin: 0;
+    padding: 0;
+    width: 59px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.card-price__price-details__info-label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid $color__dark-shade25;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Conv_Montserrat-Bold';
+    color: $color__dark-shade25;
+    font-size: 12px;
+    line-height: 20px;
+    vertical-align: middle;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card-price__total {
+    display: inline-block;
+    font-family: 'Open Sans Bold';
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 23.75px;
+}
+
+.card-price__total-value {
+    font-family: 'Conv_Montserrat-Bold', 'Open Sans', sans-serif;
+    display: inline-block;
+    font-size: 17px;
+    // font-weight: bold;
+    line-height: 23.75px;
+    float: right;
+}
+
+.card-price__total__border{
+    display: inline-block;
+    width: 182px;
+    height: 1px;
+    border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-style: dashed 1px;
+}
+
+.card-price__button-container{
+   margin-top: 17px; 
+}

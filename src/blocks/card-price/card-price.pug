@@ -1,0 +1,43 @@
+include ../../mixins/button-mixin/button-mixin.pug
+div.card-price__container
+  div.card-price__room-details__container
+    div.card-price__room-details
+      span.card-price__room-details__symbol №
+      span.card-price__room-details__number 
+        | 888
+      span.card-price__room-details__category люкс
+    div.card-price__room-price
+      span.card-price__room-price__price 9 990₽
+      span.card-price__room-price__period 
+        | в сутки
+  div.card-price__date-dropdown-container
+    include ../../blocks/date-dropdown/date-dropdown.pug
+  div.card-price__dropdown-guests-container
+    h3.card-price__block-title Гости
+    include ../../blocks/dropdown-guests/dropdown-guests-mixin.pug
+  table.card-price__price-details-table
+    tr
+      td.card-price__price-details__cell-col1
+        |9 990₽ х 4 суток
+      td.card-price__price-details__cell-col2
+      td.card-price__price-details__cell-col3
+        |39 960₽
+    tr
+      td.card-price__price-details__cell-col1
+        |Сбор за услуги: скидка 2 179₽
+      td.card-price__price-details__cell-col2 
+        span.card-price__price-details__info-label i
+      td.card-price__price-details__cell-col3 
+        |0₽
+    tr
+      td.card-price__price-details__cell-col1
+        |Сбор за дополнительные услуги
+      td.card-price__price-details__cell-col2 
+        span.card-price__price-details__info-label i
+      td.card-price__price-details__cell-col3
+        |300₽  
+  div.card-price__total Итого
+  div.card-price__total__border  
+  div.card-price__total-value 38 081₽
+  div.card-price__button-container
+    +button('arrow', 'Забронировать')
