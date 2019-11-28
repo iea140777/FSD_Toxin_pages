@@ -1,0 +1,67 @@
+@import '../../mixins/textfield-mixin/textfield-mixin.scss';
+@import '../../mixins/button-mixin/button-mixin.scss';
+@import '../../blocks/card-search/card-search.scss';
+
+.card-login__container{
+    margin:0;
+    padding: 0;
+    height: 358px;
+    width: 381px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 40px 29px 30px 30px;
+}
+
+.card-login__header {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    vertical-align: middle;
+    font-size: 24px; 
+    display: inline-block;
+    font-weight: bold;
+    color: $color__dark-shade100;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+}
+
+.card-login__form{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.card-login__user-email-container{
+    margin: 0;
+    padding:0;
+
+}
+
+.card-login__user-password-container{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.card-login__button-login-container{
+    padding:0;
+    margin:0;
+    margin-top: 20px;
+}
+
+.card-login__bottom-section-container {
+ margin: 0;
+ padding: 0;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 30px;
+}
+
+.card-login__button-create-container{
+    padding:0;
+    margin:0;
+    width: 99px;
+}

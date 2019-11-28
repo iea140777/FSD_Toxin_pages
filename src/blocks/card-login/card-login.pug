@@ -1,0 +1,16 @@
+include ../../mixins/textfield-mixin/textfield-mixin.pug
+include ../../mixins/button-mixin/button-mixin.pug
+
+div.card-login__container
+  h1.card-login__header Войти
+  form.card-login__form(name="login" autocomplete="off" action="#")
+      div.card-login__user-email-container
+        +textfield('userEmail', 'Email')
+      div.card-login__user-password-container
+        +textfield('userPassword', 'Пароль')
+  div.card-login__button-login-container
+    +button('arrow', 'Войти')
+  div.card-login__bottom-section-container  
+    span Нет аккаунта на Toxin?
+    div.card-login__button-create-container
+      +button('bordered', 'Создать')
