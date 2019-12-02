@@ -1,0 +1,37 @@
+include ../../mixins/rate-button-mixin/rate-button-mixin.pug
+
+mixin card-room-mixin(photo1, photo2, roomNumber, roomCategory, roomPrice, roomRating, roomReviews, noArrows)
+  div.card-room__container
+    div.card-room__photo-container  
+      div.card-room__slider.slider.single-item(class=noArrows)
+        div
+          img.card-room__image(src=`../../src/photos/${photo1}.png` alt=`комната №#{roomNumber}`)
+        div
+          img.card-room__image(src=`../../src/photos/${photo2}.png` alt=`комната №#{roomNumber}`)
+        div
+          img.card-room__image(src=`../../src/photos/${photo2}.png` alt=`комната №#{roomNumber}`)
+        div
+          img.card-room__image(src=`../../src/photos/${photo2}.png` alt=`комната №#{roomNumber}`)
+    div.card-room__description-container
+      div.card-room__room-details__container
+        div.card-room__room-details
+          span.card-room__room-details__symbol №
+          span.card-room__room-details__number 
+            | #{roomNumber}
+          span.card-room__room-details__category #{roomCategory}
+        div.card-room__room-price
+          span.card-room__room-price__price #{roomPrice}₽
+          span.card-room__room-price__period 
+            | в сутки
+      div.card-room__separation-line
+      div.card-room__rating__container  
+        div.card-room__rate-button__container
+          +rate-button(roomRating)
+        span.card-room__review-number 
+          span.card-room__review-number__value #{roomReviews}
+          span.card-room__review-number__text
+            |  Отзывов
+  
+
+
+

@@ -1,0 +1,161 @@
+@import '../../mixins/rate-button-mixin/rate-button-mixin.scss';
+@import '../../blocks/slick-slider/slick-slider.scss';
+@import "./pages/template/variables.scss";
+
+
+.card-room__container{
+    margin:0;
+    padding: 0;
+    width: 272px;
+    height: 257px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card-room__photo-container{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    border-radius: inherit;
+}
+
+.card-room__photo-container:after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 42px;
+    height: 151px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+    z-index: 2;
+}
+
+.card-room__photo-container:before{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 42px;
+    height: 151px;
+    right: 0px;
+    top: 0px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    z-index: 2;
+}
+
+.card-room__image{
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+
+.card-room__description-container{
+    padding: 10px 19px 21px 21px;
+}
+
+.card-room__room-details__container{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.card-room__room-details{
+    margin: 0;
+    padding: 0;
+}
+    
+.card-room__room-details__symbol {
+   font-weight: bold;
+   line-height: 30px;
+   font-size: 14px;
+}
+    
+.card-room__room-details__number {
+    font-family: 'Open Sans Bold';
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 30px;
+}
+    
+.card-room__room-details__category {
+    color: $color__purple;
+    font-family: 'Conv_Montserrat-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-left: 6px;
+}
+     
+.card-room__room-price{
+    margin: 0;
+    padding: 0;
+    color: $color__dark-shade50;
+}
+    
+.card-room__room-price__price {
+    font-family: 'Conv_Montserrat-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.card-room__room-price__period {
+    font-size: 12px;
+}
+
+.card-room__separation-line{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 230px;
+    height: 1px;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+    margin-bottom: 2px;
+}
+
+.card-room__rating__container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.card-room__rate-button__container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 4px;
+    
+}
+
+.card-room__review-number {
+    margin: 0;
+    padding: 0;
+    color: $color__dark-shade50;
+    padding-right: 2px;
+}
+
+.card-room__review-number__value {
+    font-family: 'Conv_Montserrat-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.card-room__review-number__text{
+    font-family: 'Conv_Montserrat-Regular';
+    font-size: 14px;
+}
