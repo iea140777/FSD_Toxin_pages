@@ -36,3 +36,14 @@ margin-left: 50px;
     align-items: flex-start;
 }
 
+.headerfooter__container{
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    min-width: 920px;
+    width: 100%;
+    background: #F4F4F6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}

@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 44px;
+    height: 100%;
     box-sizing: border-box; 
     border: 0;
     border-radius: 22px;
@@ -14,10 +14,12 @@
 }
 
 .button__container_bordered {
+    margin: 0;
+    padding: 0;
     background: $gradient_primary;
     padding: 2px;
     border-radius: 22px;
-    height: 44px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,11 +41,12 @@
     box-sizing: border-box;  
     position: relative;  
     cursor: pointer;
+    vertical-align: middle;
     .button__label{
-        line-height: 15px;
+        line-height: 100%;
         vertical-align: middle;
+        display: inline;
         };
-
     }
 
 .button_colored { 
@@ -61,8 +64,12 @@
 }
 
 .button_bordered {
+    margin: 0;
+    padding: 0;
     background: white;
     border: none;
+    width: 100%;
+    height: 100%;
     .button__label{
     color: $color__purple;
     };

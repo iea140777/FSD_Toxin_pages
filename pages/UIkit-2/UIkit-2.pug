@@ -32,9 +32,11 @@ append links
   link(href="../../src/blocks/card-price/card-price.scss" rel ="stylesheet")
   link(href="../../src/blocks/card-login/card-login.scss" rel ="stylesheet")
   link(href="../../src/blocks/card-room/card-room.scss" rel ="stylesheet")
+  link(href="../../src/blocks/header/header.scss" rel ="stylesheet")
 block main
   include ../../src/blocks/card-room/card-room.pug
   include ../../src/blocks/logo/logo.pug
+  include ../../src/blocks/header/header.pug
   div.form_elements_container
     div.form_elements_col
       include ../../src/blocks/textfield-email/textfield-email.pug
@@ -104,7 +106,13 @@ block main
     div.clearfix.spaceholder
     +card-room-mixin('photo2', 'grey', '840', '', '9 900', '4', '65', 'noArrows')
     div.clearfix.spaceholder
-
+    div.headerfooter__container
+      +header('')
+      div.clearfix.spaceholder
+      +header('loggedIn')
+    div.clearfix.spaceholder
+    div.clearfix.spaceholder
+    div.clearfix.spaceholder
 append scripts
   script(src="../../src/blocks/exp-checkbox/exp-checkbox.js") 
   script(src="../../src/blocks/range-slider/range-slider.js")
@@ -124,3 +132,4 @@ append scripts
   script(src="../../src/blocks/dropdown-guests/dropdown-guests-mixin.js")
   script(src="../../src/blocks/slick-slider/slick-1.8.1/slick/slick.min.js")
   script(src="../../src/blocks/slick-slider/slick-slider.js")
+  script(src="../../src/blocks/header/header.js")
