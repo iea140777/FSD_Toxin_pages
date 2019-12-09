@@ -6,8 +6,7 @@ $('.single-item.noArrows').slick({
   arrows: false,
 }),
 
-// $('.single-item.noArrows').parent('.card-room__photo-container').$('.card-room__photo-container:before').css("display", "none"),
-// $('.single-item.noArrows').parent('.card-room__photo-container:after').css("display", "none"),
+$('.single-item.noArrows').css("z-index", "100"),
 
 $('.single-item').slick({
     infinite: true,
