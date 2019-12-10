@@ -7,14 +7,15 @@
   height: 67px;
   display: block;
   box-sizing: border-box;
+  position: relative;
 }
 
 .textfield-subscription__button{
   border: none;
   position: absolute;
-  right: 4px;
-  top: 39px;
-  background: white;
+  right: 5px;
+  top: 10px;
+  background: transparent;
   outline: none; 
   cursor: pointer;
 }

@@ -33,6 +33,7 @@ append links
   link(href="../../src/blocks/card-login/card-login.scss" rel ="stylesheet")
   link(href="../../src/blocks/card-room/card-room.scss" rel ="stylesheet")
   link(href="../../src/blocks/header/header.scss" rel ="stylesheet")
+  link(href="../../src/blocks/footer/footer.scss" rel ="stylesheet")
 block main
   include ../../src/blocks/card-room/card-room.pug
   include ../../src/blocks/logo/logo.pug
@@ -110,6 +111,8 @@ block main
       +header('')
       div.clearfix.spaceholder
       +header('loggedIn')
+      div.clearfix.spaceholder
+      include ../../src/blocks/footer/footer.pug
     div.clearfix.spaceholder
     div.clearfix.spaceholder
     div.clearfix.spaceholder
