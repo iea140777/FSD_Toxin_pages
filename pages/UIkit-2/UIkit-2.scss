@@ -1,4 +1,35 @@
-.form_elements_container {
+@import "./pages/template/variables.scss";
+@import "../../src/blocks/textfield-email/textfield-email.scss";
+@import "../../src/blocks/textfield-masked/textfield-masked.scss";
+@import "../../src/blocks/date-dropdown/date-dropdown.scss";
+@import "../../src/blocks/filter-date-dropdown/filter-date-dropdown.scss";
+@import "../../src/blocks/dropdown-guests/dropdown-guests.scss";
+@import "../../src/blocks/dropdown-facilities/dropdown-facilities.scss";
+@import "../../src/blocks/textfield-subscription/textfield-subscription.scss";
+@import "../../src/blocks/exp-checkbox/exp-checkbox.scss";
+@import "../../src/blocks/comfort-icons/comfort-icons.scss";
+@import "../../src/blocks/checkbox-buttons/checkbox-buttons.scss";
+@import "../../src/blocks/radio-button/radio-button.scss";
+@import "../../src/blocks/toggle/toggle.scss";
+@import "../../src/blocks/like-button/like-button.scss";
+@import "../../src/blocks/rate-button/rate-button.scss";
+@import "../../src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.scss";
+@import "../../src/blocks/review/review.scss";
+@import "../../src/blocks/range-slider/range-slider.scss";
+@import "../../src/blocks/buttons/buttons.scss";
+@import "../../src/blocks/pagination/pagination.scss";
+@import "../../src/blocks/bullet-list/bullet-list.scss";
+@import "../../src/blocks/card-search/card-search.scss";
+@import "../../src/blocks/card-registration/card-registration.scss";
+@import "../../src/blocks/card-price/card-price.scss";
+@import "../../src/blocks/card-login/card-login.scss";
+@import "../../src/blocks/card-room/card-room.scss";
+@import "../../src/blocks/header/header.scss";
+@import "../../src/blocks/footer/footer.scss";
+@import "../../src/mixins/textfield-mixin/textfield-mixin.scss";
+@import "../../src/blocks/logo/logo.scss";
+
+.form-elements__container {
 width: 100%;
 display: flex;
 justify-content: flex-start;
@@ -7,7 +38,7 @@ padding-top: 48px;
 flex-wrap: wrap;
 }
                  
-.form_elements_col {
+.form-elements__col {
 flex-basis: 25%;
 display: flex; 
 flex-direction: column;
@@ -16,18 +47,18 @@ align-items: flex-start;
 margin-left: 50px;
 }
 
-.form_elements_col:last-child {
+.form-elements__col:last-child {
     margin-right: 20px;
 }
 .spaceholder {
     height: 30px;
 }
 
-.form_elements_container_horisontal {
+.form-elements__container_horisontal {
     flex-direction: column; 
 }   
 
-.form_elements_col_horisontal{
+.form-elements__col_horisontal{
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: 80%;

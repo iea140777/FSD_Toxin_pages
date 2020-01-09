@@ -5,41 +5,16 @@ prepend head
   - var myTitle = "Ui Kit form elements"
   - var myDesc = "Toxin Hotel Search"
 append links
-  link(href="../../src/blocks/logo/logo.scss" rel ="stylesheet")
   link(href="UIkit-2.scss" rel ="stylesheet")
-  link(href="../../src/blocks/textfield-email/textfield-email.scss" rel ="stylesheet")
-  link(href="../../src/blocks/textfield-masked/textfield-masked.scss" rel ="stylesheet")
-  link(href="../../src/blocks/date-dropdown/date-dropdown.scss" rel ="stylesheet")
-  link(href="../../src/blocks/filter-date-dropdown/filter-date-dropdown.scss" rel ="stylesheet")
-  link(href="../../src/blocks/dropdown-guests/dropdown-guests.scss" rel ="stylesheet")
-  link(href="../../src/blocks/dropdown-facilities/dropdown-facilities.scss" rel ="stylesheet")
-  link(href="../../src/blocks/textfield-subscription/textfield-subscription.scss" rel ="stylesheet")
-  link(href="../../src/blocks/exp-checkbox/exp-checkbox.scss" rel ="stylesheet")
-  link(href="../../src/blocks/comfort-icons/comfort-icons.scss" rel ="stylesheet")
-  link(href="../../src/blocks/checkbox-buttons/checkbox-buttons.scss" rel ="stylesheet")
-  link(href="../../src/blocks/radio-button/radio-button.scss" rel ="stylesheet")
-  link(href="../../src/blocks/toggle/toggle.scss" rel ="stylesheet")
-  link(href="../../src/blocks/like-button/like-button.scss" rel ="stylesheet")
-  link(href="../../src/blocks/rate-button/rate-button.scss" rel ="stylesheet")
-  link(href="../../src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.scss" rel ="stylesheet")
-  link(href="../../src/blocks/review/review.scss" rel ="stylesheet")
-  link(href="../../src/blocks/range-slider/range-slider.scss" rel ="stylesheet")
-  link(href="../../src/blocks/buttons/buttons.scss" rel ="stylesheet")
-  link(href="../../src/blocks/pagination/pagination.scss" rel ="stylesheet")
-  link(href="../../src/blocks/bullet-list/bullet-list.scss" rel ="stylesheet")
-  link(href="../../src/blocks/card-search/card-search.scss" rel ="stylesheet")
-  link(href="../../src/blocks/card-registration/card-registration.scss" rel ="stylesheet")
-  link(href="../../src/blocks/card-price/card-price.scss" rel ="stylesheet")
-  link(href="../../src/blocks/card-login/card-login.scss" rel ="stylesheet")
-  link(href="../../src/blocks/card-room/card-room.scss" rel ="stylesheet")
-  link(href="../../src/blocks/header/header.scss" rel ="stylesheet")
-  link(href="../../src/blocks/footer/footer.scss" rel ="stylesheet")
+  
 block main
   include ../../src/blocks/card-room/card-room.pug
+  include ../../src/mixins/textfield-mixin/textfield-mixin.pug
   include ../../src/blocks/logo/logo.pug
   include ../../src/blocks/header/header.pug
-  div.form_elements_container
-    div.form_elements_col
+  include ../../src/blocks/footer/footer.pug
+  div.form-elements__container
+    div.form-elements__col
       include ../../src/blocks/textfield-email/textfield-email.pug
       div.clearfix.spaceholder
       h3 Dropdown
@@ -58,7 +33,7 @@ block main
       include ../../src/blocks/textfield-subscription/textfield-subscription.pug
       div.clearfix.spaceholder
 
-    div.form_elements_col
+    div.form-elements__col
       include ../../src/blocks/checkbox-buttons/checkbox-buttons.pug
       div.clearfix.spaceholder
       h3 Radio Buttons
@@ -71,7 +46,7 @@ block main
       div.clearfix.spaceholder
       include ../../src/blocks/rate-button/rate-button.pug
       div.clearfix.spaceholder
-    div.form_elements_col
+    div.form-elements__col
       include ../../src/blocks/range-slider/range-slider.pug
       div.clearfix.spaceholder
       include ../../src/blocks/buttons/buttons.pug
@@ -79,18 +54,18 @@ block main
       div.clearfix.spaceholder
       include ../../src/blocks/pagination/pagination.pug
       div.clearfix.spaceholder     
-  div.form_elements_container.form_elements_container_horisontal
-    div.form_elements_col.form_elements_col_horisontal
+  div.form-elements__container.form-elements__container_horisontal
+    div.form-elements__col.form-elements__col_horisontal
       
       div.clearfix.spaceholder 
-    div.form_elements_col.form_elements_col_horisontal
+    div.form-elements__col.form-elements__col_horisontal
       include ../../src/blocks/exp-checkbox/exp-checkbox.pug
       div.clearfix.spaceholder
       include ../../src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.pug 
       div.clearfix.spaceholder
       include ../../src/blocks/bullet-list/bullet-list.pug
       div.clearfix.spaceholder
-    div.form_elements_col.form_elements_col_horisontal
+    div.form-elements__col.form-elements__col_horisontal
       include ../../src/blocks/comfort-icons/comfort-icons.pug
       div.clearfix.spaceholder
     include ../../src/blocks/review/review.pug
@@ -112,7 +87,9 @@ block main
       div.clearfix.spaceholder
       +header('loggedIn')
       div.clearfix.spaceholder
-      include ../../src/blocks/footer/footer.pug
+      +footer('full')
+      div.clearfix.spaceholder
+      +footer('light')
     div.clearfix.spaceholder
     div.clearfix.spaceholder
     div.clearfix.spaceholder
@@ -136,3 +113,5 @@ append scripts
   script(src="../../src/blocks/slick-slider/slick-1.8.1/slick/slick.min.js")
   script(src="../../src/blocks/slick-slider/slick-slider.js")
   script(src="../../src/blocks/header/header.js")
+  script(src="../../src/mixins/textfield-mixin/textfield-mixin.js")
+  

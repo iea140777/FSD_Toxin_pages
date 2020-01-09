@@ -24,7 +24,7 @@
 	left:0;
 }
 .checkbox input[type=checkbox]:checked + label:after {
-	 background: rgba(0, 0, 0, 0) url(../../mixins/checkbox-mixin/Vector.png) no-repeat center;
+	 background: rgba(0, 0, 0, 0) url(../../src/mixins/checkbox-mixin/Vector.png) no-repeat center;
 }
 
 .checkbox__label__text1{

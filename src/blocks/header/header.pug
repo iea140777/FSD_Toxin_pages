@@ -1,8 +1,8 @@
 include ../../mixins/button-mixin/button-mixin.pug
 
-mixin header(status)
-  - var status = status
-    case status
+mixin header(headerStatus)
+  - var headerStatus = headerStatus
+    case headerStatus
       when ''
         header.header
           div.header__header-logo__container

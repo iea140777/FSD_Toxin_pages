@@ -1,9 +1,12 @@
-//- div.textfield-email__container
-//-   form.textfield-email(name="textfield-email")
-//-     label.textfield-email__label(for='email')
-//-       h3 Text field
-//-     input#email.textfield-email__input(type='email' name='email' autocomplete="off" placeholder="Email")
+mixin textfield(type, name, placeholder, addclass)
+  div.input__container
+    input.input(type=type name=name autocomplete="off" placeholder=placeholder class=addclass)
+    
 
-mixin textfield(name, placeholder, addclass)
-  input.textfield__input(type='text' name=name autocomplete="off" placeholder=placeholder class=addclass)
-            
+// addclass:
+//- - ".input_open-icon" class for expandable icon, add position relative for container  
+//- - ".input_arrow" class for forward arrow (gradient colored), add position relative for container
+//- - ".input_date" class for data mask plugin (dd.mm.yyyy)
+
+
+ 
