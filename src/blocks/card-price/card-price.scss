@@ -1,5 +1,5 @@
 @import '../../mixins/button-mixin/button-mixin.scss';
-@import '../../blocks/card-search/card-search.scss';
+// @import '../../blocks/card-search/card-search.scss';
 
 .card-price__container{
     margin:0;
@@ -163,9 +163,7 @@ tr:nth-child(3) td{
 
 .card-price__total-value {
     font-family: 'Conv_Montserrat-Bold', 'Open Sans', sans-serif;
-    display: inline-block;
     font-size: 17px;
-    // font-weight: bold;
     line-height: 23.75px;
     float: right;
     color: $color__dark-shade100;

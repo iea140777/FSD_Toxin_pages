@@ -1,0 +1,131 @@
+@import '../../src/blocks/slick-slider/slick-1.8.1/slick/slick.css';
+
+
+/* Arrows */
+ .slick-next, .slick-prev {
+    font-size: 24px;
+    line-height: 24px;
+    position: absolute;
+    top: 65px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: white;
+    border: none;
+    outline: none;
+    z-index: 100;
+}
+
+.slick-prev
+{
+    left: 15px;
+    transform: rotate(90deg);
+}
+
+.slick-next
+{
+    right: 15px;
+    transform: rotate(-90deg);
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    font-weight: bold;
+    outline: none;
+}
+
+.slick-dotted.slick-slider
+{
+    margin-bottom: 0;
+}
+
+.slick-dots
+{   position: absolute;
+    top: 98px;
+    right: 15px;
+    display: block;
+    width: 55px;
+    height: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    z-index: 100;
+}
+.slick-dots li
+{   position: relative;
+    display: inline-block;
+    list-style: none;
+    margin: 0 2px;
+    padding: 0;
+    cursor: pointer;
+    
+}
+.slick-dots li button
+{   font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 7.5px;
+    height: 7.5px;
+    padding: 0px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+// .slick-dots li button:hover:before,
+// .slick-dots li button:focus:before
+// {
+//     opacity: 1;
+// }
+// .slick-dots li button:before
+// {
+//     // font-family: 'slick';
+//     // font-size: 20px;
+//     // line-height: 20px;
+
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+
+//     width: 20px;
+//     height: 20px;
+
+//     // content: '•';
+//     text-align: center;
+
+//     opacity: .25;
+//     // color: white;
+//     border: 1px solid white;
+//     border-radius: 50%;
+//     background: transparent;
+
+
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+.slick-dots li.slick-active button
+{
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+}
+/* Ellipse */
+

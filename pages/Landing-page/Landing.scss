@@ -1,0 +1,32 @@
+@import "../../src/blocks/card-search/card-search.scss";
+@import '../../src/blocks/slick-slider/slick-1.8.1/slick/slick.css';
+
+
+.landing__background-image__container {
+    max-width: 1920px;
+    min-width: 320px;
+    height: 830px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+landing__background-image__image{
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+
+.landing__card-search-container{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 15.3%;
+    left: 9.7%;
+    z-index: 100;
+}
+
+.slick-slide img{
+    width: 100%;
+   
+}

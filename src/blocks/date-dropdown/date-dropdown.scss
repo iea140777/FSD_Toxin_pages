@@ -1,4 +1,4 @@
-// @import '../../src/blocks/datepicker/air-datepicker/dist/css/datepicker.min.css';
+
 @import '../../src/blocks/datepicker/datepicker.scss';
 
 .date-dropdown__container{
@@ -23,10 +23,15 @@
  .date-dropdown__label{
   padding: 0;
   margin: 0;
-  // padding-bottom: 6px;
   line-height: 15px;
   position: relative;
   height: 15px;
+}
+
+.date-dropdown__label-text{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
  .date-dropdown__input{

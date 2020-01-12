@@ -1,4 +1,4 @@
-// @import '../../blocks/datepicker/air-datepicker/dist/css/datepicker.min.css';
+
 @import '../../blocks/datepicker/datepicker.scss';
 
 
@@ -57,11 +57,11 @@
   height:15px;
 }
  
-.date-dropdown__label-text{
-  padding: 0;
-  margin: 0;
-  margin-bottom: 5px;
-}
+// .date-dropdown__label-text{
+//   padding: 0;
+//   margin: 0;
+//   margin-bottom: 5px;
+// }
 
 .filter-date-dropdown__arrow{
   position: absolute;

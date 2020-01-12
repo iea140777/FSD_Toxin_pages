@@ -1,4 +1,4 @@
-
+//- for Datepicker plugin script should be added on the page: script(src="../../src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
 $('#date-range').datepicker(
 {
     clearButton: true,

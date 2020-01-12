@@ -1,0 +1,18 @@
+extends ../template/layout.pug
+
+append links
+  link(href="../template/site-page-layout.scss" rel ="stylesheet")
+  
+
+block main
+  include ../../src/blocks/header-site/header-site.pug
+  div.site-page-layout__container
+    div.template__header-container
+      +header-site('')
+    block pageContent
+      section.page-content__container
+    div.template__footer-container
+      include ../../src/blocks/footer-site/footer-site.pug
+    
+append scripts
+  script(src="../../src/blocks/header-site/header-site.js")

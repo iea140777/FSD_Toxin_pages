@@ -1,12 +1,13 @@
 @import "./pages/template/variables.scss";
 @import "../../blocks/header-logo/header-logo.scss";
+@import '../../mixins/button-mixin/button-mixin.scss';
 
 
 .header{
     margin: 0;
     padding: 0;
-    max-width: 1440px;
-    min-width: 920px;
+    // max-width: 1440px;
+    // min-width: 920px;
     width: 100%;
     min-height: 70px;
     display: flex;

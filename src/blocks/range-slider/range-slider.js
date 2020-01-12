@@ -1,8 +1,6 @@
-// function numberWithSpaces(x) {
-//   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-// };
+// - For Slider script should be included on the page: (src="../../src/blocks/range-slider/jquery-ui-1.12.1/jquery-ui.min.js")
 
-$( function() {
+$(function() {
     $( "#slider-range" ).slider({
       range: true,
       animate: true,
@@ -17,5 +15,3 @@ $( function() {
     " - " + ($( "#slider-range" ).slider( "values", 1 )).toLocaleString() + "₽" );
 });
 
-// var num = 1234567890;
-// var result = num.toLocaleString();

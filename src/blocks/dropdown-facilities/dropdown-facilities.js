@@ -1,8 +1,8 @@
-$( '<button class="dropdown2__expand-button", type="button", formaction="#"><i class="material-icons dropdown_arrow">expand_more</i></button>' ).insertAfter(".dropdown2__input");
+$( '<button class="dropdown-facilities__expand-button", type="button", formaction="#"><i class="material-icons dropdown_arrow">expand_more</i></button>' ).insertAfter(".dropdown-facilities__input");
 
-$(".dropdown2__expand-button").click(function(){
-    $(".dropdown2__list").toggle();
-    $(".dropdown2__expand-button").toggleClass("dropdown2__close-icon");
+$(".dropdown-facilities__expand-button").click(function(){
+    $(".dropdown-facilities__list").toggle();
+    $(".dropdown-facilities__expand-button").toggleClass("dropdown-facilities__close-icon");
 });
 
 $(function(){
@@ -30,7 +30,7 @@ $(function(){
                   
           var InputTextFacilities = Number(counter1.val()) + Bedroom + Number(counter2.val()) + Bed + Number(counter3.val()) + Bathroom;
          
-          $(".dropdown2__input").val(InputTextFacilities);
+          $(".dropdown-facilities__input").val(InputTextFacilities);
     });
 });
 

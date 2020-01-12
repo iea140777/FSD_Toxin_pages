@@ -1,5 +1,3 @@
-//- -var dropdown_final_text = 'Сколько гостей' 
-
 
 mixin dropdown__list-item (item_title, id)
   li.dropdown__list-item
@@ -9,16 +7,16 @@ mixin dropdown__list-item (item_title, id)
 
 
 //- mixin dropdown
-div.dropdown2__container
+div.dropdown-facilities__container
   h3.dropdown-facilities__label Dropdown
-  input.dropdown2__input(type='text' name='facilities' autocomplete="off" placeholder="" readonly)
-  ul.dropdown2__list
+  input.dropdown-facilities__input(type='text' name='facilities' autocomplete="off" placeholder="" readonly)
+  ul.dropdown-facilities__list
     + dropdown__list-item('Спальни', 'counter1')
     + dropdown__list-item('Кровати', 'counter2')
     + dropdown__list-item('Ванные комнаты', 'counter3')
     
 
-  
+//- for Spin-number-plugin script should be added on the page: script(src="../../src/blocks/dropdown-facilities/spin-number-plugin.js") 
      
     
 

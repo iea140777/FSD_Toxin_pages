@@ -1,0 +1,28 @@
+extends ../template/site-page-layout.pug
+prepend head
+  - var lang="ru"
+  - var myTitle = "Landing page"
+  - var myDesc = "Toxin Hotel Search"
+append links
+  link(href="Landing.scss" rel ="stylesheet")
+
+block pageContent
+  div.landing__background-image__container
+    div
+      img.landing__background-image__image(src='landing_photo1.jpg' )
+    div
+      img.landing__background-image__image(src='landing_photo2.jpg' )
+    div
+      img.landing__background-image__image(src='landing_photo3.jpg' )
+  div.landing__card-search-container
+    include ../../src/blocks/card-search/card-search.pug
+  
+append scripts
+  script(src="Landing.js")   
+  script(src="../../src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
+  script(src="../../src/blocks/date-dropdown/date-dropdown.js")
+  script(src="../../src/blocks/dropdown-guests/spin-number-plugin.js")
+  script(src="../../src/mixins/button-mixin/button-mixin.js")
+  script(src="../../src/blocks/dropdown-guests/dropdown-guests-mixin.js")
+  script(src="../../src/mixins/textfield-mixin/textfield-mixin.js")
+  script(src="../../src/blocks/card-room/slick-slider/slick-1.8.1/slick/slick.min.js")

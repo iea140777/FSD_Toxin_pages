@@ -1,0 +1,58 @@
+include ../../mixins/button-mixin/button-mixin.pug
+
+mixin header-site(headerStatus)
+  - var headerStatus = headerStatus
+    case headerStatus
+      when ''
+        header.header
+          div.header__header-logo__container
+            include ../header-logo/header-logo.pug
+          nav.header__header-menu
+            a.header__header-menu__list-item(href="#" onclick="return false;") О нас
+            a.header__header-menu__list-item(href="#" onclick="return false;") Услуги
+              span.material-icons.header-menu__open-icon expand_more
+              ul.header__header-menu__services
+                li.header__header-menu__services-list-item Service 1
+                li.header__header-menu__services-list-item Service 2
+                li.header__header-menu__services-list-item Service 3
+                li.header__header-menu__services-list-item Service 4
+            a.header__header-menu__list-item(href="#" onclick="return false;") Вакансии
+            a.header__header-menu__list-item(href="#" onclick="return false;") Новости
+            a.header__header-menu__list-item(href="#" onclick="return false;") Соглашения
+              span.material-icons.header-menu__open-icon expand_more
+              ul.header__header-menu__agreements
+                li.header__header-menu__agreements-list-item Agreement 1
+                li.header__header-menu__agreements-list-item Agreement 2
+                li.header__header-menu__agreements-list-item Agreement 3
+                li.header__header-menu__agreements-list-item Agreement 4
+          div.header__header-buttons
+            div.header__header-buttons__login-button
+              +button('bordered', 'ВОЙТИ')
+            div.header__header-buttons__register-button
+              +button('colored', 'ЗАРЕГИСТРИРОВАТЬСЯ')
+      when 'loggedIn' 
+        header.header
+          div.header__header-logo__container
+            include ../header-logo/header-logo.pug
+          nav.header__header-menu
+            a.header__header-menu__list-item(href="#" onclick="return false;") О нас
+            a.header__header-menu__list-item(href="#" onclick="return false;") Услуги
+              span.material-icons.header-menu__open-icon expand_more
+              ul.header__header-menu__services
+                li.header__header-menu__services-list-item Service 1
+                li.header__header-menu__services-list-item Service 2
+                li.header__header-menu__services-list-item Service 3
+                li.header__header-menu__services-list-item Service 4
+            a.header__header-menu__list-item(href="#" onclick="return false;") Вакансии
+            a.header__header-menu__list-item(href="#" onclick="return false;") Новости
+            a.header__header-menu__list-item(href="#" onclick="return false;") Соглашения
+              span.material-icons.header-menu__open-icon expand_more
+              ul.header__header-menu__services
+                li.header__header-menu__services-list-item Service 1
+                li.header__header-menu__services-list-item Service 2
+                li.header__header-menu__services-list-item Service 3
+                li.header__header-menu__services-list-item Service 4
+          div.header__logged-in
+            div.header__separation-line
+            span.header__user-name Cosmin Negoita
+              
