@@ -13,14 +13,21 @@
         "pageContent"
         "footer";
 }
-.header {
+.template__header-container {
+    margin: 0;
+    padding: 0;
     grid-area: header;
 }
 
 .page-content__container {
+    margin: 0;
+    padding: 0;
     grid-area: pageContent;
 }
 
-.footer {
+.template__footer-container {
+    margin: 0;
+    padding: 0;
     grid-area: footer;
+    height: 443px;
 }

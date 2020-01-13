@@ -3,30 +3,65 @@
 
 
 .landing__background-image__container {
-    max-width: 1920px;
-    min-width: 320px;
+    width: 100%;
     height: 830px;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    box-sizing: border-box;
+    vertical-align: bottom;
 }
 
-landing__background-image__image{
+.landing__background-image__container div {
+    height: 830px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.landing__background-image__image{
     margin:0;
     padding: 0;
     width: 100%;
+    vertical-align: bottom;
+    display: inline-block;
 }
 
 .landing__card-search-container{
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 15.3%;
+    top: 10.2%;
     left: 9.7%;
     z-index: 100;
 }
 
 .slick-slide img{
     width: 100%;
-   
 }
+
+.landing__background-image__container:after {
+    margin: 0;
+    padding: 0;
+    content: "Лучшие номера для вашей работы, отдыха и просто вдохновения";
+    display: inline-block;
+    position: absolute;
+    top: 92%;
+    right: 9.5%;
+    width: 297px;
+    color: $color__dark-shade75;
+    text-align: right;
+    z-index: 100;
+}
+
+// .landing__text{
+//     margin: 0;
+//     padding: 0;
+//     display: block;
+//     position: absolute;
+//     top: 700px;
+//     left: 1009px;
+//     width: 297px;
+//     color: $color__dark-shade75;
+// }

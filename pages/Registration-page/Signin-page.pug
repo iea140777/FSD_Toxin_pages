@@ -1,0 +1,12 @@
+extends ../template/site-page-layout.pug
+prepend head
+  - var lang="ru"
+  - var myTitle = "Registration page"
+  - var myDesc = "Toxin Hotel Search"
+append links
+  link(href="Registration-page.scss" rel ="stylesheet")
+
+block pageContent
+  div.registration__container
+    div.registration__card-registration-container
+      include ../../src/blocks/card-login/card-login.pug

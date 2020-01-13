@@ -9,13 +9,14 @@ append links
 block pageContent
   div.landing__background-image__container
     div
-      img.landing__background-image__image(src='landing_photo1.jpg' )
+      img.landing__background-image__image(align=bottom, src='landing_photo1.jpg', alt='Лучшие номера для вашей работы, отдыха и просто вдохновения')
     div
-      img.landing__background-image__image(src='landing_photo2.jpg' )
+      img.landing__background-image__image(align=bottom, src='landing_photo2.jpg', alt='Лучшие номера для вашей работы, отдыха и просто вдохновения')
     div
-      img.landing__background-image__image(src='landing_photo3.jpg' )
+      img.landing__background-image__image(align=bottom, src='landing_photo3.jpg', alt='Лучшие номера для вашей работы, отдыха и просто вдохновения')
   div.landing__card-search-container
     include ../../src/blocks/card-search/card-search.pug
+  //- span.landing__text Лучшие номера для вашей работы, отдыха и просто вдохновения
   
 append scripts
   script(src="Landing.js")   

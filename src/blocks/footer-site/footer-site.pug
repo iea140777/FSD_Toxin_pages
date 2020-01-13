@@ -1,40 +1,41 @@
 include ../../mixins/textfield-mixin/textfield-mixin.pug
 
 footer.footer
-  div.footer__column1__logo
-    div.footer__logo
-      include ../header-logo/header-logo.pug
-    p.footer__text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-  div.footer__column2__menu  
-    nav.footer__menu-section1
-      h3.footer__menu-title Навигация
-      a.footer__menu-item(href="#" onclick="return false;") О нас
-      a.footer__menu-item(href="#" onclick="return false;") Новости
-      a.footer__menu-item(href="#" onclick="return false;") Служба поддержки
-      a.footer__menu-item(href="#" onclick="return false;") Услуги
-    nav.footer__menu-section2
-      h3.footer__menu-title О нас
-      a.footer__menu-item(href="#" onclick="return false;") О сервисе
-      a.footer__menu-item(href="#" onclick="return false;") Наша команда
-      a.footer__menu-item(href="#" onclick="return false;") Вакансии
-      a.footer__menu-item(href="#" onclick="return false;") Инвесторы
-    nav.footer__menu-section3
-      h3.footer__menu-title Служба поддержки
-      a.footer__menu-item(href="#" onclick="return false;") Соглашения
-      a.footer__menu-item(href="#" onclick="return false;") Сообщества
-      a.footer__menu-item(href="#" onclick="return false;") Связь с нами
-  div.footer__column3__subscription
-    h3.footer__menu-title Подписка
-    p.footer__menu-item(href="#" onclick="return false;") Получайте специальные предложения и новости сервиса
-    div.footer__menu-item__email-input
-      +textfield('email', 'user-Email', 'Your email address', 'input_arrow')
-div.footer__copyright-section
-  span.footer__copyright Copyright © 2018 Toxin отель. Все права зачищены.
-  div.footer__social-icons
-    a.footer__social-icons__button(href="#" onclick="return false;")
-      img.footer__social-icons__image(src='../../src/blocks/footer/twitter.png' alt='Logo')
-    a.footer__social-icons__button(href="#" onclick="return false;")
-      img.footer__social-icons__image(src='../../src/blocks/footer/facebook.png' alt='Logo')
-    a.footer__social-icons__button(href="#" onclick="return false;")
-      img.footer__social-icons__image(src='../../src/blocks/footer/Instagram.png' alt='Logo')
+  div.footer__navigation-section
+    div.footer__column1__logo
+      div.footer__logo
+        include ../header-logo/header-logo.pug
+      p.footer__text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+    div.footer__column2__menu  
+      nav.footer__menu-section1
+        h3.footer__menu-title Навигация
+        a.footer__menu-item(href="#" onclick="return false;") О нас
+        a.footer__menu-item(href="#" onclick="return false;") Новости
+        a.footer__menu-item(href="#" onclick="return false;") Служба поддержки
+        a.footer__menu-item(href="#" onclick="return false;") Услуги
+      nav.footer__menu-section2
+        h3.footer__menu-title О нас
+        a.footer__menu-item(href="#" onclick="return false;") О сервисе
+        a.footer__menu-item(href="#" onclick="return false;") Наша команда
+        a.footer__menu-item(href="#" onclick="return false;") Вакансии
+        a.footer__menu-item(href="#" onclick="return false;") Инвесторы
+      nav.footer__menu-section3
+        h3.footer__menu-title Служба поддержки
+        a.footer__menu-item(href="#" onclick="return false;") Соглашения
+        a.footer__menu-item(href="#" onclick="return false;") Сообщества
+        a.footer__menu-item(href="#" onclick="return false;") Связь с нами
+    div.footer__column3__subscription
+      h3.footer__menu-title Подписка
+      p.footer__menu-item(href="#" onclick="return false;") Получайте специальные предложения и новости сервиса
+      div.footer__menu-item__email-input
+        +textfield('email', 'user-Email', 'Your email address', 'input_arrow') 
+  div.footer__copyright-section
+    span.footer__copyright Copyright © 2018 Toxin отель. Все права зачищены.
+    div.footer__social-icons
+      a.footer__social-icons__button(href="#" onclick="return false;")
+        img.footer__social-icons__image(src='../../src/blocks/footer/twitter.png' alt='Logo')
+      a.footer__social-icons__button(href="#" onclick="return false;")
+        img.footer__social-icons__image(src='../../src/blocks/footer/facebook.png' alt='Logo')
+      a.footer__social-icons__button(href="#" onclick="return false;")
+        img.footer__social-icons__image(src='../../src/blocks/footer/Instagram.png' alt='Logo')
       

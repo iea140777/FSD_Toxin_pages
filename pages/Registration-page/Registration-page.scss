@@ -1,0 +1,28 @@
+@import "../../src/blocks/card-registration/card-registration.scss";
+@import "../../src/blocks/card-login/card-login.scss";
+
+
+.registration__container {
+    width: 100%;
+    height: 702px;
+    margin: 0;
+    padding: 0;
+    background-image: url('registration-photo.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration__card-registration-container{
+    margin: 0;
+    padding: 0;
+    // position: absolute;
+    // top: 4.1%;
+    // left: 36.8%;
+    z-index: 100;
+}
+
