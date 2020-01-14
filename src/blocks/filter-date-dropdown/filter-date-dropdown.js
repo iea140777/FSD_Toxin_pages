@@ -19,4 +19,4 @@ $('#date-range').datepicker(
 
 $('<i class="material-icons filter-date-dropdown__arrow">expand_more</i>').insertAfter(".filter-date-dropdown__input");
 
-// $('.datepicker--buttons').append('<span class="datepicker--button -apply">Применить</span>');
+$('.filter-date-dropdown__input .datepicker--buttons').append('<span class="datepicker--button -apply">Применить</span>');

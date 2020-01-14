@@ -1,0 +1,92 @@
+@import "../../src/blocks/card-room/card-room.scss";
+@import "../../src/blocks/pagination/pagination.scss";
+@import "../../src/blocks/filter-date-dropdown/filter-date-dropdown.scss";
+@import "../../src/blocks/dropdown-guests/dropdown-guests-mixin.scss";
+@import "../../src/blocks/range-slider/range-slider.scss";
+@import "../../src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.scss";
+@import "../../src/blocks/dropdown-facilities/dropdown-facilities.scss";
+@import "../../src/blocks/exp-checkbox/exp-checkbox.scss";
+
+.search-room__container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 266px auto;
+    grid-template-rows: auto;
+    column-gap: 50px;
+    padding: 30px 140px 70px 140px;
+    border-bottom: 1px solid $color__dark-shade25;
+    align-items: start;    
+}
+
+.search-room__filter__container {
+    margin: 0;
+    padding: 0;
+    grid-column-start: 1;
+    display: grid;
+    grid-template-columns: 266px;
+    grid-template-rows: repeat(auto-fill, auto);
+    justify-content: start;
+    align-content: start;
+    row-gap: 20px;
+}
+
+.search-room__search-results__container{
+    margin: 0;
+    padding: 0;
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    justify-content: start;
+    align-items: start;
+}
+
+.search-room__search-results__header{
+    grid-row-start: 1;
+    display: inline-block;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 7px;
+    padding-left: 10px;
+}
+
+.search-room__search-results__cards-container{    
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    justify-content: start;
+    align-items: start;
+    column-gap: 12px;
+    row-gap: 20px;
+}
+
+
+.search-room__pagination__container{
+    grid-row-start: 3;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+// @media (max-width: 1000px) {
+//     .search-room__search-results__container {
+//     grid-template-columns: 270px 270px;
+//     }
+//     .search-room__container{
+//     padding-right: 40px;
+//     padding-left: 40px;  
+//     };
+//     .search-room__search-results__header{
+//         grid-column-start: 1;
+//         grid-column-end: 3;
+//         grid-row-start: 1;
+//     }
+//   }

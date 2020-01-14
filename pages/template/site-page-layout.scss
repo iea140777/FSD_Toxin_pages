@@ -1,5 +1,23 @@
 @import "../../src/blocks/header-site/header-site.scss";
 @import "../../src/blocks/footer-site/footer-site.scss";
+@import "../../src/blocks/checkbox-buttons/checkbox-buttons.scss";
+
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+    min-width: 320px;
+    box-sizing: border-box;
+}
+
+[class$="container"]  {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
 
 
 .site-page-layout__container{
@@ -17,12 +35,14 @@
     margin: 0;
     padding: 0;
     grid-area: header;
+    width: 100%;
 }
 
 .page-content__container {
     margin: 0;
     padding: 0;
     grid-area: pageContent;
+    width: 100%;
 }
 
 .template__footer-container {
@@ -30,4 +50,5 @@
     padding: 0;
     grid-area: footer;
     height: 443px;
+    width: 100%;
 }

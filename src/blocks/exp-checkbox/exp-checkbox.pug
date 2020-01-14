@@ -2,7 +2,7 @@ include ../../mixins/checkbox-mixin/checkbox-mixin.pug
 
 div.exp-checkbox__container
     div.exp-checkbox__title__container
-        h3.exp-checkbox__title Expandable checkbox list 
+        h3.exp-checkbox__title Дополнительные удобства
             span.material-icons.exp-checkbox__open-icon expand_more 
     ul#exp.exp-checkbox__list
         li.exp-checkbox__list-item: +checkbox("Завтрак", '2')
@@ -15,5 +15,3 @@ div.exp-checkbox__container
         li.exp-checkbox__list-item: +checkbox("Шампунь",'9')
           
 
-//- script
-//-     $('.exp_checkbox_btn').click(function(){$('.sub-menu').toggle(); });     
