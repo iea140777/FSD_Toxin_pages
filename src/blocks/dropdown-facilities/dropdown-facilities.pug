@@ -1,20 +1,23 @@
 
-mixin dropdown__list-item (item_title, id)
-  li.dropdown__list-item
-    div.dropdown__list-item__title
-      h3=item_title
-    div.dropdown__counter(id=id, min="0", max="20", step="1")
-
-
-//- mixin dropdown
 div.dropdown-facilities__container
   h3.dropdown-facilities__label Удобства номера
-  input.dropdown-facilities__input(type='text' name='facilities' autocomplete="off" placeholder="" readonly)
-  ul.dropdown-facilities__list
-    + dropdown__list-item('Спальни', 'counter1')
-    + dropdown__list-item('Кровати', 'counter2')
-    + dropdown__list-item('Ванные комнаты', 'counter3')
+  input.dropdown-facilities__input(type='text' name='facilities' autocomplete="off" placeholder="Удобства" readonly)
+  ul.dropdown-facilities__list.dropdown-facilities__list_hidden
+    li.dropdown__list-item
+      div.dropdown__list-item__title
+        h3 Спальни
+      div.counter.dropdown__counter4(min="0", max="20", step="1")
+    li.dropdown__list-item
+      div.dropdown__list-item__title
+        h3 Кровати
+      div.counter.dropdown__counter5(min="0", max="20", step="1")
+    li.dropdown__list-item
+      div.dropdown__list-item__title
+        h3 Ванные комнаты
+      div.counter.dropdown__counter6(min="0", max="20", step="1") 
     
+
+
 
 //- for Spin-number-plugin script should be added on the page: script(src="../../src/blocks/dropdown-facilities/spin-number-plugin.js") 
      

@@ -19,6 +19,10 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3 {
+    margin: 0;
+    padding: 0; 
+}
 
 .site-page-layout__container{
     margin: 0;
@@ -49,6 +53,6 @@ a {
     margin: 0;
     padding: 0;
     grid-area: footer;
-    height: 443px;
+    // height: 443px;
     width: 100%;
 }

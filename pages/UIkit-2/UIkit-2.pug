@@ -8,7 +8,7 @@ append links
   link(href="UIkit-2.scss" rel ="stylesheet")
   
 block main
-  include ../../src/blocks/card-room/card-room.pug
+  include ../../src/mixins/card-room-mixin/card-room-mixin.pug
   include ../../src/mixins/textfield-mixin/textfield-mixin.pug
   include ../../src/blocks/logo/logo.pug
   include ../../src/blocks/header/header.pug
@@ -18,7 +18,7 @@ block main
       include ../../src/blocks/textfield-email/textfield-email.pug
       div.clearfix.spaceholder
       h3 Dropdown
-      include ../../src/blocks/dropdown-guests/dropdown-guests-mixin.pug
+      include ../../src/blocks/dropdown-guests/dropdown-guests.pug
       div.clearfix.spaceholder
       include ../../src/blocks/dropdown-facilities/dropdown-facilities.pug
       div.clearfix.spaceholder
@@ -76,9 +76,32 @@ block main
     div.clearfix.spaceholder
     include ../../src/blocks/card-login/card-login.pug
     div.clearfix.spaceholder
-    +card-room-mixin('photo1', 'grey', '888', 'люкс', '9 990', '5', '145')
+    //- +card-room-mixin('photo1', 'grey', '888', 'люкс', '9 990', '5', '145')
+    //- div.clearfix.spaceholder
+    //- +card-room-mixin('photo2', 'grey', '840', '', '9 900', '4', '65', 'noArrows')
     div.clearfix.spaceholder
-    +card-room-mixin('photo2', 'grey', '840', '', '9 900', '4', '65', 'noArrows')
+    +card-room-mixin({
+      photo1: '../../src/photos/photo1.jpg',
+      photo2: '../../src/photos/grey.png',
+      roomNumber: '888',
+      roomCategory: 'люкс',
+      roomPrice: '9 990',
+      roomRating: '5',
+      roomReviews: '145',
+      noArrows: ''
+      })
+    div.clearfix.spaceholder
+    +card-room-mixin({
+      photo1: '../../src/photos/photo2.jpg',
+      photo2: '../../src/photos/grey.png',
+      roomNumber: '840',
+      roomCategory: 'люкс',
+      roomPrice: '9 900',
+      roomRating: '4',
+      roomReviews: '65',
+      noArrows: 'noArrows'
+      })  
+      
     div.clearfix.spaceholder
     div.headerfooter__container
       +header('')
@@ -99,14 +122,12 @@ append scripts
   script(src="../../src/blocks/filter-date-dropdown/filter-date-dropdown.js")
   script(src="../../src/blocks/dropdown-guests/spin-number-plugin.js")
   script(src="../../src/blocks/dropdown-facilities/dropdown-facilities.js")
-  //- script(src="../../src/blocks/textfield-masked/jquery.maskedinput.js")
-  //- script(src="../../src/blocks/textfield-masked/textfield-masked.js")
   script(src="../../src/mixins/like-button-mixin/like-button-mixin.js")
   script(src="../../src/blocks/range-slider/jquery-ui-1.12.1/jquery-ui.min.js")
   script(src="../../src/mixins/button-mixin/button-mixin.js")
-  script(src="../../src/blocks/dropdown-guests/dropdown-guests-mixin.js")
-  script(src="../../src/blocks/card-room/slick-slider/slick-1.8.1/slick/slick.min.js")
-  script(src="../../src/blocks/card-room/slick-slider/slick-slider.js")
+  script(src="../../src/blocks/dropdown-guests/dropdown-guests.js")
+  script(src="../../src/mixins/card-room-mixin/slick-slider/slick-1.8.1/slick/slick.min.js")
+  script(src="../../src/mixins/card-room-mixin/slick-slider/slick-slider.js")
   script(src="../../src/blocks/header/header.js")
   script(src="../../src/mixins/textfield-mixin/textfield-mixin.js")
   script(src="../../src/mixins/textfield-mixin/jquery.maskedinput.js")

@@ -1,17 +1,19 @@
 include ../../mixins/rate-button-mixin/rate-button-mixin.pug
 
-mixin card-room-mixin(photo1, photo2, roomNumber, roomCategory, roomPrice, roomRating, roomReviews, noArrows)
+mixin card-room-mixin(params)
+  -
+    const {photo1, photo2, roomNumber, roomCategory, roomPrice, roomRating, roomReviews, noArrows} = params;
   div.card-room__container
     div.card-room__photo-container  
       div.card-room__slider.slider.single-item(class=noArrows)
         div
-          img.card-room__image(src=`../../src/photos/${photo1}.jpg` alt=`комната №#{roomNumber}`)
+          img.card-room__image(src=photo1 alt='комната №#{roomNumber}')
         div
-          img.card-room__image(src=`../../src/photos/${photo2}.png` alt=`комната №#{roomNumber}`)
+          img.card-room__image(src=photo2 alt='комната №#{roomNumber}')
         div
-          img.card-room__image(src=`../../src/photos/${photo2}.png` alt=`комната №#{roomNumber}`)
+          img.card-room__image(src=photo2 alt='комната №#{roomNumber}')
         div
-          img.card-room__image(src=`../../src/photos/${photo2}.png` alt=`комната №#{roomNumber}`)
+          img.card-room__image(src=photo2 alt='комната №#{roomNumber}')
     div.card-room__description-container
       div.card-room__room-details__container
         div.card-room__room-details
@@ -31,7 +33,7 @@ mixin card-room-mixin(photo1, photo2, roomNumber, roomCategory, roomPrice, roomR
           span.card-room__review-number__value #{roomReviews}
           span.card-room__review-number__text
             |  Отзывов
-  
+
 
 //- Default view of pictures in slider includes arrows "back" and "fwd". For default view put '' for noArrows param, 
 //- to get view without arrows put'noArrows' for noArrows param
@@ -39,4 +41,5 @@ mixin card-room-mixin(photo1, photo2, roomNumber, roomCategory, roomPrice, roomR
 //- For slick-slider plugin should be added on the page: 
 //-   script(src="../../src/blocks/card-room/slick-slider/slick-1.8.1/slick/slick.min.js")
 //-   script(src="../../src/blocks/card-room/slick-slider/slick-slider.js")
+
 

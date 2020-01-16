@@ -8,5 +8,5 @@ $( '<button class="input__button", type="button", formaction="#"><i class="mater
 
 
 $('.input__open-icon').click(function(){
-    $(".input__open-icon").toggleClass("input__close-icon");
+    $.this.toggleClass("input__close-icon");
 });

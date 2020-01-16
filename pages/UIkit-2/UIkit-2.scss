@@ -3,7 +3,7 @@
 @import "../../src/blocks/textfield-masked/textfield-masked.scss";
 @import "../../src/blocks/date-dropdown/date-dropdown.scss";
 @import "../../src/blocks/filter-date-dropdown/filter-date-dropdown.scss";
-@import "../../src/blocks/dropdown-guests/dropdown-guests-mixin.scss";
+@import "../../src/blocks/dropdown-guests/dropdown-guests.scss";
 @import "../../src/blocks/dropdown-facilities/dropdown-facilities.scss";
 @import "../../src/blocks/textfield-subscription/textfield-subscription.scss";
 @import "../../src/blocks/exp-checkbox/exp-checkbox.scss";
@@ -23,7 +23,7 @@
 @import "../../src/blocks/card-registration/card-registration.scss";
 @import "../../src/blocks/card-price/card-price.scss";
 @import "../../src/blocks/card-login/card-login.scss";
-@import "../../src/blocks/card-room/card-room.scss";
+@import "../../src/mixins/card-room-mixin/card-room-mixin.scss";
 @import "../../src/blocks/header/header.scss";
 @import "../../src/blocks/footer/footer.scss";
 @import "../../src/mixins/textfield-mixin/textfield-mixin.scss";

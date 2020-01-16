@@ -1,5 +1,7 @@
 @import '../../mixins/button-mixin/button-mixin.scss';
-// @import '../../blocks/card-search/card-search.scss';
+@import "../../src/blocks/dropdown-guests/dropdown-guests.scss";
+@import "../../src/blocks/date-dropdown/date-dropdown.scss";
+
 
 .card-price__container{
     margin:0;

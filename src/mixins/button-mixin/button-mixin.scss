@@ -25,6 +25,12 @@
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+    &:hover{
+        opacity: 0.5;
+    };
+    &:active{
+        opacity: 0.75;   
+    }; 
 }
 
 .button__container_text{
@@ -38,14 +44,17 @@
     text-align: center;
     text-decoration: none;
     border-radius: 22px;
-    box-sizing: border-box;  
+    box-sizing: content-box;  
     position: relative;  
     cursor: pointer;
-    vertical-align: middle;
+    vertical-align: baseline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .button__label{
         line-height: 100%;
-        vertical-align: middle;
-        display: inline;
+        vertical-align: baseline;
+        display: inline-block;
         };
     }
 
@@ -59,7 +68,7 @@
         opacity: 0.5;
     };
     &:active{
-        opacity: 0.25;   
+        opacity: 0.75;   
     }; 
 }
 
@@ -71,7 +80,13 @@
     width: 100%;
     height: 100%;
     .button__label{
-    color: $color__purple;
+        color: $color__purple;
+        &:hover{
+            opacity: 0.5;
+        };
+        &:active{
+            opacity: 0.75;   
+        }; 
     };
 }    
 
@@ -82,16 +97,25 @@
     .button__label{
     color: $color__purple;
     &:hover{
-        color: $color__dark-shade50;
+        opacity: 0.5;
     };
+    &:active{
+        opacity: 0.75;   
+    }; 
     };
 }   
 
 .button__arrow-forward{
-position: absolute;
-right: 10px;
-top: 10px;
-color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    &:hover{
+        opacity: 0.5;
+    };
+    &:active{
+        opacity: 0.75;   
+    }; 
 }
 
 

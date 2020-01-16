@@ -1,0 +1,24 @@
+
+div.dropdown-guests__container
+  h3.dropdown-guests__label Гости
+  input.dropdown-guests__input(type='text' name='guests' autocomplete="off" placeholder="Сколько гостей" readonly)
+  ul.dropdown-guests__list.dropdown-guests__list_hidden
+    li.dropdown__list-item
+      div.dropdown__list-item__title
+        h3 Взрослые
+      div.counter.dropdown__counter1(min="0", max="20", step="1")
+    li.dropdown__list-item
+      div.dropdown__list-item__title
+        h3 Дети
+      div.counter.dropdown__counter2(min="0", max="20", step="1")
+    li.dropdown__list-item
+      div.dropdown__list-item__title
+        h3 Младенцы
+      div.counter.dropdown__counter3(min="0", max="20", step="1") 
+    div.dropdown__list-item__buttons
+      input.dropdown__button.dropdown__button_clear(type='button' value='Очистить' class='invisible')
+      input.dropdown__button.dropdown__button_apply(type='button' value='Применить')
+
+
+
+//- Spin-number-plugin script should be added on the page: script(src="../../src/blocks/dropdown-guests/spin-number-plugin.js") 

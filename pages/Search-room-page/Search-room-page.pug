@@ -7,13 +7,14 @@ append links
   link(href="Search-room-page.scss" rel ="stylesheet")
 
 block pageContent
-  include ../../src/blocks/card-room/card-room.pug
+  include ../../src/mixins/card-room-mixin/card-room-mixin.pug
   div.search-room__container
     section.search-room__filter__container
       include ../../src/blocks/filter-date-dropdown/filter-date-dropdown.pug
-      include ../../src/blocks/dropdown-guests/dropdown-guests-mixin.pug
-      include ../../src/blocks/range-slider/range-slider.pug
-      span.search-room__filter_range-slider__comment Стоимость за сутки пребывания в номере
+      include ../../src/blocks/dropdown-guests/dropdown-guests.pug
+      div.search-room__filter__range-slider-container
+        include ../../src/blocks/range-slider/range-slider.pug
+        span.search-room__filter_range-slider__comment Стоимость за сутки пребывания в номере
       include ../../src/blocks/checkbox-buttons/checkbox-buttons.pug
       include ../../src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.pug
       include ../../src/blocks/dropdown-facilities/dropdown-facilities.pug
@@ -21,35 +22,141 @@ block pageContent
     section.search-room__search-results__container
       h1.search-room__search-results__header Номера, которые мы для вас подобрали
       div.search-room__search-results__cards-container
-        +card-room-mixin('photo1', 'grey', '888', 'люкс', '9 990', '5', '145')
-        +card-room-mixin('photo2', 'grey', '840', '', '9 900', '4', '65', 'noArrows')
-        +card-room-mixin('photo1', 'grey', '888', 'люкс', '9 990', '5', '145')
-        +card-room-mixin('photo2', 'grey', '840', '', '9 900', '4', '65', 'noArrows')
-        +card-room-mixin('photo1', 'grey', '888', 'люкс', '9 990', '5', '145')
-        +card-room-mixin('photo2', 'grey', '840', '', '9 900', '4', '65', 'noArrows')
-        +card-room-mixin('photo1', 'grey', '888', 'люкс', '9 990', '5', '145')
-        +card-room-mixin('photo2', 'grey', '840', '', '9 900', '4', '65', 'noArrows')
+        +card-room-mixin({
+          photo1: '/pages/Search-room-page/card-room-img/image1.jpg',
+          photo2: '/pages/Search-room-page/card-room-img/grey.png',
+          roomNumber: '888',
+          roomCategory: 'люкс',
+          roomPrice: '9 990',
+          roomRating: '5',
+          roomReviews: '145',
+          noArrows: ''
+          })
+        +card-room-mixin({
+          photo1: '/pages/Search-room-page/card-room-img/image2.jpg',
+          photo2: '/pages/Search-room-page/card-room-img/grey.png',
+          roomNumber: '840',
+          roomCategory: '',
+          roomPrice: '9 900',
+          roomRating: '4',
+          roomReviews: '65',
+          noArrows: 'noArrows'
+          })  
+        +card-room-mixin({
+          photo1: '/pages/Search-room-page/card-room-img/image3.jpg',
+          photo2: '/pages/Search-room-page/card-room-img/grey.png',
+          roomNumber: '980',
+          roomCategory: 'люкс',
+          roomPrice: '8 500',
+          roomRating: '3',
+          roomReviews: '35',
+          noArrows: 'noArrows'
+          })  
+        +card-room-mixin({
+          photo1: '/pages/Search-room-page/card-room-img/image4.jpg',
+          photo2: '/pages/Search-room-page/card-room-img/grey.png',
+          roomNumber: '856',
+          roomCategory: '',
+          roomPrice: '7 300',
+          roomRating: '5',
+          roomReviews: '19',
+          noArrows: 'noArrows'
+          })  
+        +card-room-mixin({
+          photo1: '/pages/Search-room-page/card-room-img/image5.jpg',
+          photo2: '/pages/Search-room-page/card-room-img/grey.png',
+          roomNumber: '740',
+          roomCategory: '',
+          roomPrice: '6 000',
+          roomRating: '4',
+          roomReviews: '44',
+          noArrows: 'noArrows'
+          })  
+        +card-room-mixin({
+          photo1: '/pages/Search-room-page/card-room-img/image6.jpg',
+          photo2: '/pages/Search-room-page/card-room-img/grey.png',
+          roomNumber: '982',
+          roomCategory: '',
+          roomPrice: '5 800',
+          roomRating: '3',
+          roomReviews: '56',
+          noArrows: 'noArrows'
+          })  
+        +card-room-mixin({
+          photo1: '/pages/Search-room-page/card-room-img/image7.jpg',
+          photo2: '/pages/Search-room-page/card-room-img/grey.png',
+          roomNumber: '678',
+          roomCategory: '',
+          roomPrice: '5 500',
+          roomRating: '5',
+          roomReviews: '45',
+          noArrows: 'noArrows'
+          })
+        +card-room-mixin({
+          photo1: '/pages/Search-room-page/card-room-img/image8.jpg',
+          photo2: '/pages/Search-room-page/card-room-img/grey.png',
+          roomNumber: '450',
+          roomCategory: '',
+          roomPrice: '5 300',
+          roomRating: '4',
+          roomReviews: '39',
+          noArrows: 'noArrows'
+          }) 
+        +card-room-mixin({
+          photo1: '/pages/Search-room-page/card-room-img/image9.jpg',
+          photo2: '/pages/Search-room-page/card-room-img/grey.png',
+          roomNumber: '350',
+          roomCategory: '',
+          roomPrice: '5 000',
+          roomRating: '3',
+          roomReviews: '77',
+          noArrows: 'noArrows'
+          })
+        +card-room-mixin({
+          photo1: '/pages/Search-room-page/card-room-img/image10.jpg',
+          photo2: '/pages/Search-room-page/card-room-img/grey.png',
+          roomNumber: '666',
+          roomCategory: '',
+          roomPrice: '5 000',
+          roomRating: '5',
+          roomReviews: '25',
+          noArrows: 'noArrows'
+          })  
+        +card-room-mixin({
+          photo1: '/pages/Search-room-page/card-room-img/image11.jpg',
+          photo2: '/pages/Search-room-page/card-room-img/grey.png',
+          roomNumber: '444',
+          roomCategory: '',
+          roomPrice: '5 000',
+          roomRating: '3',
+          roomReviews: '15',
+          noArrows: 'noArrows'
+          })
+        +card-room-mixin({
+          photo1: '/pages/Search-room-page/card-room-img/image12.jpg',
+          photo2: '/pages/Search-room-page/card-room-img/grey.png',
+          roomNumber: '352',
+          roomCategory: '',
+          roomPrice: '5 000',
+          roomRating: '3',
+          roomReviews: '55',
+          noArrows: 'noArrows'
+          })                       
       div.search-room__pagination__container
         include ../../src/blocks/pagination/pagination.pug
  
 
 append scripts
-  script(src="../../src/blocks/card-room/slick-slider/slick-1.8.1/slick/slick.min.js")
-  script(src="../../src/blocks/card-room/slick-slider/slick-slider.js")
+  script(src="../../src/mixins/card-room-mixin/slick-slider/slick-1.8.1/slick/slick.min.js")
+  script(src="../../src/mixins/card-room-mixin/slick-slider/slick-slider.js")
   script(src="../../src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
   script(src="../../src/blocks/filter-date-dropdown/filter-date-dropdown.js")
   script(src="../../src/blocks/dropdown-guests/spin-number-plugin.js")
-  script(src="../../src/blocks/dropdown-guests/dropdown-guests-mixin.js")
+  script(src="../../src/blocks/dropdown-guests/dropdown-guests.js")
   script(src="../../src/blocks/range-slider/jquery-ui-1.12.1/jquery-ui.min.js")
   script(src="../../src/blocks/range-slider/range-slider.js")
   script(src="../../src/blocks/dropdown-facilities/dropdown-facilities.js")
   script(src="../../src/blocks/exp-checkbox/exp-checkbox.js")
+  script(src="../../src/mixins/textfield-mixin/textfield-mixin.js")
   
-  //- script(src="Landing.js")   
-  //- script(src="../../src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
-  //- script(src="../../src/blocks/date-dropdown/date-dropdown.js")
-  //- script(src="../../src/blocks/dropdown-guests/spin-number-plugin.js")
-  //- script(src="../../src/mixins/button-mixin/button-mixin.js")
-  //- script(src="../../src/blocks/dropdown-guests/dropdown-guests-mixin.js")
-  //- script(src="../../src/mixins/textfield-mixin/textfield-mixin.js")
-  //- script(src="../../src/blocks/card-room/slick-slider/slick-1.8.1/slick/slick.min.js")
+  

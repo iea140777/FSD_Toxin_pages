@@ -27,9 +27,10 @@ mixin header-site(headerStatus)
                 li.header__header-menu__agreements-list-item Agreement 4
           div.header__header-buttons
             div.header__header-buttons__login-button
-              +button('bordered', 'ВОЙТИ')
+              a(href="../../pages/Registration-page/Signin-page.pug" name="Sign in Page" target="blank")
+                +button('bordered', 'ВОЙТИ', '../../pages/Registration-page/Signin-page.pug')
             div.header__header-buttons__register-button
-              +button('colored', 'ЗАРЕГИСТРИРОВАТЬСЯ')
+              +button('colored', 'ЗАРЕГИСТРИРОВАТЬСЯ', '../../pages/Registration-page/Registration-page.pug')
       when 'loggedIn' 
         header.header
           div.header__header-logo__container

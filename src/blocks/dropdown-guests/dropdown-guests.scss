@@ -1,5 +1,5 @@
 // @import '../../mixins/dropdown-list-item-mixin/dropdown-list-item-mixin.scss';
-
+@import "../../mixins/textfield-mixin/textfield-mixin.scss";
 .dropdown-guests__container {
   margin: 0;
   padding: 0; 
@@ -70,27 +70,120 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   position: absolute;
-  padding-top: 10px;
-  top: 70px;
+  top: 67px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  border-top: none;
-  border-radius: 2px;
+  border-radius: 0 0 2px 2px;
   width: 100%;
+  height: 159px;
   box-sizing: border-box;
   z-index: 100;
   background-color: white;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  padding-bottom: 6px;
 }
-.dropdown_list__hidden{
+
+.dropdown-guests__list_hidden{
   display: none;
 }
 
-.dropdown__buttons{
-padding-top: 16px;
-margin-bottom: 8px;
+.dropdown__list-item{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 14px;
+  padding-right: 6px;
+  box-sizing:  border-box;
+  align-items: center;
 }
 
+.dropdown__list-item__title{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.dropdown__list-item__title h3{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.dropdown__counter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+}
+
+.number-input{
+  font-family: 'Conv_Montserrat-Bold', 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1F2041;
+  text-transform: uppercase;
+  text-align: center;
+  outline: none;
+  border: none;
+  width: 32px;
+  display: inline-block;
+  background: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.incrementer, .decrementer {
+  width: 30px;
+  height: 30px;
+  font-family: 'Conv_Montserrat-Bold', 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom;
+  color: rgba(31, 32, 65, 0.5);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 22px;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.decrementer_disabled{
+  opacity: 0.38;
+  &:focus, &:hover{
+    opacity: 0.38;
+  }
+}
+
+.dropdown__list-item__buttons{
+  display: flex;
+  justify-content: space-between; 
+  padding-left: 14px;
+  padding-right: 6px;
+  padding-top: 16px;
+  padding-bottom: 1px;
+  }
+  
 .dropdown__button{
   margin: 0;
   padding: 0;
@@ -125,68 +218,4 @@ margin-bottom: 8px;
   margin-left: auto;
 }
 
-.dropdown__list-item{
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 37px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 14px;
-  padding-right: 6px;
-  box-sizing:  border-box;
-}
-
-.dropdown__list-item__title{
-display: inline-block;
-}
-
-.dropdown__counter{
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 42px;
-}
-
-.number-input{
-  font-family: 'Conv_Montserrat-Bold', 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 14px;
-  color: #1F2041;
-  text-transform: uppercase;
-  text-align: center;
-  outline: none;
-  border: none;
-  width: 32px;
-  display: inline-block;
-  background: none;
-}
- .incrementer, .decrementer {
-width: 30px;
-height: 30px;
-font-family: 'Conv_Montserrat-Bold', 'Open Sans', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 26px;
-display: inline-block;
-text-align: center;
-vertical-align: bottom;
-color: rgba(31, 32, 65, 0.5);
-border: 1px solid rgba(31, 32, 65, 0.25);
-box-sizing: border-box;
-border-radius: 22px;
-background-color: white;
-cursor: pointer;
-outline: none;
-}
-.decrementer___disabled{
-  opacity: 0.38;
-  &:focus, &:hover{
-    opacity: 0.38;
-  }
-}
 
