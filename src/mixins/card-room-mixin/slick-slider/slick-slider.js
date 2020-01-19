@@ -1,14 +1,5 @@
-$('.single-item.noArrows').slick({
-  infinite: true,
-  dots: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-}),
 
-$('.single-item.noArrows').css("z-index", "100"),
-
-$('.single-item').slick({
+$('.single-item.Arrows').slick({
     infinite: true,
     dots: true,
     slidesToShow: 1,
@@ -18,4 +9,13 @@ $('.single-item').slick({
     prevArrow: '<i class="material-icons slick-prev" aria-label="Previous">expand_more</i>',
   })
 
+  $('.single-item.noArrows').slick({
+    infinite: true,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  })
+  
+  $('.single-item.noArrows').css("z-index", "100")
   

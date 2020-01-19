@@ -10,6 +10,7 @@ append links
 block main
   include ../../src/mixins/card-room-mixin/card-room-mixin.pug
   include ../../src/mixins/textfield-mixin/textfield-mixin.pug
+  include ../../src/mixins/review-mixin/review-mixin.pug
   include ../../src/blocks/logo/logo.pug
   include ../../src/blocks/header/header.pug
   include ../../src/blocks/footer/footer.pug
@@ -66,7 +67,13 @@ block main
     div.form-elements__col.form-elements__col_horisontal
       include ../../src/blocks/comfort-icons/comfort-icons.pug
       div.clearfix.spaceholder
-    include ../../src/blocks/review/review.pug
+      +review({
+              imageUrl:'review__photo1.png', 
+              likeAmount: '12', 
+              likeStatus: 'checked', 
+              author: 'Мурад Сарафанов', 
+              date: '5 дней назад', 
+              message: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
     div.clearfix.spaceholder
     include ../../src/blocks/card-search/card-search.pug
     div.clearfix.spaceholder

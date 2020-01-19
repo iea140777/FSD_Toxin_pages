@@ -86,7 +86,7 @@
 .header__header-menu__services{
     position: absolute;
     left: -15px;
-    top: 20px;
+    top: 30px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -94,9 +94,12 @@
     width: 75px;
     padding: 10px;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    z-index: 100;
+    z-index: 1000;
     text-align: center;
     background: white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
 
 .header__header-menu__services-list-item{
@@ -111,7 +114,7 @@
 .header__header-menu__agreements{
     position: absolute;
     left: -15px;
-    top: 20px;
+    top: 30px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -119,9 +122,12 @@
     width: 100px;
     padding: 10px;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    z-index: 100;
+    z-index: 1000;
     text-align: center;
     background: white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
 
 .header__header-menu__agreements-list-item{

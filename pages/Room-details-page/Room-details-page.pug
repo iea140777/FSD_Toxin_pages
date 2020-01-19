@@ -1,0 +1,74 @@
+extends ../template/site-page-layout.pug
+prepend head
+  - var lang="ru"
+  - var myTitle = "Room details page"
+  - var myDesc = "Toxin Hotel Search"
+append links
+  link(href="Room-details-page.scss" rel ="stylesheet")
+
+block pageContent
+  include ../../src/mixins/comfort-icons-mixin/comfort-icons-mixin.pug
+  include ../../src/mixins/review-mixin/review-mixin.pug
+  div.room-details__container 
+    div.room-details__image__container
+      div.room-details__image1
+      div.room-details__image2
+      div.room-details__image3
+    div.room-details__info__container
+      div.room-details__info__piechart__container
+        h2.room-details__info__piechart__header Впечатления от номера
+        div.room-details__info__pie__container
+          include ../../src/blocks/piechart/piechart.pug
+      div.room-details__info__comfort-icons__container
+        h2.room-details__info__icons__header Сведения о номере
+        +comfort-icon-mixin('mood', 'Комфорт', 'Шумопоглощающие стены')
+        +comfort-icon-mixin('location_city', 'Удобство', 'Окно в каждой из спален') 
+        +comfort-icon-mixin('whatshot', 'Уют', 'Номер оснащен камином')(class="comfort-icon_no-border")  
+      div.room-details__info__reviews__container
+        div.room-details__info__reviews__header__container
+          h2.room-details__info__reviews__header1 Отзывы посетителей номера
+          span.room-details__info__reviews__header2 2 отзыва
+        div.room-details__info__review1__container
+          +review({
+            imageUrl:'img/review__photo1.png', 
+            likeAmount: '12', 
+            likeStatus: 'checked', 
+            author: 'Мурад Сарафанов', 
+            date: '5 дней назад', 
+            message: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+        div.room-details__info__review2__container
+          +review({
+            imageUrl:'img/review__photo2.png', 
+            likeAmount: '2', 
+            likeStatus: 'unchecked', 
+            author: 'Патрисия Стёклышкова', 
+            date: 'Неделю назад', 
+            message: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
+      div.room-details__info__card-price__container
+        include ../../src/blocks/card-price/card-price.pug
+      
+      div.room-details__info__rules__container
+        h2.room-details__info__rules__header Правила  
+        include ../../src/blocks/bullet-list/bullet-list.pug 
+      div.room-details__info__cancel__container
+        h2.room-details__info__cancel__header Отмена 
+        p.room-details__info__cancel__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.  
+        
+
+  //- "headerIcons headerPiechart card-price"
+  //-   "comfort-icons1 piechart card-price"
+  //-   "comfort-icons2 piechart card-price"
+  //-   "comfort-icons3 . card-price"
+  //-   "reviewsHeader1 reviewsHeader2 card-price"
+  //-   "reviews1 reviews1 card-price"
+  //-   "reviews2 reviews2 card-price"
+  //-   "rulesHeader cancelHeader ."
+  //-   "rules cancel ."
+
+    
+append scripts
+  script(src="../../src/blocks/date-dropdown/date-dropdown.js")
+  script(src="../../src/blocks/dropdown-guests/spin-number-plugin.js")
+  script(src="../../src/blocks/dropdown-guests/dropdown-guests.js")
+  
+  

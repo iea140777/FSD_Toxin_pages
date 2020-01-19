@@ -1,0 +1,16 @@
+include ../../mixins/like-button-mixin/like-button-mixin.pug
+
+mixin review(params)
+  -
+    const{imageUrl, likeAmount, likeStatus, author, date, message} = params;
+  div.review__container
+    img.review__photo(src=imageUrl alt="photo")
+    div.review__like-button-container    
+      +like-button(likeAmount, likeStatus)
+    div.review__text
+        span.review__author #{author}
+        span.review__date #{date}
+        span.review__message #{message}
+
+
+  

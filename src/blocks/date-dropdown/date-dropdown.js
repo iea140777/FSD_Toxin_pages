@@ -1,5 +1,5 @@
   //- for Datepicker plugin script should be added on the page: script(src="../../src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
-$('#start_one').datepicker({ 
+$('#start_one, #end_one').datepicker({ 
     onSelect: function (fd, d, picker) { 
       $("#start_one").val(fd.split("-")[0]);
       $("#end_one").val(fd.split("-")[1]);

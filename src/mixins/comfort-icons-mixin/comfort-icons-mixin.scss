@@ -1,0 +1,43 @@
+@import "./pages/template/variables.scss";
+
+
+.comfort-icon{
+  margin: 0px;
+  padding: 0px;
+  width: 280px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: solid 1px $color__dark-shade10;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.comfort-icon_no-border{
+  border: none;
+}
+
+.comfort-icon__icon {
+  display: inline-block;
+  font-size: 48px;
+  line-height: 48px;
+  vertical-align: middle;
+  display: inline-block;
+  background: $gradient_primary;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  background-clip: text;
+}
+
+.comfort-icon__text {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.comfort-icon__title {
+  font-family: 'Conv_Montserrat-Bold', 'Open Sans', sans-serif;
+  font-weight: 900;
+}
