@@ -12,20 +12,16 @@
   "license": "ISC",
   "dependencies": {
     "air-datepicker": "^2.2.3",
-    "datepicker": "0.0.0",
     "inputmask": "^4.0.9",
     "jquery": "^3.4.1",
     "jquery-ui-dist": "^1.12.1",
-    "jqueryui": "^1.11.1",
     "jsdom": "^15.2.1",
-    "lightpick": "^1.5.2",
     "mask": "^0.2.2",
     "material-design-icons": "^3.0.1",
     "nouislider": "^14.1.1",
     "pug": "^2.0.4",
     "sass": "^1.24.3",
-    "src": "^1.1.2",
-    "tiny-date-picker": "^3.2.8"
+    "src": "^1.1.2"
   },
   "devDependencies": {
     "cssnano": "^4.1.10"

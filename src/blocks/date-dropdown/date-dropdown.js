@@ -1,11 +1,11 @@
   //- for Datepicker plugin script should be added on the page: script(src="../../src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
-$('#start_one, #end_one').datepicker({ 
+$('.date-dropdown__container #start_one').datepicker({ 
     onSelect: function (fd, d, picker) { 
       $("#start_one").val(fd.split("-")[0]);
       $("#end_one").val(fd.split("-")[1]);
     },
     clearButton: true,
-    autoClose: false,
+    autoClose: true,
     position: "right bottom",
     offset: 0,
     inline: false,

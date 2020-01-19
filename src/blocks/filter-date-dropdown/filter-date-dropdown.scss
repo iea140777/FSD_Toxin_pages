@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0; 
   width: 100%;
-  // height: 60px;
+  box-sizing: content-box;
 }
   
 .filter-date-dropdown__form {
@@ -17,7 +17,22 @@
   position: relative;
   width: 100%;
 }
-    
+
+.filter-date-dropdown__label{
+  display:inline-block;
+  padding: 0;
+  margin: 0;
+  // height:15px;
+  width: 100%
+}
+ 
+.filter-date-dropdown__label-text{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+
 .filter-date-dropdown__input {
   margin: 0px;
   padding: 0px; 
@@ -50,23 +65,10 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
-.filter-date-dropdown__label{
-  display:inline-block;
-  padding: 0;
-  margin: 0;
-  height:15px;
-}
- 
-.filter-date-dropdown__label-text{
-  padding: 0;
-  margin: 0;
-  margin-bottom: 5px;
-}
-
 .filter-date-dropdown__arrow{
   position: absolute;
   right: 10px;
-  top: 41px;
+  top: 30px;
   cursor: pointer;
   outline: none;
   color: rgba(31, 32, 65, 0.5);

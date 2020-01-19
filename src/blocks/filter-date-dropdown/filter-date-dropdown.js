@@ -1,5 +1,7 @@
 //- for Datepicker plugin script should be added on the page: script(src="../../src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
-$('#date-range').datepicker(
+
+
+$('.filter-date-dropdown__form .datepicker-here').datepicker(
 {
     clearButton: true,
     autoClose: false,
@@ -9,7 +11,7 @@ $('#date-range').datepicker(
     multipleDates: 2,
     prevHtml: '<i class="material-icons arrow_back">arrow_back</i>',
     nextHtml: '<i class="material-icons arrow_forward">arrow_forward</i>',
-    position: 'bottom left',
+    position: 'bottom right',
     navTitles: {
       days: 'MM <i>yyyy</i>',
       months: 'yyyy',
