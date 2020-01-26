@@ -3,34 +3,40 @@ prepend head
   - var lang="en"
   - var myTitle = "Toxin"
   - var myDesc = "Toxin"
-append links
-    link(href="main.scss" rel ="stylesheet")
+
   
 block main
-  h1.pages-list__header UI Kit
-    ul.pages-list
-      li.pages-list__item 
-        a(href="./pages/UIkit-1/UIkit-1.pug" name="UI Kit Colors and Fonts" target="blank") 
+  nav.pages-list__container 
+    //- include ./src/blocks/header-logo/header-logo.pug
+    h3.pages-list__header UI Kit
+    ul.pages-list__list
+      li.pages-list__list-item 
+        a(href="./pages/UIkit-colors-fonts/UIkit-colors-fonts.pug" name="UI Kit Colors and Fonts" target="blank") 
           h3 UI Kit Colors and Fonts
-      li.pages-list__item 
+      li.pages-list__list-item 
         a(href="./pages/UIkit-2/UIkit-2.pug" name="UI Kit Form Elements" target="blank") 
           h3 UI Kit Form Elements
-      li.pages-list__item 
+      li.pages-list__list-item 
+        a(href="./pages/UIkit-cards/UIkit-cards.pug" name="UI Kit Cards" target="blank") 
+          h3 UI Kit Cards
+      li.pages-list__list-item 
+        a(href="./pages/UIkit-headers-footers/UIkit-headers-footers.pug" name="UI Kit Headers & Footers" target="blank") 
+          h3 UI Kit Headers & Footers
+    h3.pages-list__header Site Pages
+    ul.pages-list__list
+      li.pages-list__list-item 
         a(href="./pages/Landing-page/Landing.pug" name="Landing Page" target="blank") 
           h3 Landing Page
-      li.pages-list__item 
+      li.pages-list__list-item 
         a(href="./pages/Registration-page/Registration-page.pug" name="Registration Page" target="blank") 
           h3 Registration Page
-      li.pages-list__item 
+      li.pages-list__list-item 
         a(href="./pages/Registration-page/Signin-page.pug" name="Sign in Page" target="blank") 
           h3 Sign in Page
-      li.pages-list__item 
+      li.pages-list__list-item 
         a(href="./pages/Search-room-page/Search-room-page.pug" name="Search room  Page" target="blank") 
           h3 Search room Page
-      li.pages-list__item 
+      li.pages-list__list-item 
         a(href="./pages/Room-details-page/Room-details-page.pug" name="Room details Page" target="blank") 
           h3 Room details Page
-
 block scripts
-    
- 

@@ -27,10 +27,35 @@ mixin header-site(headerStatus)
                 li.header__header-menu__agreements-list-item Agreement 4
           div.header__header-buttons
             div.header__header-buttons__login-button
-              a(href="../../pages/Registration-page/Signin-page.pug" name="Sign in Page" target="blank")
-                +button('bordered', 'ВОЙТИ', '../../pages/Registration-page/Signin-page.pug')
+              +button('bordered', 'ВОЙТИ', '../../pages/Registration-page/Signin-page.pug')
             div.header__header-buttons__register-button
               +button('colored', 'ЗАРЕГИСТРИРОВАТЬСЯ', '../../pages/Registration-page/Registration-page.pug')
+          div.header-mobile__container
+            div.header-mobile__menu-icon-container
+              i.material-icons.header-mobile__icon menu
+              i.material-icons.header-mobile__icon-close close
+            ul.header-mobile__menu-list
+              li.header-mobile__menu-list-item
+                a.header__header-menu__list-item(href="#" onclick="return false;") 
+                  h3 О нас
+              li.header-mobile__menu-list-item
+                a.header__header-menu__list-item(href="#" onclick="return false;") 
+                  h3 Услуги
+              li.header-mobile__menu-list-item
+                a.header__header-menu__list-item(href="#" onclick="return false;") 
+                  h3 Вакансии
+              li.header-mobile__menu-list-item
+                a.header__header-menu__list-item(href="#" onclick="return false;") 
+                  h3 Новости
+              li.header-mobile__menu-list-item
+                a.header__header-menu__list-item(href="#" onclick="return false;") 
+                  h3 Соглашения
+              div.header__header-buttons__login-button
+                +button('bordered', 'ВОЙТИ', '../../pages/Registration-page/Signin-page.pug')
+              div.header__header-buttons__register-button
+                +button('colored', 'ЗАРЕГИСТРИРОВАТЬСЯ', '../../pages/Registration-page/Registration-page.pug')
+
+
       when 'loggedIn' 
         header.header
           div.header__header-logo__container

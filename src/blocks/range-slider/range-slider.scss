@@ -1,4 +1,4 @@
-@import '../../src/blocks/range-slider/jquery-ui-1.12.1/jquery-ui.css';
+@import '../../src/blocks/range-slider/jquery-ui-1.12.1.custom/jquery-ui.css';
 .range-slider__container {
     margin: 0;
     padding: 0; 
@@ -43,7 +43,7 @@ line-height: 15px;
 
 .range-slider__slider {
 width: 266px;
-height: 6px;
+height: 7px;
 border: 1px solid rgba(31, 32, 65, 0.25);
 box-sizing: border-box;
 border-radius: 3px;
@@ -61,6 +61,10 @@ position: relative;
     cursor: pointer;
 }
 
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.4em;
+	margin-left: -.6em;
+}
 
 #slider-range .ui-slider-range {
     position: absolute;

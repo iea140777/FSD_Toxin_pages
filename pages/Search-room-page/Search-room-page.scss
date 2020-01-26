@@ -6,14 +6,16 @@
 @import "../../src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.scss";
 @import "../../src/blocks/dropdown-facilities/dropdown-facilities.scss";
 @import "../../src/blocks/exp-checkbox/exp-checkbox.scss";
+@import "../../src/blocks/checkbox-buttons/checkbox-buttons.scss";
 
 .search-room__container{
     margin: 0;
     padding: 0;
     width: 100%;
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: 266px auto;
-    grid-template-rows: auto;
+    grid-template-columns: 266px minmax(270px, 1116px);
+    // grid-template-rows: auto;
     column-gap: 59px;
     padding: 30px 140px 54px 140px;
     border-bottom: 1px solid $color__dark-shade25;
@@ -26,7 +28,6 @@
     grid-column-start: 1;
     display: grid;
     grid-template-columns: 266px;
-    grid-template-rows: repeat(auto-fill, auto);
     justify-content: start;
     align-content: start;
     row-gap: 17px;
@@ -52,9 +53,10 @@
 .search-room__search-results__container{
     margin: 0;
     padding: 0;
+    width: 100%;
     grid-column-start: 2;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     justify-content: start;
     align-items: start;
@@ -74,7 +76,7 @@
 .search-room__search-results__cards-container{    
     margin: 0;
     padding: 0;
-    width: 100%;
+    // width: 100%;
     grid-row-start: 2;
     display: grid;
     grid-template-columns: repeat(auto-fill, 270px);

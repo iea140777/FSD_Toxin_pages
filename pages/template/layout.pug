@@ -9,12 +9,16 @@ html
             title #{myTitle}
             base(target="_blank")
             block links
-                link(href="/pages/template/fonts/fontstyle.scss" rel ="stylesheet") 
+                link(href="/pages/template/fonts/fontstyle.scss" rel ="stylesheet")
                 link(href="/pages/template/variables.scss" rel ="stylesheet")
                 link(href="/pages/template/normalize.css" rel ="stylesheet")
+                link(href="/pages/template/main.scss" rel ="stylesheet")
+                
+             
         
     body
-        block main
+        div.page-layout__container
+            block main  
         block scripts
             script(src="../template/jquery-3.4.1.js")
             script(src="../template/jquery-migrate-1.4.1.js")

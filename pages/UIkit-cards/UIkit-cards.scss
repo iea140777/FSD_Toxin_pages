@@ -1,0 +1,32 @@
+
+@import "../../src/blocks/card-search/card-search.scss";
+@import "../../src/blocks/card-registration/card-registration.scss";
+@import "../../src/blocks/card-price/card-price.scss";
+@import "../../src/blocks/card-login/card-login.scss";
+@import "../../src/mixins/card-room-mixin/card-room-mixin.scss";
+@import "../../src/blocks/logo/logo.scss";
+@import "../../src/blocks/datepicker/datepicker.scss";
+
+.UIkit-cards__container{
+  width: 100%;
+  background-color: #F4F4F6;
+}
+
+.UIkit-cards__cards-container{
+  width: 100%;
+  display: grid;
+  padding: 65px 140px 140px 140px;
+  grid-template-columns: 380px 380px 320px;
+  grid-template-rows: auto;
+  align-items: start;
+  justify-content: left;
+  column-gap: 40px;
+}
+
+.UIkit-cards__col-container{
+  display: grid;
+  grid-template-columns: auto;
+  align-items: start;
+  justify-content: left;
+  row-gap: 40px;
+}

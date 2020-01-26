@@ -1,0 +1,26 @@
+@import "/pages/template/variables.scss";
+.UIkit-fonts__container{
+    margin: 0;
+    padding: 0;
+    width: 403px;
+    display: grid;
+    grid-template-columns: 37px 336px;
+    grid-template-rows: repeat(auto-fill, auto);
+    column-gap: 30px;
+    row-gap: 50px;
+    align-items: start;
+}
+
+.UIkit-fonts__descr, .UIkit-fonts__fonts{
+    margin: 0;
+    padding: 0;
+}
+
+.UIkit-fonts__fonts {
+    text-align: right;
+    h1, h2, h3, span{
+        font-family: 'Conv_Montserrat-Regular';
+        font-weight: normal;
+        color: $color__dark-shade25;
+    };
+}

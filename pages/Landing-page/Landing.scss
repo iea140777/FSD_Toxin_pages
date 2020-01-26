@@ -32,8 +32,8 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 10.2%;
-    left: 9.7%;
+    top: 15%;
+    left: 9.3%;
     z-index: 100;
 }
 
@@ -47,7 +47,7 @@
     content: "Лучшие номера для вашей работы, отдыха и просто вдохновения";
     display: inline-block;
     position: absolute;
-    top: 92%;
+    bottom: 5%;
     right: 9.5%;
     width: 297px;
     color: $color__dark-shade75;

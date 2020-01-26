@@ -1,0 +1,21 @@
+
+@import "../../src/mixins/header-mixin/header-mixin.scss";
+@import "../../src/blocks/footer/footer.scss";
+@import "../../src/blocks/logo/logo.scss";
+
+.UIkit-headers-footers__container{
+  width: 100%;
+  background-color: #F4F4F6;
+}
+
+.UIkit-headers-footers__headers-footers-container{
+  width: 100%;
+  display: grid;
+  padding: 65px 0px 150px 0px;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  align-items: start;
+  justify-content: stretch;
+  row-gap: 40px;
+}
+

@@ -1,11 +1,4 @@
-// @import "../../src/mixins/card-room-mixin/card-room-mixin.scss";
-// @import "../../src/blocks/pagination/pagination.scss";
-// @import "../../src/blocks/filter-date-dropdown/filter-date-dropdown.scss";
-// @import "../../src/blocks/dropdown-guests/dropdown-guests.scss";
-// @import "../../src/blocks/range-slider/range-slider.scss";
-// @import "../../src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.scss";
-// @import "../../src/blocks/dropdown-facilities/dropdown-facilities.scss";
-// @import "../../src/blocks/exp-checkbox/exp-checkbox.scss";
+
 @import "../../src/mixins/comfort-icons-mixin/comfort-icons-mixin.scss";
 @import "../../src/mixins/review-mixin/review-mixin.scss";
 @import "../../src/blocks/card-price/card-price.scss";
@@ -17,6 +10,7 @@
     padding: 0;
     width: 100%;
     display: grid;
+    grid-template-columns: 100%;
     grid-template-rows: auto auto;
     border-bottom: 1px solid $color__dark-shade25;
 }

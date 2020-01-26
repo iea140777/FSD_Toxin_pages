@@ -30,6 +30,8 @@
     color: black;
     margin-bottom: 22px;
     margin-top: 12px;
+    padding-left: 1px;
+    padding-right: 1px;
   }
   
   .arrow_forward {
@@ -44,17 +46,23 @@
   }
   
   .datepicker--nav-title {
-    font-family: 'Conv_Quicksand-Bold', 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    // letter-spacing: 0.9px;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 19px;
-    line-height: 24px;
+    line-height: 100%;
     color: #1F2041;
     background-color: none;
   }
   
   .datepicker--nav-title i {
     color: black;
+    font-family: 'Conv_Quicksand-Bold', 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 100%;
+    letter-spacing: 0.05px;
   }
   
   .datepicker--cell{
@@ -232,7 +240,7 @@
   
   .datepicker--buttons {
     justify-content: space-between;
-    padding: 4px;
+    padding: 8px 4px 10px 4px;
     border-top: none;
     font-family: 'Conv_Montserrat-Bold', 'Open Sans', sans-serif;
     font-weight: bold;

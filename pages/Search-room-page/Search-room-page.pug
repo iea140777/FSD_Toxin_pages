@@ -32,8 +32,7 @@ block pageContent
             roomRating: '5',
             roomReviews: '145',
             noArrows: 'noArrows'
-            })
-        //- a(href='../../pages/Room-details-page/Room-details-page.pug', target="blank")    
+            })   
         +card-room-mixin({
           photo1: '/pages/Search-room-page/card-room-img/image2.jpg',
           photo2: '/pages/Search-room-page/card-room-img/image4.jpg',
@@ -44,7 +43,6 @@ block pageContent
           roomReviews: '65',
           noArrows: 'Arrows'
           })  
-        //- a(href='../../pages/Room-details-page/Room-details-page.pug', target="blank")
         +card-room-mixin({
           photo1: '/pages/Search-room-page/card-room-img/image3.jpg',
           photo2: '/pages/Search-room-page/card-room-img/image11.jpg',
@@ -162,10 +160,11 @@ append scripts
   script(src="../../src/mixins/card-room-mixin/slick-slider/slick-1.8.1/slick/slick.min.js")
   script(src="../../src/mixins/card-room-mixin/slick-slider/slick-slider.js")
   script(src="../../src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
+  script(src="../../src/blocks/datepicker/datepicker.js")
   script(src="../../src/blocks/filter-date-dropdown/filter-date-dropdown.js")
   script(src="../../src/blocks/dropdown-guests/spin-number-plugin.js")
   script(src="../../src/blocks/dropdown-guests/dropdown-guests.js")
-  script(src="../../src/blocks/range-slider/jquery.ui-slider.js")
+  script(src="../../src/blocks/range-slider/jquery-ui-1.12.1.custom/jquery-ui.min.js")
   script(src="../../src/blocks/range-slider/range-slider.js")
   script(src="../../src/blocks/dropdown-facilities/dropdown-facilities.js")
   script(src="../../src/blocks/exp-checkbox/exp-checkbox.js")

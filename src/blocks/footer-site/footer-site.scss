@@ -1,5 +1,7 @@
 @import "./pages/template/variables.scss";
 @import '../../mixins/textfield-mixin/textfield-mixin.scss';
+// @import "../../blocks/footer/footer.scss";
+
 .footer{
     margin: 0;
     padding: 0;
@@ -10,6 +12,9 @@
     box-sizing: border-box;
     background: #FFFFFF;
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+    @media screen and (max-width: 1430px){
+        display: none;
+    }
 }
 
 .footer__navigation-section{
@@ -138,11 +143,16 @@
     @extend.footer;
     margin: 0;
     padding: 0;
-    height: 367px;
+    height: 25%;
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: center; 
+    justify-content: center;
+    display: none;
+    padding: 15px;
+    @media screen and (max-width: 1430px){
+        display: flex;  
+    } 
 }    
 
 .footer_light .footer__text{
@@ -150,6 +160,10 @@
     text-align: center;
     margin-top: 18px;
     margin-bottom: 28px;
+    @media screen and (max-width: 450px){
+        margin-top: 10px;
+        margin-bottom: 10px;  
+    } 
 }
 
 .footer__social-icons, .footer__social-icons__button{

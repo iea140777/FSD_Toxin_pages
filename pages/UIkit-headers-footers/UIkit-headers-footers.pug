@@ -1,0 +1,25 @@
+extends ../template/layout.pug
+prepend head
+  - var lang="en"
+  - var myTitle = "Ui_Kit_Headers&Footers"
+  - var myDesc = "Toxin UI Kit"
+append links
+  link(href="UIkit-headers-footers.scss" rel ="stylesheet")
+  
+ 
+block main
+  include ../../src/mixins/header-mixin/header-mixin.pug
+  include ../../src/blocks/footer/footer.pug
+ 
+  div.UIkit-headers-footers__container
+    include ../../src/blocks/logo/logo.pug
+    div.UIkit-headers-footers__headers-footers-container
+      +header('')
+      +header('loggedIn')
+      +footer('full')
+      +footer('light')
+append scripts
+  script(src="../../src/mixins/button-mixin/button-mixin.js")
+  script(src="../../src/blocks/header-site/header-UIkit.js")
+  script(src="../../src/mixins/textfield-mixin/textfield-mixin.js")
+  script(src="../../src/mixins/textfield-mixin/jquery.maskedinput.js")

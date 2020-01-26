@@ -4,41 +4,42 @@ mixin footer(footerStatus)
     case footerStatus
       when 'full'
         footer.footer
-          div.footer__column1__logo
-            div.footer__logo
-              include ../header-logo/header-logo.pug
-            p.footer__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-          nav.footer__column2__menu
-            h3.footer__menu-title Navigation
-            a.footer__menu-item(href="#" onclick="return false;") About Us
-            a.footer__menu-item(href="#" onclick="return false;") News
-            a.footer__menu-item(href="#" onclick="return false;") Support
-            a.footer__menu-item(href="#" onclick="return false;") Product
-          nav.footer__column3__menu
-            h3.footer__menu-title About Us
-            a.footer__menu-item(href="#" onclick="return false;") Who we are
-            a.footer__menu-item(href="#" onclick="return false;") Our team
-            a.footer__menu-item(href="#" onclick="return false;") Careers
-            a.footer__menu-item(href="#" onclick="return false;") Investors
-          nav.footer__column4__menu
-            h3.footer__menu-title Support
-            a.footer__menu-item(href="#" onclick="return false;") Documentation
-            a.footer__menu-item(href="#" onclick="return false;") Community
-            a.footer__menu-item(href="#" onclick="return false;") Get in touch
-          div.footer__column5__subscription
-            h3.footer__menu-title Subscribe to our newsletter
-            p.footer__menu-item(href="#" onclick="return false;") Receive our latest news and promotions in your inbox!
-            div.footer__menu-item__email-input
-              +textfield('email', 'user-Email', 'Your email address', 'input_arrow')
-        div.footer__copyright-section
-          span.footer__copyright Copyright © 2018 Toxin UI Kit. All rights reserved.
-          div.footer__social-icons
-            a.footer__social-icons__button(href="#" onclick="return false;")
-              img.footer__social-icons__image(src='../../src/blocks/footer/twitter.png' alt='Logo')
-            a.footer__social-icons__button(href="#" onclick="return false;")
-              img.footer__social-icons__image(src='../../src/blocks/footer/facebook.png' alt='Logo')
-            a.footer__social-icons__button(href="#" onclick="return false;")
-              img.footer__social-icons__image(src='../../src/blocks/footer/Instagram.png' alt='Logo')
+          div.footer__navigation-section
+            div.footer__column1__logo
+              div.footer__logo
+                include ../header-logo/header-logo.pug
+              p.footer__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+            nav.footer__column2__menu
+              h3.footer__menu-title Navigation
+              a.footer__menu-item(href="#" onclick="return false;") About Us
+              a.footer__menu-item(href="#" onclick="return false;") News
+              a.footer__menu-item(href="#" onclick="return false;") Support
+              a.footer__menu-item(href="#" onclick="return false;") Product
+            nav.footer__column3__menu
+              h3.footer__menu-title About Us
+              a.footer__menu-item(href="#" onclick="return false;") Who we are
+              a.footer__menu-item(href="#" onclick="return false;") Our team
+              a.footer__menu-item(href="#" onclick="return false;") Careers
+              a.footer__menu-item(href="#" onclick="return false;") Investors
+            nav.footer__column4__menu
+              h3.footer__menu-title Support
+              a.footer__menu-item(href="#" onclick="return false;") Documentation
+              a.footer__menu-item(href="#" onclick="return false;") Community
+              a.footer__menu-item(href="#" onclick="return false;") Get in touch
+            div.footer__column5__subscription
+              h3.footer__menu-title Subscribe to our newsletter
+              p.footer__menu-item(href="#" onclick="return false;") Receive our latest news and promotions in your inbox!
+              div.footer__menu-item__email-input
+                +textfield('email', 'user-Email', 'Your email address', 'input_arrow')
+          div.footer__copyright-section
+            span.footer__copyright Copyright © 2018 Toxin UI Kit. All rights reserved.
+            div.footer__social-icons
+              a.footer__social-icons__button(href="#" onclick="return false;")
+                img.footer__social-icons__image(src='../../src/blocks/footer/twitter.png' alt='Logo')
+              a.footer__social-icons__button(href="#" onclick="return false;")
+                img.footer__social-icons__image(src='../../src/blocks/footer/facebook.png' alt='Logo')
+              a.footer__social-icons__button(href="#" onclick="return false;")
+                img.footer__social-icons__image(src='../../src/blocks/footer/Instagram.png' alt='Logo')
       when 'light'
         footer.footer_light
           include ../header-logo/header-logo.pug

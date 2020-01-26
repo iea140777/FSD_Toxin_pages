@@ -9,8 +9,8 @@ block main
   div.site-page-layout__container
     div.template__header-container
       +header-site('')
-    block pageContent
-      section.page-content__container
+    section.page-content__container
+      block pageContent
     div.template__footer-container
       include ../../src/blocks/footer-site/footer-site.pug
     
