@@ -410,7 +410,7 @@
 .date-dropdown__container {
   margin: 0;
   padding: 0;
-  width: 320px;
+  width: 100%;
   height: 65px;
   display: flex;
   justify-content: space-between;
@@ -457,6 +457,11 @@
   display: inline-block;
   padding-right: 35px;
   cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+  .date-dropdown__input {
+    width: 140px;
+  }
 }
 
 .date-dropdown__input::placeholder {
@@ -713,14 +718,14 @@
 .incrementer, .decrementer {
   width: 30px;
   height: 30px;
-  font-family: "Conv_Montserrat-Bold", "Open Sans", sans-serif;
+  font-family: "Conv_Montserrat-Regular", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 26px;
-  display: inline-block;
-  text-align: center;
-  vertical-align: bottom;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgba(31, 32, 65, 0.5);
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -911,17 +916,36 @@
   justify-content: space-between;
   justify-items: center;
 }
+@media screen and (max-width: 400px) {
+  .card-search__container {
+    width: 315px;
+    height: 280px;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+  }
+}
 
 .card-search__header {
   margin: 0;
   padding: 0;
   line-height: 30px;
   vertical-align: middle;
-  font-size: 24px;
   display: inline-block;
   font-weight: bold;
   color: #1F2041;
   display: inline-block;
+}
+@media screen and (max-width: 400px) {
+  .card-search__header {
+    font-family: "Conv_Montserrat-Bold", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+  }
 }
 
 .card-search__date-dropdown-container {
@@ -952,16 +976,21 @@
 
 .landing__background-image__container {
   width: 100%;
-  height: 830px;
+  max-height: 830px;
   margin: 0;
   padding: 0;
   overflow: hidden;
   box-sizing: border-box;
   vertical-align: bottom;
+  position: relative;
+}
+@media screen and (max-width: 880px) {
+  .landing__background-image__container {
+    min-height: 410px;
+  }
 }
 
-.landing__background-image__container div {
-  height: 830px;
+.landing__background-image__container slick-list {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -972,8 +1001,16 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  vertical-align: bottom;
-  display: inline-block;
+  overflow: hidden;
+}
+@media screen and (max-width: 880px) {
+  .landing__background-image__image {
+    min-height: 410px;
+  }
+}
+
+.slick-list.draggable {
+  height: 100%;
 }
 
 .landing__card-search-container {
@@ -984,9 +1021,22 @@
   left: 9.3%;
   z-index: 100;
 }
-
-.slick-slide img {
-  width: 100%;
+@media screen and (max-width: 870px) {
+  .landing__card-search-container {
+    top: 150px;
+    left: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .landing__card-search-container {
+    top: 80px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .landing__card-search-container {
+    top: 80px;
+    left: 2px;
+  }
 }
 
 .landing__background-image__container:after {

@@ -4,30 +4,40 @@
 
 .landing__background-image__container {
     width: 100%;
-    height: 830px;
+    max-height: 830px;
     margin: 0;
     padding: 0;
     overflow: hidden;
     box-sizing: border-box;
     vertical-align: bottom;
+    position: relative;
+    @media screen and (max-width: 880px){
+        min-height: 410px;
+    }
 }
 
-.landing__background-image__container div {
-    height: 830px;
+.landing__background-image__container slick-list {
+    // max-height: 830px;
     margin: 0;
     padding: 0;
     overflow: hidden;
     vertical-align: bottom;
 }
 
+
 .landing__background-image__image{
     margin:0;
     padding: 0;
     width: 100%;
-    vertical-align: bottom;
-    display: inline-block;
+    overflow: hidden;
+    @media screen and (max-width: 880px){
+        min-height: 410px;
+    }
 }
 
+.slick-list.draggable{
+    height: 100%;
+}
 .landing__card-search-container{
     margin: 0;
     padding: 0;
@@ -35,10 +45,17 @@
     top: 15%;
     left: 9.3%;
     z-index: 100;
-}
-
-.slick-slide img{
-    width: 100%;
+    @media screen and (max-width: 870px){
+        top: 150px;
+        left: 10px;
+    };
+    @media screen and (max-width: 450px){
+        top: 80px;
+    };
+    @media screen and (max-width: 400px){
+        top: 80px;
+        left: 2px;
+    };
 }
 
 .landing__background-image__container:after {
@@ -55,13 +72,3 @@
     z-index: 100;
 }
 
-// .landing__text{
-//     margin: 0;
-//     padding: 0;
-//     display: block;
-//     position: absolute;
-//     top: 700px;
-//     left: 1009px;
-//     width: 297px;
-//     color: $color__dark-shade75;
-// }
