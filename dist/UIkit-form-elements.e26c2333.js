@@ -117,18 +117,89 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/mixins/like-button-mixin/like-button-mixin.js":[function(require,module,exports) {
-$(".like-button").click(function () {
-  var likeIncrementer = $('.like-button__favorite-icon_unchecked + .like-button__counter');
-  var likeCount = Number(likeIncrementer.val());
-  var newLikeCount = likeCount + 1;
-  console.log(likeCount);
-  $('.like-button__favorite-icon_unchecked + .like-button__counter').val(newLikeCount);
-  $(".like-button__favorite-icon_unchecked").replaceWith('<i class="material-icons like-button__favorite-icon like-button__favorite-icon_checked">favorite</i>');
-  $('.like-button_unchecked').removeClass('like-button_unchecked').addClass('like-button_checked');
-  $(".like-button__counter_unchecked").removeClass('like-button__counter_unchecked').addClass('like-button__counter_checked');
-});
-},{}],"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+})({"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/blocks/datepicker/air-datepicker/dist/css/datepicker.min.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/blocks/range-slider/jquery-ui-1.12.1.custom/jquery-ui.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./images\\ui-icons_444444_256x240.png":[["ui-icons_444444_256x240.11896f64.png","src/blocks/range-slider/jquery-ui-1.12.1.custom/images/ui-icons_444444_256x240.png"],"src/blocks/range-slider/jquery-ui-1.12.1.custom/images/ui-icons_444444_256x240.png"],"./images\\ui-icons_555555_256x240.png":[["ui-icons_555555_256x240.d51290a9.png","src/blocks/range-slider/jquery-ui-1.12.1.custom/images/ui-icons_555555_256x240.png"],"src/blocks/range-slider/jquery-ui-1.12.1.custom/images/ui-icons_555555_256x240.png"],"./images\\ui-icons_ffffff_256x240.png":[["ui-icons_ffffff_256x240.d53f9d82.png","src/blocks/range-slider/jquery-ui-1.12.1.custom/images/ui-icons_ffffff_256x240.png"],"src/blocks/range-slider/jquery-ui-1.12.1.custom/images/ui-icons_ffffff_256x240.png"],"./images\\ui-icons_777620_256x240.png":[["ui-icons_777620_256x240.ea001225.png","src/blocks/range-slider/jquery-ui-1.12.1.custom/images/ui-icons_777620_256x240.png"],"src/blocks/range-slider/jquery-ui-1.12.1.custom/images/ui-icons_777620_256x240.png"],"./images\\ui-icons_cc0000_256x240.png":[["ui-icons_cc0000_256x240.4c838cb2.png","src/blocks/range-slider/jquery-ui-1.12.1.custom/images/ui-icons_cc0000_256x240.png"],"src/blocks/range-slider/jquery-ui-1.12.1.custom/images/ui-icons_cc0000_256x240.png"],"./images\\ui-icons_777777_256x240.png":[["ui-icons_777777_256x240.b8e101dc.png","src/blocks/range-slider/jquery-ui-1.12.1.custom/images/ui-icons_777777_256x240.png"],"src/blocks/range-slider/jquery-ui-1.12.1.custom/images/ui-icons_777777_256x240.png"],"_css_loader":"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"pages/UIkit-form-elements/UIkit-form-elements.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"../../src/blocks/datepicker/air-datepicker/dist/css/datepicker.min.css":"src/blocks/datepicker/air-datepicker/dist/css/datepicker.min.css","../../src/blocks/range-slider/jquery-ui-1.12.1.custom/jquery-ui.css":"src/blocks/range-slider/jquery-ui-1.12.1.custom/jquery-ui.css","./..\\..\\src\\mixins\\checkbox-mixin\\Vector.png":[["Vector.b27374fd.png","src/mixins/checkbox-mixin/Vector.png"],"src/mixins/checkbox-mixin/Vector.png"],"./..\\..\\src\\blocks\\bullet-list\\Ellipse.png":[["Ellipse.d7006587.png","src/blocks/bullet-list/Ellipse.png"],"src/blocks/bullet-list/Ellipse.png"],"_css_loader":"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -332,5 +403,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/mixins/like-button-mixin/like-button-mixin.js"], null)
-//# sourceMappingURL=/like-button-mixin.5f91be3b.js.map
+},{}]},{},["../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/UIkit-form-elements.e26c2333.js.map

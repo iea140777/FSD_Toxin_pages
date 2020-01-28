@@ -549,8 +549,8 @@
 
 .input__open-icon {
   position: absolute;
-  top: 3px;
-  left: -10px;
+  top: 0px;
+  left: -16px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -811,10 +811,6 @@
   opacity: 0.75;
 }
 
-.button__container_text {
-  height: 15px;
-}
-
 .button {
   height: 100%;
   outline: none;
@@ -874,7 +870,6 @@
 .button_text {
   background: white;
   border: none;
-  height: 20px;
 }
 .button_text .button__label {
   color: #BC9CFF;
@@ -1027,8 +1022,8 @@
 
 .input__open-icon {
   position: absolute;
-  top: 3px;
-  left: -10px;
+  top: 0px;
+  left: -16px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -1200,10 +1195,6 @@
   opacity: 0.75;
 }
 
-.button__container_text {
-  height: 15px;
-}
-
 .button {
   height: 100%;
   outline: none;
@@ -1263,7 +1254,6 @@
 .button_text {
   background: white;
   border: none;
-  height: 20px;
 }
 .button_text .button__label {
   color: #BC9CFF;
@@ -1719,8 +1709,8 @@
 
 .input__open-icon {
   position: absolute;
-  top: 3px;
-  left: -10px;
+  top: 0px;
+  left: -16px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -1981,10 +1971,6 @@
   opacity: 0.75;
 }
 
-.button__container_text {
-  height: 15px;
-}
-
 .button {
   height: 100%;
   outline: none;
@@ -2044,7 +2030,6 @@
 .button_text {
   background: white;
   border: none;
-  height: 20px;
 }
 .button_text .button__label {
   color: #BC9CFF;
@@ -2248,10 +2233,6 @@
   opacity: 0.75;
 }
 
-.button__container_text {
-  height: 15px;
-}
-
 .button {
   height: 100%;
   outline: none;
@@ -2311,7 +2292,6 @@
 .button_text {
   background: white;
   border: none;
-  height: 20px;
 }
 .button_text .button__label {
   color: #BC9CFF;
@@ -2409,8 +2389,8 @@
 
 .input__open-icon {
   position: absolute;
-  top: 3px;
-  left: -10px;
+  top: 0px;
+  left: -16px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -3252,8 +3232,8 @@ tr:nth-child(3) td {
 
 .input__open-icon {
   position: absolute;
-  top: 3px;
-  left: -10px;
+  top: 0px;
+  left: -16px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -3295,10 +3275,6 @@ tr:nth-child(3) td {
 }
 .button__container_bordered:active {
   opacity: 0.75;
-}
-
-.button__container_text {
-  height: 15px;
 }
 
 .button {
@@ -3360,7 +3336,6 @@ tr:nth-child(3) td {
 .button_text {
   background: white;
   border: none;
-  height: 20px;
 }
 .button_text .button__label {
   color: #BC9CFF;

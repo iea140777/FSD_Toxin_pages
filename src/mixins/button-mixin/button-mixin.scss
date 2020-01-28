@@ -32,10 +32,6 @@
     }; 
 }
 
-.button__container_text{
-    height: 15px;
-}
-
 .button {
     height: 100%;
     outline: none;
@@ -95,7 +91,6 @@
 .button_text {
     background: white;
     border: none;
-    height: 20px;
     .button__label{
     color: $color__purple;
     &:hover{

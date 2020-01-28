@@ -34,9 +34,6 @@ h1, h2, h3 {
   min-width: 320px;
   width: 100vw;
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .pages-list__container {

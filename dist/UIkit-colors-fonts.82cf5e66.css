@@ -7,7 +7,7 @@
 .UIkit-colors-fonts {
   margin: 0;
   padding: 0;
-  margin: 145px 191px 145px 149px;
+  padding: 145px 191px 145px 149px;
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 427px;

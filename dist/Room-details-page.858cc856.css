@@ -193,10 +193,6 @@
   opacity: 0.75;
 }
 
-.button__container_text {
-  height: 15px;
-}
-
 .button {
   height: 100%;
   outline: none;
@@ -256,7 +252,6 @@
 .button_text {
   background: white;
   border: none;
-  height: 20px;
 }
 .button_text .button__label {
   color: #BC9CFF;
@@ -354,8 +349,8 @@
 
 .input__open-icon {
   position: absolute;
-  top: 3px;
-  left: -10px;
+  top: 0px;
+  left: -16px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -1406,6 +1401,7 @@ tr:nth-child(3) td {
   padding: 0;
   display: inline-block;
   vertical-align: bottom;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 .room-details__info__review1__container {

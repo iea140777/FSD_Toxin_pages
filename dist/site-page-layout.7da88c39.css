@@ -41,10 +41,6 @@
   opacity: 0.75;
 }
 
-.button__container_text {
-  height: 15px;
-}
-
 .button {
   height: 100%;
   outline: none;
@@ -104,7 +100,6 @@
 .button_text {
   background: white;
   border: none;
-  height: 20px;
 }
 .button_text .button__label {
   color: #BC9CFF;
@@ -141,8 +136,8 @@
   box-sizing: border-box;
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  padding-left: 9.8%;
-  padding-right: 9.8%;
+  padding-left: 9.72%;
+  padding-right: 9.72%;
 }
 @media screen and (max-width: 1300px) {
   .header {
@@ -429,7 +424,7 @@
 }
 
 .header__header-menu__list-item:nth-of-type(2), .header__header-menu__list-item:nth-of-type(5) {
-  margin-right: 20px;
+  margin-right: 22px;
 }
 
 .header__header-menu__list-item:nth-of-type(3) {
@@ -586,8 +581,8 @@
 
 .input__open-icon {
   position: absolute;
-  top: 3px;
-  left: -10px;
+  top: 0px;
+  left: -16px;
   color: rgba(31, 32, 65, 0.5);
 }
 
