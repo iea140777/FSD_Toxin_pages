@@ -929,6 +929,7 @@
   padding: 0;
   line-height: 30px;
   vertical-align: middle;
+  font-size: 24px;
   display: inline-block;
   font-weight: bold;
   color: #1F2041;
@@ -2113,6 +2114,7 @@
   padding: 0;
   line-height: 30px;
   vertical-align: middle;
+  font-size: 24px;
   display: inline-block;
   font-weight: bold;
   color: #1F2041;
@@ -2161,7 +2163,7 @@
   margin: 0;
   padding: 0;
   height: 646px;
-  width: 381px;
+  width: 380px;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -2169,16 +2171,27 @@
   box-sizing: border-box;
   padding: 40px 29px 30px 30px;
 }
+@media screen and (max-width: 400px) {
+  .card-registration__container {
+    width: 300px;
+  }
+}
 
 .card-registration__header {
   line-height: 30px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 400px) {
+  .card-registration__header {
+    padding-bottom: 0;
+  }
 }
 
 .card-registration__form {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .card-registration__name, .card-registration__birthday, .card-registration__entry-data,
@@ -2192,15 +2205,12 @@
 
 .card-registration__name {
   margin-bottom: 12px;
+  margin-top: 20px;
 }
 
 .card-registration__user-last-name-container {
   margin-top: 10px;
   margin-bottom: 3px;
-}
-
-.card-registration__name {
-  margin-top: 20px;
 }
 
 .card-registration__birthday {
@@ -2209,15 +2219,32 @@
 
 .card-registration__entry-data {
   margin-top: 21px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .card-registration__birthday__label-text, .card-registration__entry-data__label-text {
   margin-bottom: 4px;
 }
 
+.card-registration__user-email-container {
+  width: 100%;
+}
+@media screen and (max-width: 400px) {
+  .card-registration__user-email-container {
+    width: 239px;
+  }
+}
+
 .card-registration__user-password-container {
   margin-top: 10px;
   margin-bottom: 0px;
+  width: 100%;
+}
+@media screen and (max-width: 400px) {
+  .card-registration__user-password-container {
+    width: 239px;
+  }
 }
 
 .card-registration__subscribe-container {
@@ -3424,6 +3451,11 @@ tr:nth-child(3) td {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   padding: 40px 29px 30px 30px;
+}
+@media screen and (max-width: 400px) {
+  .card-login__container {
+    width: 300px;
+  }
 }
 
 .card-login__header {

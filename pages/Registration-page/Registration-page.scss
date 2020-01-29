@@ -9,13 +9,10 @@
     height: 702px;
     margin: 0;
     padding: 0;
-    // padding-bottom: 30px;
-    // padding-top: 30px;
     background-image: url('registration-photo.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    // position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,5 +22,8 @@
     margin: 0;
     padding: 0;
     z-index: 100;
+    @media screen and (max-width: 400px){
+        width: 300px;
+    }
 }
 

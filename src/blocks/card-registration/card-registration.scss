@@ -8,25 +8,32 @@
     margin:0;
     padding: 0;
     height: 646px;
-    width: 381px;
+    width: 380px;
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     padding: 40px 29px 30px 30px;
+    @media screen and (max-width: 400px){
+        width: 300px;
+    }
 }
 
 .card-registration__header {
     @extend .card-search__header;
     line-height: 30px;
     box-sizing: border-box;
+    @media screen and (max-width: 400px){
+       padding-bottom: 0;
+    }
 }
 
 .card-registration__form{
  margin: 0;
  padding:0;
  box-sizing: border-box;
+ width: 100%;
 }
 
 .card-registration__name, .card-registration__birthday, .card-registration__entry-data, 
@@ -40,13 +47,11 @@
 
 .card-registration__name{
     margin-bottom: 12px;
+    margin-top: 20px;
 }
 .card-registration__user-last-name-container{
     margin-top: 10px;
     margin-bottom: 3px;
-}
-.card-registration__name{
-    margin-top: 20px;
 }
 
 .card-registration__birthday{
@@ -55,14 +60,27 @@
 
 .card-registration__entry-data{
     margin-top: 21px;
+    box-sizing: border-box;
+    width: 100%;
 }
 .card-registration__birthday__label-text, .card-registration__entry-data__label-text{
     margin-bottom: 4px;
 }
 
+.card-registration__user-email-container{
+    width: 100%;
+    @media screen and (max-width: 400px){
+        width: 239px;
+    }
+}
+
 .card-registration__user-password-container{
     margin-top: 10px;
     margin-bottom: 0px;
+    width: 100%;
+    @media screen and (max-width: 400px){
+        width: 239px;
+    }
 }
 
 .card-registration__subscribe-container{
