@@ -2770,6 +2770,51 @@ a.pagination__list-item:last-child {
   border-bottom: 1px solid rgba(31, 32, 65, 0.25);
   align-items: start;
 }
+@media screen and (max-width: 1300px) {
+  .search-room__container {
+    padding: 10px 5vw 54px 5vw;
+  }
+}
+@media screen and (max-width: 660px) {
+  .search-room__container {
+    grid-template-columns: minmax(300px, 640px);
+    grid-template-rows: auto;
+    justify-content: center;
+    column-gap: 0;
+  }
+}
+
+.search-room__filter-container-header-mobile {
+  margin: 0;
+  padding: 0;
+  display: none;
+  width: 290px;
+  cursor: pointer;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  vertical-align: baseline;
+}
+@media screen and (max-width: 660px) {
+  .search-room__filter-container-header-mobile {
+    display: block;
+  }
+}
+.search-room__filter-container-header-mobile h3 {
+  display: inline-block;
+  line-height: 100%;
+  vertical-align: middle;
+  color: #BC9CFF;
+}
+
+.search-room__menu-open-button.material-icons {
+  line-height: 100%;
+  vertical-align: middle;
+  color: #BC9CFF;
+}
+
+.search-room__menu-close-button {
+  transform: rotate(180deg);
+}
 
 .search-room__filter__container {
   margin: 0;
@@ -2780,6 +2825,24 @@ a.pagination__list-item:last-child {
   justify-content: start;
   align-content: start;
   row-gap: 17px;
+}
+@media screen and (max-width: 660px) {
+  .search-room__filter__container {
+    display: none;
+    width: 266px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    background: white;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .search-room__filter__container_open {
+    display: grid;
+  }
 }
 
 .search-room__filter__range-slider-container {
@@ -2810,6 +2873,12 @@ a.pagination__list-item:last-child {
   justify-content: start;
   align-items: start;
 }
+@media screen and (max-width: 660px) {
+  .search-room__search-results__container {
+    grid-column-start: 1;
+    justify-content: center;
+  }
+}
 
 .search-room__search-results__header {
   grid-row-start: 1;
@@ -2831,6 +2900,11 @@ a.pagination__list-item:last-child {
   align-items: start;
   column-gap: 12px;
   row-gap: 21px;
+}
+@media screen and (max-width: 660px) {
+  .search-room__search-results__cards-container {
+    justify-content: center;
+  }
 }
 
 .search-room__pagination__container {

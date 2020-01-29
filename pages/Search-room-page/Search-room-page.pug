@@ -9,6 +9,9 @@ append links
 block pageContent
   include ../../src/mixins/card-room-mixin/card-room-mixin.pug
   div.search-room__container
+    div.search-room__filter-container-header-mobile
+      h3 Изменить параметры поиска
+      i.search-room__menu-open-button.material-icons expand_more 
     section.search-room__filter__container
       include ../../src/blocks/filter-date-dropdown/filter-date-dropdown.pug
       include ../../src/blocks/dropdown-guests/dropdown-guests.pug
@@ -168,5 +171,6 @@ append scripts
   script(src="../../src/blocks/dropdown-facilities/dropdown-facilities.js")
   script(src="../../src/blocks/exp-checkbox/exp-checkbox.js")
   script(src="../../src/mixins/textfield-mixin/textfield-mixin.js")
+  script(src="Search-room-page.js")
   
   
