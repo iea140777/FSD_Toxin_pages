@@ -1,1 +1,0 @@
-{"version":3,"sources":["src/blocks/datepicker/datepicker.js"],"names":["$","append"],"mappings":";AAAAA,EAAE,wBAAwBC,OAAO","file":"datepicker.f8208977.js","sourceRoot":"..\\..","sourcesContent":["$('.datepicker--buttons').append('<span class=\"datepicker--button -apply\">Применить</span>');\r\n"]}
