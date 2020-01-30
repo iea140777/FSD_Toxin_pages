@@ -24,6 +24,9 @@
     grid-template-columns: 68.125% 31.875%;
     column-gap: 0;
     row-gap: 0;
+    @media screen and (max-width: 1250px){
+        height: 50vw;
+    };
 }
 
 .room-details__image1{
@@ -69,11 +72,58 @@
     "rules cancel card-price";
     column-gap: 70px;
     row-gap: 10px;
+    @media screen and (max-width: 1370px){
+        padding: 70px 5vw;
+    };
+    @media screen and (max-width: 1250px){
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "comfort-icons  card-price"
+        "piechart card-price"
+        "reviews      reviews"
+        "rules cancel";
+        column-gap: 5vw;
+        row-gap: 5vh;
+    };
+    @media screen and (max-width: 820px){
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "card-price card-price"
+        "comfort-icons piechart"
+        "reviews reviews"
+        "rules cancel";
+        row-gap: 5vw;
+        padding: 5vw 5vw;
+        justify-content: center;
+    };
+    @media screen and (max-width: 730px){
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "card-price"
+        "comfort-icons"
+        "piechart"
+        "reviews"
+        "rules" 
+        "cancel";
+        row-gap: 5vw;
+        padding: 5vw 5vw;
+        justify-content: center;
+    };
+    @media screen and (max-width: 400px){
+        row-gap: 10vw;
+
+    }
 }
 
-.room-details__info__icons__header {
-    margin: 0;
-    padding: 0;
+.room-details__info__piechart__container{
+    @media screen and (max-width: 730px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    };
+    @media screen and (max-width: 400px){
+        padding: 3vw;
+    }
 }
 
 .room-details__info__piechart__header {
@@ -88,17 +138,32 @@
     padding-top: 20px;
 }
 
+
+
 .room-details__info__comfort-icons__container {
     margin: 0;
     padding: 0;
     grid-area: comfort-icons;
     margin-bottom: 5px;
+    @media screen and (max-width: 730px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.room-details__info__icons__header {
+    margin: 0;
+    padding: 0;
 }
 
 .room-details__info__reviews__container {
     margin: 0;
     padding: 0;
     grid-area: reviews;
+    @media screen and (max-width: 400px){
+        padding: 3vw;
+    };
 }
 
 .room-details__info__reviews__header__container {
@@ -132,6 +197,11 @@
     margin: 0;
     padding: 0;
     grid-area: card-price;
+    @media screen and (max-width: 820px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .room-details__info__rules__container {
@@ -139,6 +209,10 @@
     padding: 0;
     grid-area: rules;
     margin-top: 23px;
+    @media screen and (max-width: 400px){
+        padding: 3vw;
+        margin-top: 0;
+    }
 } 
 
 .room-details__info__rules__header {
@@ -146,6 +220,9 @@
     padding: 0;
     padding-left: 20px;
     margin-bottom: 17px;
+    @media screen and (max-width: 730px){
+        text-align: center;
+    }
 }
 
 .room-details__info__cancel__container  {
@@ -153,11 +230,18 @@
     padding: 0;
     grid-area: cancel;
     margin-top: 23px;
+    @media screen and (max-width: 400px){
+        padding: 3vw;
+        margin-top: 0;
+    }
 }
 
 .room-details__info__cancel__header {
     margin: 0;
     padding: 0;
     margin-bottom: 17px;
+    @media screen and (max-width: 730px){
+        text-align: center;
+    }
 }
 

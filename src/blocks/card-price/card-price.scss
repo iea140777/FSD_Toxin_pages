@@ -14,6 +14,11 @@
     box-sizing: border-box;
     padding: 40px 29px 30px 30px;
     height: 511px;
+    @media screen and (max-width: 400px){
+        width: 310px;
+        height: 470px;
+        padding: 10px;
+    }
 }
 
 .card-price__room-details__container{
@@ -96,6 +101,9 @@
     margin-bottom: 20px;
     border-collapse: collapse;
     box-sizing: border-box;
+    @media screen and (max-width: 400px){
+       font-size: 11px;
+    }
 }
 
 .card-price__price-details-table tr td {
@@ -135,6 +143,9 @@ tr:nth-child(3) td{
     width: 59px;
     text-align: right;
     vertical-align: top;
+    @media screen and (max-width: 400px){
+        width: 45px;
+    }
 }
 
 .card-price__price-details__info-label {
@@ -178,6 +189,9 @@ tr:nth-child(3) td{
     border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-style: dashed 1px;
+    @media screen and (max-width: 400px){
+        width: 150px;
+    }
 }
 
 .card-price__button-container{

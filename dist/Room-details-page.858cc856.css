@@ -954,6 +954,13 @@
   padding: 40px 29px 30px 30px;
   height: 511px;
 }
+@media screen and (max-width: 400px) {
+  .card-price__container {
+    width: 310px;
+    height: 470px;
+    padding: 10px;
+  }
+}
 
 .card-price__room-details__container {
   display: flex;
@@ -1036,6 +1043,11 @@
   border-collapse: collapse;
   box-sizing: border-box;
 }
+@media screen and (max-width: 400px) {
+  .card-price__price-details-table {
+    font-size: 11px;
+  }
+}
 
 .card-price__price-details-table tr td {
   margin: 0;
@@ -1074,6 +1086,11 @@ tr:nth-child(3) td {
   width: 59px;
   text-align: right;
   vertical-align: top;
+}
+@media screen and (max-width: 400px) {
+  .card-price__price-details__cell-col3 {
+    width: 45px;
+  }
 }
 
 .card-price__price-details__info-label {
@@ -1117,6 +1134,11 @@ tr:nth-child(3) td {
   border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-style: dashed 1px;
+}
+@media screen and (max-width: 400px) {
+  .card-price__total__border {
+    width: 150px;
+  }
 }
 
 .card-price__button-container {
@@ -1256,6 +1278,11 @@ tr:nth-child(3) td {
   padding: 0;
   margin-left: 30px;
 }
+@media screen and (max-width: 400px) {
+  .piechart__legend {
+    margin-left: 15px;
+  }
+}
 
 .piechart__legend__line {
   margin: 0;
@@ -1293,6 +1320,11 @@ tr:nth-child(3) td {
   display: inline-block;
   margin-left: 4px;
 }
+@media screen and (max-width: 400px) {
+  .piechart__legend__line__text {
+    font-size: 12px;
+  }
+}
 
 .room-details__container {
   margin: 0;
@@ -1313,6 +1345,11 @@ tr:nth-child(3) td {
   grid-template-columns: 68.125% 31.875%;
   column-gap: 0;
   row-gap: 0;
+}
+@media screen and (max-width: 1250px) {
+  .room-details__image__container {
+    height: 50vw;
+  }
 }
 
 .room-details__image1 {
@@ -1356,10 +1393,54 @@ tr:nth-child(3) td {
   column-gap: 70px;
   row-gap: 10px;
 }
+@media screen and (max-width: 1370px) {
+  .room-details__info__container {
+    padding: 70px 5vw;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .room-details__info__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "comfort-icons  card-price" "piechart card-price" "reviews      reviews" "rules cancel";
+    column-gap: 5vw;
+    row-gap: 5vh;
+  }
+}
+@media screen and (max-width: 820px) {
+  .room-details__info__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "card-price card-price" "comfort-icons piechart" "reviews reviews" "rules cancel";
+    row-gap: 5vw;
+    padding: 5vw 5vw;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 730px) {
+  .room-details__info__container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "card-price" "comfort-icons" "piechart" "reviews" "rules" "cancel";
+    row-gap: 5vw;
+    padding: 5vw 5vw;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .room-details__info__container {
+    row-gap: 10vw;
+  }
+}
 
-.room-details__info__icons__header {
-  margin: 0;
-  padding: 0;
+@media screen and (max-width: 730px) {
+  .room-details__info__piechart__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .room-details__info__piechart__container {
+    padding: 3vw;
+  }
 }
 
 .room-details__info__piechart__header {
@@ -1380,11 +1461,28 @@ tr:nth-child(3) td {
   grid-area: comfort-icons;
   margin-bottom: 5px;
 }
+@media screen and (max-width: 730px) {
+  .room-details__info__comfort-icons__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.room-details__info__icons__header {
+  margin: 0;
+  padding: 0;
+}
 
 .room-details__info__reviews__container {
   margin: 0;
   padding: 0;
   grid-area: reviews;
+}
+@media screen and (max-width: 400px) {
+  .room-details__info__reviews__container {
+    padding: 3vw;
+  }
 }
 
 .room-details__info__reviews__header__container {
@@ -1419,12 +1517,25 @@ tr:nth-child(3) td {
   padding: 0;
   grid-area: card-price;
 }
+@media screen and (max-width: 820px) {
+  .room-details__info__card-price__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .room-details__info__rules__container {
   margin: 0;
   padding: 0;
   grid-area: rules;
   margin-top: 23px;
+}
+@media screen and (max-width: 400px) {
+  .room-details__info__rules__container {
+    padding: 3vw;
+    margin-top: 0;
+  }
 }
 
 .room-details__info__rules__header {
@@ -1433,6 +1544,11 @@ tr:nth-child(3) td {
   padding-left: 20px;
   margin-bottom: 17px;
 }
+@media screen and (max-width: 730px) {
+  .room-details__info__rules__header {
+    text-align: center;
+  }
+}
 
 .room-details__info__cancel__container {
   margin: 0;
@@ -1440,10 +1556,21 @@ tr:nth-child(3) td {
   grid-area: cancel;
   margin-top: 23px;
 }
+@media screen and (max-width: 400px) {
+  .room-details__info__cancel__container {
+    padding: 3vw;
+    margin-top: 0;
+  }
+}
 
 .room-details__info__cancel__header {
   margin: 0;
   padding: 0;
   margin-bottom: 17px;
+}
+@media screen and (max-width: 730px) {
+  .room-details__info__cancel__header {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=/Room-details-page.858cc856.css.map */
