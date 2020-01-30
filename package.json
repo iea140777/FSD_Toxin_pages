@@ -5,8 +5,7 @@
   "main": "index.pug",
   "scripts": {
     "start": "parcel index.pug",
- 
-    "build":  "parcel build index.pug -d docs"
+    "build":  "parcel build index.pug -d docs --public-url ./"
 
   },
   "keywords": [],
