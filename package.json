@@ -6,7 +6,8 @@
   "scripts": {
     "start": "parcel index.pug",
  
-    "build": "parcel build index.pug pages/Landing-page/Landing-page.pug pages/Registration-page/Registration-page.pug  pages/Room-details-page/Room-details-page.pug pages/Search-room-page/Search-room-page.pug  pages/UIkit-cards/UIkit-cards.pug pages/UIkit-colors-fonts/UIkit-colors-fonts.pug  pages/UIkit-form-elements/UIkit-form-elements.pug pages/UIkit-headers-footers/UIkit-headers-footers.pug -d docs --public-url ./"
+    "build":  "parcel build index.pug -d docs"
+
   },
   "keywords": [],
   "author": "",
