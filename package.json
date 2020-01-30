@@ -5,7 +5,8 @@
   "main": "index.pug",
   "scripts": {
     "start": "parcel index.pug",
-    "build": "parcel build index.pug -d docs --public-url ./"
+ 
+    "build": "parcel build index.pug -d docs pages/Landing-page/Landing-page.pug -d docs/Landing-page pages/Registration-page/Registration-page.pug -d docs/Registration-page pages/Room-details-page/Room-details-page.pug -d docs/Room-details-page pages/Search-room-page/Search-room-page.pug -d docs/Search-room-page pages/UIkit-cards/UIkit-cards.pug -d docs/UIkit-cards pages/UIkit-colors-fonts/UIkit-colors-fonts.pug -d docs/UIkit-color-fonts pages/UIkit-form-elements/UIkit-form-elements.pug -d docs/UIkit-form-elements pages/UIkit-headers-footers/UIkit-headers-footers.pug -d docs/UIkit-headers-footers --public-url ./"
   },
   "keywords": [],
   "author": "",
