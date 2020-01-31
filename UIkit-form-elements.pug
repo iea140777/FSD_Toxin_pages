@@ -28,18 +28,18 @@ block main
         h3.form-elements__element-title Masked text field
         +textfield('text', 'Date', 'ДД.ММ.ГГГГ', 'input_date')
       div.form-elements__element-container
-        include ../../src/blocks/date-dropdown/date-dropdown.pug
+        include src/blocks/date-dropdown/date-dropdown.pug
       div.form-elements__element-container
-        include ../../src/blocks/filter-date-dropdown/filter-date-dropdown.pug
+        include src/blocks/filter-date-dropdown/filter-date-dropdown.pug
       div.form-elements__element-container
         h3.form-elements__element-title Subscription text field
         +textfield('email', 'user-Email', 'Email', 'input_arrow')
     div.form-elements__col
       div.form-elements__element-container
-        include ../../src/blocks/checkbox-buttons/checkbox-buttons.pug
+        include src/blocks/checkbox-buttons/checkbox-buttons.pug
       div.form-elements__element-container
         h3.form-elements__element-title Radio buttons
-        include ../../src/blocks/radio-button/radio-button.pug
+        include src/blocks/radio-button/radio-button.pug
       div.form-elements__element-container
         h3.form-elements__element-title Toggle
         div.toggle__container
@@ -50,39 +50,39 @@ block main
           label.toggle__label(for="checkbox2") Получать спецпредложения
       div.form-elements__element-container
         h3.form-elements__element-title Like button
-        include ../../src/blocks/like-button/like-button.pug
+        include src/blocks/like-button/like-button.pug
       div.form-elements__element-container
         h3.form-elements__element-title Rate button
-        include ../../src/blocks/rate-button/rate-button.pug
+        include src/blocks/rate-button/rate-button.pug
     div.form-elements__col
       div.form-elements__element-container
-        include ../../src/blocks/range-slider/range-slider.pug
+        include src/blocks/range-slider/range-slider.pug
       div.form-elements__element-container
-        include ../../src/blocks/buttons/buttons.pug
+        include src/blocks/buttons/buttons.pug
       div.form-elements__element-container
         h3.form-elements__element-title Pagination
-        include ../../src/blocks/pagination/pagination.pug
+        include src/blocks/pagination/pagination.pug
   div.form-elements__container2 
     div.form-elements__element-container
-      include ../../src/blocks/dropdown-facilities/dropdown-facilities.pug
-      include ../../src/blocks/dropdown-facilities/dropdown-facilities.pug
+      include src/blocks/dropdown-facilities/dropdown-facilities.pug
+      include src/blocks/dropdown-facilities/dropdown-facilities.pug
     div.form-elements__element-container
-      include ../../src/blocks/dropdown-guests/dropdown-guests.pug
+      include src/blocks/dropdown-guests/dropdown-guests.pug
     div.form-elements__element-container
-      include ../../src/blocks/dropdown-guests/dropdown-guests.pug
+      include src/blocks/dropdown-guests/dropdown-guests.pug
     div.form-elements__element-container
-      include ../../src/blocks/exp-checkbox/exp-checkbox.pug
-      include ../../src/blocks/exp-checkbox/exp-checkbox.pug
+      include src/blocks/exp-checkbox/exp-checkbox.pug
+      include src/blocks/exp-checkbox/exp-checkbox.pug
     div.form-elements__element-container
-      include ../../src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.pug
+      include src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.pug
     div.form-elements__element-container
       h3.form-elements__element-title Bullet list
-      include ../../src/blocks/bullet-list/bullet-list.pug  
+      include src/blocks/bullet-list/bullet-list.pug  
     div.form-elements__element-container
-      include ../../src/blocks/comfort-icons/comfort-icons.pug
+      include src/blocks/comfort-icons/comfort-icons.pug
     div.form-elements__element-container.form-elements__review-element-container
       +review({
-            imageUrl:'review__photo1.png', 
+            imageUrl:'pages/UIkit-form-elements/review__photo1.png', 
             likeAmount: '12', 
             likeStatus: 'checked', 
             author: 'Мурад Сарафанов', 
@@ -92,18 +92,18 @@ block main
       
      
 append scripts
-  script(src="../../src/blocks/exp-checkbox/exp-checkbox.js") 
-  script(src="../../src/blocks/range-slider/range-slider.js")
-  script(src="../../src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
+  script(src="src/blocks/exp-checkbox/exp-checkbox.js") 
+  script(src="src/blocks/range-slider/range-slider.js")
+  script(src="src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
   //- script(src="../../src/blocks/datepicker/datepicker.js")
-  script(src="../../src/blocks/date-dropdown/date-dropdown.js")
-  script(src="../../src/blocks/filter-date-dropdown/filter-date-dropdown.js")
-  script(src="../../src/blocks/dropdown-guests/spin-number-plugin.js")
-  script(src="../../src/blocks/dropdown-facilities/dropdown-facilities.js")
-  script(src="../../src/mixins/like-button-mixin/like-button-mixin.js")
-  script(src="../../src/blocks/range-slider/jquery-ui-1.12.1.custom/jquery-ui.min.js")
-  script(src="../../src/mixins/button-mixin/button-mixin.js")
-  script(src="../../src/blocks/dropdown-guests/dropdown-guests.js")
-  script(src="../../src/mixins/textfield-mixin/textfield-mixin.js")
-  script(src="../../src/mixins/textfield-mixin/jquery.maskedinput.js")
+  script(src="src/blocks/date-dropdown/date-dropdown.js")
+  script(src="src/blocks/filter-date-dropdown/filter-date-dropdown.js")
+  script(src="src/blocks/dropdown-guests/spin-number-plugin.js")
+  script(src="src/blocks/dropdown-facilities/dropdown-facilities.js")
+  script(src="src/mixins/like-button-mixin/like-button-mixin.js")
+  script(src="src/blocks/range-slider/jquery-ui-1.12.1.custom/jquery-ui.min.js")
+  script(src="src/mixins/button-mixin/button-mixin.js")
+  script(src="src/blocks/dropdown-guests/dropdown-guests.js")
+  script(src="src/mixins/textfield-mixin/textfield-mixin.js")
+  script(src="src/mixins/textfield-mixin/jquery.maskedinput.js")
   

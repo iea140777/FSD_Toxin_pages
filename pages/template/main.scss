@@ -1,4 +1,4 @@
-// @import "./src/blocks/header-logo/header-logo.scss";
+@import "/pages/template/variables.scss";
 body {
     margin: 0;
     padding: 0;
@@ -49,9 +49,8 @@ h1, h2, h3 {
 .pages-list__container {
     margin: 0;
     padding: 0;
-    // width: 100%;
-    padding: 100px 100px 100px 100px;
-    margin: 100px;
+    padding: 5vh 5vw 5vh 5vw;
+    margin: 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,21 +61,41 @@ h1, h2, h3 {
     box-sizing: border-box;
 }
 
+.main__header{
+    margin: 0;
+    padding: 0;
+    display: block;
+    color: $color__dark-shade75;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+
+.main__header2{
+    margin: 0;
+    padding: 0;
+    display: block;
+    color: $color__dark-shade50;
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 20px;
+}
+
 .pages-list__header {
     margin: 0;
     padding: 0;
     display: block;
     color:#BC9CFF;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .pages-list__list {
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 15px;
+    padding-bottom: 20px;
 }
         
 .pages-list__list-item {
@@ -87,7 +106,7 @@ h1, h2, h3 {
 }
 
 .pages-list__list-item a h3 {
-    color:   rgba(31, 32, 65, 0.75);
+    color:   rgba(31, 32, 65, 0.50);
     cursor: pointer;
     &:hover{
         // color:   rgba(31, 32, 65, 0.75);

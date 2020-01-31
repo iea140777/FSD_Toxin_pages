@@ -13,7 +13,7 @@
     color: rgba(31, 32, 65, 0.5);
     width: 320px;
     position: absolute;
-    left: -100000px;
+    // left: -100000px;
     opacity: 0;
     transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
     transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;

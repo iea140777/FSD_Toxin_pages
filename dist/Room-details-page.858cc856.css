@@ -592,7 +592,6 @@
   color: rgba(31, 32, 65, 0.5);
   width: 320px;
   position: absolute;
-  left: -100000px;
   opacity: 0;
   transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
@@ -1491,6 +1490,11 @@ tr:nth-child(3) td {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 400px) {
+  .room-details__info__reviews__header__container {
+    flex-direction: column;
+  }
+}
 
 .room-details__info__reviews__header1 {
   margin: 0;
@@ -1505,6 +1509,11 @@ tr:nth-child(3) td {
   display: inline-block;
   vertical-align: bottom;
   color: rgba(31, 32, 65, 0.5);
+}
+@media screen and (max-width: 400px) {
+  .room-details__info__reviews__header2 {
+    font-size: 12px;
+  }
 }
 
 .room-details__info__review1__container {
@@ -1571,6 +1580,12 @@ tr:nth-child(3) td {
 @media screen and (max-width: 730px) {
   .room-details__info__cancel__header {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .datepicker.-from-bottom- {
+    transform: translateX(-13px);
   }
 }
 /*# sourceMappingURL=/Room-details-page.858cc856.css.map */

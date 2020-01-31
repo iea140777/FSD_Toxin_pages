@@ -83,6 +83,7 @@
     }
 }
 
+
 .search-room__filter__container_open{
     @media screen and (max-width: 660px){
         display:grid;
@@ -158,17 +159,8 @@
     padding-right: 8%;
 }
 
-// @media (max-width: 1000px) {
-//     .search-room__search-results__container {
-//     grid-template-columns: 270px 270px;
-//     }
-//     .search-room__container{
-//     padding-right: 40px;
-//     padding-left: 40px;  
-//     };
-//     .search-room__search-results__header{
-//         grid-column-start: 1;
-//         grid-column-end: 3;
-//         grid-row-start: 1;
-//     }
-//   }
+.datepicker.-from-bottom- {
+    @media screen and (max-width: 400px){
+      transform: translateX(33px);
+  };
+}

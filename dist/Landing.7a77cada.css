@@ -132,7 +132,6 @@
   color: rgba(31, 32, 65, 0.5);
   width: 320px;
   position: absolute;
-  left: -100000px;
   opacity: 0;
   transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
@@ -919,8 +918,8 @@
 @media screen and (max-width: 400px) {
   .card-search__container {
     width: 315px;
-    height: 280px;
-    padding: 10px 10px 10px 10px;
+    height: 300px;
+    padding: 20px 10px 20px 10px;
     align-items: center;
   }
 }
@@ -1052,6 +1051,12 @@
   color: rgba(31, 32, 65, 0.75);
   text-align: right;
   z-index: 100;
+}
+
+@media screen and (max-width: 400px) {
+  .datepicker.-from-bottom- {
+    transform: translateX(-13px);
+  }
 }
 
 /*# sourceMappingURL=/Landing.7a77cada.css.map */

@@ -171,6 +171,9 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 400px){
+        flex-direction: column;
+    };
 }
 
 .room-details__info__reviews__header1 {
@@ -186,6 +189,9 @@
     display: inline-block;
     vertical-align: bottom;
     color: $color__dark-shade50;
+    @media screen and (max-width: 400px){
+       font-size: 12px;
+    };
 }
 
 .room-details__info__review1__container{
@@ -245,3 +251,8 @@
     }
 }
 
+.datepicker.-from-bottom- {
+    @media screen and (max-width: 400px){
+      transform: translateX(-13px);
+  };
+}
