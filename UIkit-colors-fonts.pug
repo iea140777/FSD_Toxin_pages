@@ -1,0 +1,19 @@
+extends pages/template/layout.pug
+prepend head
+  - var lang="en"
+  - var myTitle = "Ui_Kit_colors&types"
+  - var myDesc = "Toxin_hotel_search"
+append links
+  link(href="pages/UIkit-colors-fonts/UIkit-colors-fonts.scss" rel ="stylesheet")
+  link(href="src/blocks/logo/logo.scss" rel ="stylesheet")
+  link(href="src/blocks/UIkit-fonts/UIkit-fonts.scss" rel ="stylesheet")
+  link(href="src/blocks/UIkit-colors/UIkit-colors.scss" rel ="stylesheet")
+ 
+block main
+  div.UIkit-colors-fonts__container
+    include src/blocks/logo/logo.pug
+    div.UIkit-colors-fonts
+      div.UIkit-colors-fonts__colors
+        include src/blocks/UIkit-colors/UIkit-colors.pug
+      div.UIkit-colors-fonts__fonts
+        include src/blocks/UIkit-fonts/UIkit-fonts.pug

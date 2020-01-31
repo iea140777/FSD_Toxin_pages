@@ -7,7 +7,7 @@ mixin footer(footerStatus)
           div.footer__navigation-section
             div.footer__column1__logo
               div.footer__logo
-                include ../header-logo/header-logo.pug
+                include src/blocks/header-logo/header-logo.pug
               p.footer__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
             nav.footer__column2__menu
               h3.footer__menu-title Navigation
@@ -35,19 +35,19 @@ mixin footer(footerStatus)
             span.footer__copyright Copyright © 2018 Toxin UI Kit. All rights reserved.
             div.footer__social-icons
               a.footer__social-icons__button(href="#" onclick="return false;")
-                img.footer__social-icons__image(src='../../src/blocks/footer/twitter.png' alt='Logo')
+                img.footer__social-icons__image(src='/src/blocks/footer/twitter.png' alt='Logo')
               a.footer__social-icons__button(href="#" onclick="return false;")
-                img.footer__social-icons__image(src='../../src/blocks/footer/facebook.png' alt='Logo')
+                img.footer__social-icons__image(src='/src/blocks/footer/facebook.png' alt='Logo')
               a.footer__social-icons__button(href="#" onclick="return false;")
-                img.footer__social-icons__image(src='../../src/blocks/footer/Instagram.png' alt='Logo')
+                img.footer__social-icons__image(src='/src/blocks/footer/Instagram.png' alt='Logo')
       when 'light'
         footer.footer_light
           include ../header-logo/header-logo.pug
           p.footer__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
           div.footer__social-icons
             a.footer__social-icons__button(href="#" onclick="return false;")
-              img.footer__social-icons__image(src='../../src/blocks/footer/twitter.png' alt='Logo')
+              img.footer__social-icons__image(src='src/blocks/footer/twitter.png' alt='Logo')
             a.footer__social-icons__button(href="#" onclick="return false;")
-              img.footer__social-icons__image(src='../../src/blocks/footer/facebook.png' alt='Logo')
+              img.footer__social-icons__image(src='src/blocks/footer/facebook.png' alt='Logo')
             a.footer__social-icons__button(href="#" onclick="return false;")
-              img.footer__social-icons__image(src='../../src/blocks/footer/Instagram.png' alt='Logo')
+              img.footer__social-icons__image(src='src/blocks/footer/Instagram.png' alt='Logo')

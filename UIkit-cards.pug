@@ -1,0 +1,56 @@
+extends ../template/layout.pug
+prepend head
+  - var lang="en"
+  - var myTitle = "Ui_Kit_cards"
+  - var myDesc = "Toxin UI Kit"
+append links
+  link(href="pages/UIkit-cards/UIkit-cards.scss" rel ="stylesheet")
+  
+ 
+block main
+  include src/mixins/card-room-mixin/card-room-mixin.pug
+  div.UIkit-cards__container
+    include src/blocks/logo/logo.pug
+    div.UIkit-cards__cards-container
+      div.UIkit-cards__col-container
+        include src/blocks/card-search/card-search.pug
+        include src/blocks/card-registration/card-registration.pug
+      div.UIkit-cards__col-container
+        include src/blocks/card-price/card-price.pug
+        include src/blocks/card-login/card-login.pug
+      div.UIkit-cards__col-container
+        div.UIkit-cards__datepicker
+        +card-room-mixin({
+          photo1: 'src/photos/photo1.jpg',
+          photo2: 'src/photos/grey.png',
+          roomNumber: '888',
+          roomCategory: 'люкс',
+          roomPrice: '9 990',
+          roomRating: '5',
+          roomReviews: '145',
+          noArrows: 'Arrows'
+          })
+        +card-room-mixin({
+          photo1: 'src/photos/photo2.jpg',
+          photo2: 'src/photos/grey.png',
+          roomNumber: '840',
+          roomCategory: 'люкс',
+          roomPrice: '9 900',
+          roomRating: '4',
+          roomReviews: '65',
+          noArrows: 'noArrows'
+          })  
+append scripts
+  script(src="src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
+  script(src="pages/UIkit-cards/UIkit-cards.js")
+  //- script(src="../../src/blocks/date-dropdown/date-dropdown.js")
+  //- script(src="../../src/blocks/filter-date-dropdown/filter-date-dropdown.js")
+  script(src="src/blocks/datepicker/datepicker.js")
+  //- script(src="src/blocks/dropdown-guests/spin-number-plugin.js")
+  //- script(src="../../src/blocks/dropdown-facilities/dropdown-facilities.js")
+  script(src="src/mixins/button-mixin/button-mixin.js")
+  //- script(src="../../src/blocks/dropdown-guests/dropdown-guests.js")
+  script(src="src/mixins/card-room-mixin/slick-slider/slick-1.8.1/slick/slick.min.js")
+  script(src="src/mixins/card-room-mixin/slick-slider/slick-slider.js")
+  script(src="src/mixins/textfield-mixin/textfield-mixin.js")
+  script(src="src/mixins/textfield-mixin/jquery.maskedinput.js")
