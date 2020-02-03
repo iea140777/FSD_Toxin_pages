@@ -1,8 +1,8 @@
 extends pages/template/site-page-layout.pug
 prepend head
   - var lang="ru"
-  - var myTitle = "Toxin Hotel Search"
-  - var myDesc = "Landing page"
+  - var myTitle = "Toxin | Main"
+  - var myDesc = "Toxin Landing page"
 append links
   link(href="pages/Landing-page/Landing.scss" rel ="stylesheet")
 
@@ -17,7 +17,7 @@ block pageContent
   div.landing__card-search-container
     include src/blocks/card-search/card-search.pug
   
-  
+
 append scripts
   script(src="pages/Landing-page/Landing.js")   
   script(src="src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
