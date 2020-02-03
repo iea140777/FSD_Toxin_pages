@@ -21,9 +21,9 @@ block main
         h3.form-elements__element-title Text field
         +textfield('tetx', 'user-Email', 'This is pretty awesome')
       div.form-elements__element-container
-        h3.form-elements__element-title Dropdown
-        //- include ../../src/blocks/dropdown-guests/dropdown-guests.pug
-        +textfield('text', 'Guests', 'Сколько гостей', 'input_open-icon')
+        //- h3.form-elements__element-title Dropdown
+        include src/blocks/dropdown-guests/dropdown-guests.pug
+        //- +textfield('text', 'Guests', 'Сколько гостей', 'input_open-icon')
       div.form-elements__element-container
         h3.form-elements__element-title Masked text field
         +textfield('text', 'Date', 'ДД.ММ.ГГГГ', 'input_date')
@@ -95,15 +95,16 @@ append scripts
   script(src="src/blocks/exp-checkbox/exp-checkbox.js") 
   script(src="src/blocks/range-slider/range-slider.js")
   script(src="src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
-  //- script(src="../../src/blocks/datepicker/datepicker.js")
   script(src="src/blocks/date-dropdown/date-dropdown.js")
   script(src="src/blocks/filter-date-dropdown/filter-date-dropdown.js")
+  script(src="src/blocks/datepicker/datepicker.js")
   script(src="src/blocks/dropdown-guests/spin-number-plugin.js")
+  script(src="src/blocks/dropdown-guests/dropdown-guests.js")
   script(src="src/blocks/dropdown-facilities/dropdown-facilities.js")
   script(src="src/mixins/like-button-mixin/like-button-mixin.js")
   script(src="src/blocks/range-slider/jquery-ui-1.12.1.custom/jquery-ui.min.js")
   script(src="src/mixins/button-mixin/button-mixin.js")
-  script(src="src/blocks/dropdown-guests/dropdown-guests.js")
-  script(src="src/mixins/textfield-mixin/textfield-mixin.js")
   script(src="src/mixins/textfield-mixin/jquery.maskedinput.js")
+  script(src="src/mixins/textfield-mixin/textfield-mixin.js")
+  script(src="pages/UIkit-form-elements/UIkit-form-elements.js")
   

@@ -118,70 +118,80 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"src/blocks/dropdown-guests/dropdown-guests.js":[function(require,module,exports) {
-$('.dropdown-guests__input').after('<button class="dropdown-guests__expand-button", type="button", formaction="#"><i class="material-icons dropdown-guests_arrow">expand_more</i></button>');
-$(".dropdown-guests__expand-button, .dropdown-guests__input").click(function () {
-  $(".dropdown-guests__list").toggleClass('dropdown-guests__list_hidden');
-  $(".dropdown-guests__expand-button").toggleClass("dropdown-guests__close-icon");
+var InputText = '';
+$('.dropdown-guests__container').each(function () {
+  $(this).find('.dropdown-guests__input').after('<button class="dropdown-guests__expand-button", type="button", formaction="#"><i class="material-icons dropdown-guests_arrow">expand_more</i></button>');
+  $(this).find(".dropdown-guests__expand-button, .dropdown-guests__input").click(function () {
+    $(this).parent().find(".dropdown-guests__list").toggleClass('dropdown-guests__list_hidden');
+    $(this).parent().find(".dropdown-guests__expand-button").toggleClass("dropdown-guests__close-icon");
+  });
+  $(this).find(".dropdown-guests__list .counter").htmlNumberSpinner();
+  $(this).find('.dropdown__counter1 .decrementer, .dropdown__counter2 .decrementer, .dropdown__counter3 .decrementer').addClass("decrementer_disabled");
+  $(this).find('.incrementer, .decrementer').click(function () {
+    var counter1 = $(this).parent().parent().parent().find(".dropdown__counter1 .number-input");
+    var counter2 = $(this).parent().parent().parent().find(".dropdown__counter2 .number-input");
+    var counter3 = $(this).parent().parent().parent().find(".dropdown__counter3 .number-input");
+    var GuestsNumber = Number(counter1.val()) + Number(counter2.val()) + Number(counter3.val());
+    var Guest = '';
+
+    if (GuestsNumber == 1) {
+      Guest = ' гость';
+    } else if (GuestsNumber >= 2 && GuestsNumber <= 4) {
+      Guest = ' гостя';
+    } else if (GuestsNumber >= 5) {
+      Guest = ' гостей';
+    } else if (GuestsNumber == 0) {
+      Guest = 'Выберите кол-во гостей';
+      GuestsNumber = '';
+    }
+
+    InputText = GuestsNumber + Guest;
+    $(this).parent().parent().parent().parent().find(".dropdown-guests__input").val(InputText);
+
+    if (Number(counter1.val()) >= 1) {
+      $('.dropdown__counter1 .decrementer').removeClass("decrementer_disabled");
+    } else {
+      $('.dropdown__counter1 .decrementer').addClass("decrementer_disabled");
+    }
+
+    if (Number(counter2.val()) >= 1) {
+      $('.dropdown__counter2 .decrementer').removeClass("decrementer_disabled");
+    } else {
+      $('.dropdown__counter2 .decrementer').addClass("decrementer_disabled");
+    }
+
+    if (Number(counter3.val()) >= 1) {
+      $('.dropdown__counter3 .decrementer').removeClass("decrementer_disabled");
+    } else {
+      $('.dropdown__counter3 .decrementer').addClass("decrementer_disabled");
+    }
+
+    if (GuestsNumber > 0) {
+      $(this).parent().parent().parent().parent().find('.dropdown__button_clear').removeClass("invisible");
+    } else if (GuestsNumber < 1) {
+      $(this).parent().parent().parent().parent().find('.dropdown__button_clear').addClass("invisible");
+    }
+  });
+  $(this).find('.dropdown__button_apply').click(function () {
+    $(this).parent().parent().parent().find(".dropdown-guests__list").toggleClass('dropdown-guests__list_hidden');
+    $(this).parent().parent().parent().find(".dropdown-guests__expand-button").toggleClass("dropdown-guests__close-icon");
+  });
+  $(this).find('.dropdown__button_clear').click(function () {
+    $(this).parent().parent().parent().find(".dropdown-guests__input").val("Сколько гостей");
+    $(this).parent().parent().parent().find(".dropdown__counter1 .number-input").val(0);
+    $(this).parent().parent().parent().find(".dropdown__counter2 .number-input").val(0);
+    $(this).parent().parent().parent().find(".dropdown__counter3 .number-input").val(0);
+    $(this).addClass("invisible");
+    $(this).parent().parent().parent().find('.dropdown__counter1 .decrementer, .dropdown__counter2 .decrementer, .dropdown__counter3 .decrementer').addClass("decrementer_disabled");
+  });
 });
-$(".dropdown-guests__list .counter").htmlNumberSpinner();
-$('.dropdown__counter1 .decrementer, .dropdown__counter2 .decrementer, .dropdown__counter3 .decrementer').addClass("decrementer_disabled");
-$('.incrementer, .decrementer').click(function () {
-  var counter1 = $(".dropdown__counter1 .number-input");
-  var counter2 = $(".dropdown__counter2 .number-input");
-  var counter3 = $(".dropdown__counter3 .number-input");
-  var GuestsNumber = Number(counter1.val()) + Number(counter2.val()) + Number(counter3.val());
-  var Guest = '';
-  var InputText = '';
-
-  if (GuestsNumber == 1) {
-    Guest = ' гость';
-  } else if (GuestsNumber >= 2 && GuestsNumber <= 4) {
-    Guest = ' гостя';
-  } else if (GuestsNumber >= 5) {
-    Guest = ' гостей';
-  } else if (GuestsNumber == 0) {
-    Guest = 'Выберите кол-во гостей';
-    GuestsNumber = '';
-  }
-
-  InputText = GuestsNumber + Guest;
-  $(".dropdown-guests__input").val(InputText);
-
-  if (Number(counter1.val()) >= 1) {
-    $('.dropdown__counter1 .decrementer').removeClass("decrementer_disabled");
-  } else {
-    $('.dropdown__counter1 .decrementer').addClass("decrementer_disabled");
-  }
-
-  if (Number(counter2.val()) >= 1) {
-    $('.dropdown__counter2 .decrementer').removeClass("decrementer_disabled");
-  } else {
-    $('.dropdown__counter2 .decrementer').addClass("decrementer_disabled");
-  }
-
-  if (Number(counter3.val()) >= 1) {
-    $('.dropdown__counter3 .decrementer').removeClass("decrementer_disabled");
-  } else {
-    $('.dropdown__counter3 .decrementer').addClass("decrementer_disabled");
-  }
-
-  if (GuestsNumber > 0) {
-    $('.dropdown__button_clear').removeClass("invisible");
-  } else if (GuestsNumber < 1) {
-    $('.dropdown__button_clear').addClass("invisible");
-  }
-});
-$('.dropdown__button_apply').click(function () {
-  $(".dropdown-guests__list").toggleClass('dropdown-guests__list_hidden');
-  $(".dropdown-guests__expand-button").toggleClass("dropdown-guests__close-icon");
-});
-$('.dropdown__button_clear').click(function () {
-  $(".dropdown-guests__input").val("Сколько гостей");
-  $(".dropdown__counter1 .number-input").val(0);
-  $(".dropdown__counter2 .number-input").val(0);
-  $(".dropdown__counter3 .number-input").val(0);
-  $('.dropdown__button_clear').addClass("invisible");
-  $('.dropdown__counter1 .decrementer, .dropdown__counter2 .decrementer, .dropdown__counter3 .decrementer').addClass("decrementer_disabled");
+$(function () {
+  $(document).click(function (event) {
+    if ($(event.target).closest(".dropdown-guests__expand-button, .dropdown-guests__input, .dropdown-guests__list").length) return;
+    $(".dropdown-guests__list").addClass('dropdown-guests__list_hidden');
+    $(".dropdown-guests__expand-button").removeClass("dropdown-guests__close-icon");
+    event.stopPropagation();
+  });
 });
 },{}],"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -211,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59873" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50699" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

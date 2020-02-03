@@ -1,10 +1,10 @@
 div.date-dropdown__container
   form.date-dropdown__form
-    label.date-dropdown__label(for='start_one')
+    label.date-dropdown__label
       h3.date-dropdown__label-text Прибытие
-      input#start_one.date-dropdown__input(type='text' data-range="true" placeholder="ДД.ММ.ГГГГ" readonly data-multiple-dates-separator=" - ")
-    label.date-dropdown__label(for='end_one')
+      input.date-dropdown__input.date-dropdown__input-start-date(type='text' placeholder="ДД.ММ.ГГГГ" readonly data-multiple-dates-separator=" - ")
+    label.date-dropdown__label
       h3.date-dropdown__label-text Выезд
-      input#end_one.date-dropdown__input(type='text' placeholder='ДД.ММ.ГГГГ' readonly)
+      input.date-dropdown__input.date-dropdown__input-end-date(type='text' placeholder='ДД.ММ.ГГГГ' readonly)
 
 //- for Datepicker plugin script should be added on the page: script(src="../../src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")

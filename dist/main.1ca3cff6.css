@@ -69,6 +69,7 @@ h1, h2, h3 {
   font-size: 12px;
   line-height: 12px;
   padding-bottom: 20px;
+  text-transform: none;
 }
 
 .pages-list__header {
@@ -106,6 +107,26 @@ h1, h2, h3 {
   color: rgba(188, 156, 255, 0.75);
 }
 .pages-list__list-item a h3:visited {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.pages-list__repository-link {
+  margin-top: 15px;
+}
+.pages-list__repository-link a h3 {
+  text-transform: none;
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+}
+.pages-list__repository-link:hover {
+  color: #BC9CFF;
+}
+.pages-list__repository-link:active {
+  color: rgba(188, 156, 255, 0.5);
+}
+.pages-list__repository-link:visited {
   color: rgba(31, 32, 65, 0.25);
 }
 

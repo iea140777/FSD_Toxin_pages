@@ -118,18 +118,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"src/blocks/dropdown-facilities/dropdown-facilities.js":[function(require,module,exports) {
-$('<button class="dropdown-facilities__expand-button", type="button", formaction="#"><i class="material-icons dropdown_arrow">expand_more</i></button>').insertAfter(".dropdown-facilities__input");
-$(".dropdown-facilities__expand-button, .dropdown-facilities__input").click(function () {
-  $(".dropdown-facilities__list").toggleClass('dropdown-facilities__list_hidden');
-  $(".dropdown-facilities__expand-button").toggleClass("dropdown-facilities__close-icon");
-});
-$(".dropdown-facilities__list .counter").htmlNumberSpinner();
-$('.dropdown__counter4 .decrementer, .dropdown__counter5 .decrementer, .dropdown__counter6 .decrementer').addClass("decrementer_disabled");
-$(function () {
-  $('.incrementer, .decrementer').click(function () {
-    var counter4 = $(".dropdown__counter4 .number-input");
-    var counter5 = $(".dropdown__counter5 .number-input");
-    var counter6 = $(".dropdown__counter6 .number-input");
+$('.dropdown-facilities__container').each(function () {
+  $(this).find(".dropdown-facilities__input").after('<button class="dropdown-facilities__expand-button", type="button", formaction="#"><i class="material-icons dropdown_arrow">expand_more</i></button>');
+  $(this).find(".dropdown-facilities__expand-button, .dropdown-facilities__input").click(function () {
+    $(this).parent().find(".dropdown-facilities__list").toggleClass('dropdown-facilities__list_hidden');
+    $(this).parent().find(".dropdown-facilities__expand-button").toggleClass("dropdown-facilities__close-icon");
+  });
+  $(this).find(".dropdown-facilities__list .counter").htmlNumberSpinner();
+  $(this).find('.dropdown__counter4 .decrementer, .dropdown__counter5 .decrementer, .dropdown__counter6 .decrementer').addClass("decrementer_disabled");
+  $(this).find('.incrementer, .decrementer').click(function () {
+    var counter4 = $(this).parent().parent().parent().find(".dropdown__counter4 .number-input");
+    var counter5 = $(this).parent().parent().parent().find(".dropdown__counter5 .number-input");
+    var counter6 = $(this).parent().parent().parent().find(".dropdown__counter6 .number-input");
     var Bedroom = '';
     var Bed = '';
     var Bathroom = '';
@@ -165,25 +165,33 @@ $(function () {
       InputTextFacilities = Number(counter4.val()) + Bedroom + Number(counter5.val()) + Bed + Number(counter6.val()) + Bathroom;
     }
 
-    $(".dropdown-facilities__input").val(InputTextFacilities);
+    $(this).parent().parent().parent().parent().find(".dropdown-facilities__input").val(InputTextFacilities);
 
     if (Number(counter4.val()) >= 1) {
-      $('.dropdown__counter4 .decrementer').removeClass("decrementer_disabled");
+      $(this).parent().parent().parent().find('.dropdown__counter4 .decrementer').removeClass("decrementer_disabled");
     } else {
-      $('.dropdown__counter4 .decrementer').addClass("decrementer_disabled");
+      $(this).parent().parent().parent().find('.dropdown__counter4 .decrementer').addClass("decrementer_disabled");
     }
 
     if (Number(counter5.val()) >= 1) {
-      $('.dropdown__counter5 .decrementer').removeClass("decrementer_disabled");
+      $(this).parent().parent().parent().find('.dropdown__counter5 .decrementer').removeClass("decrementer_disabled");
     } else {
-      $('.dropdown__counter5 .decrementer').addClass("decrementer_disabled");
+      $(this).parent().parent().parent().find('.dropdown__counter5 .decrementer').addClass("decrementer_disabled");
     }
 
     if (Number(counter6.val()) >= 1) {
-      $('.dropdown__counter6 .decrementer').removeClass("decrementer_disabled");
+      $(this).parent().parent().parent().find('.dropdown__counter6 .decrementer').removeClass("decrementer_disabled");
     } else {
-      $('.dropdown__counter6 .decrementer').addClass("decrementer_disabled");
+      $(this).parent().parent().parent().find('.dropdown__counter6 .decrementer').addClass("decrementer_disabled");
     }
+  });
+});
+$(function () {
+  $(document).click(function (event) {
+    if ($(event.target).closest(".dropdown-facilities__expand-button, .dropdown-facilities__input, .dropdown-facilities__list").length) return;
+    $(".dropdown-facilities__list").addClass('dropdown-facilities__list_hidden');
+    $(".dropdown-facilities__expand-button").removeClass("dropdown-facilities__close-icon");
+    event.stopPropagation();
   });
 });
 },{}],"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -214,7 +222,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59873" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50699" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

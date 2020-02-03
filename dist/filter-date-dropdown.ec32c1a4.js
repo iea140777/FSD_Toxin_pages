@@ -136,8 +136,8 @@ $('.filter-date-dropdown__input').datepicker({
     months: 'yyyy',
     years: 'yyyy1 - yyyy2'
   }
-});
-$('.datepicker--buttons').append('<span class="datepicker--button -apply">Применить</span>');
+}); // $('.datepicker--buttons').append('<span class="datepicker--button -apply">Применить</span>');
+
 $('.filter-date-dropdown__input').click(function () {
   $(this).data('datepicker').show();
 });
@@ -172,7 +172,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59873" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50699" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,19 +1,19 @@
-$( '<button class="dropdown-facilities__expand-button", type="button", formaction="#"><i class="material-icons dropdown_arrow">expand_more</i></button>' ).insertAfter(".dropdown-facilities__input");
+$('.dropdown-facilities__container').each(function(){
+$(this).find(".dropdown-facilities__input").after( '<button class="dropdown-facilities__expand-button", type="button", formaction="#"><i class="material-icons dropdown_arrow">expand_more</i></button>');
 
-$(".dropdown-facilities__expand-button, .dropdown-facilities__input").click(function(){
-    $(".dropdown-facilities__list").toggleClass('dropdown-facilities__list_hidden');
-    $(".dropdown-facilities__expand-button").toggleClass("dropdown-facilities__close-icon");
+$(this).find(".dropdown-facilities__expand-button, .dropdown-facilities__input").click(function(){
+    $(this).parent().find(".dropdown-facilities__list").toggleClass('dropdown-facilities__list_hidden');
+    $(this).parent().find(".dropdown-facilities__expand-button").toggleClass("dropdown-facilities__close-icon");
 });
 
-$(".dropdown-facilities__list .counter").htmlNumberSpinner();
+$(this).find(".dropdown-facilities__list .counter").htmlNumberSpinner();
 
-$('.dropdown__counter4 .decrementer, .dropdown__counter5 .decrementer, .dropdown__counter6 .decrementer').addClass("decrementer_disabled");
+$(this).find('.dropdown__counter4 .decrementer, .dropdown__counter5 .decrementer, .dropdown__counter6 .decrementer').addClass("decrementer_disabled");
 
-$(function(){
-    $('.incrementer, .decrementer').click(function(){
-        let counter4 = $(".dropdown__counter4 .number-input");
-        let counter5 = $(".dropdown__counter5 .number-input");
-        let counter6 = $(".dropdown__counter6 .number-input");
+$(this).find('.incrementer, .decrementer').click(function(){
+        let counter4 = $(this).parent().parent().parent().find(".dropdown__counter4 .number-input");
+        let counter5 = $(this).parent().parent().parent().find(".dropdown__counter5 .number-input");
+        let counter6 = $(this).parent().parent().parent().find(".dropdown__counter6 .number-input");
         let Bedroom = '';
         let Bed = '';
         let Bathroom = '';
@@ -33,15 +33,23 @@ $(function(){
             {InputTextFacilities = 'Выберите удобства';}
             else {InputTextFacilities = Number(counter4.val()) + Bedroom + Number(counter5.val()) + Bed + Number(counter6.val()) + Bathroom;}
         
-        $(".dropdown-facilities__input").val(InputTextFacilities);
+            $(this).parent().parent().parent().parent().find(".dropdown-facilities__input").val(InputTextFacilities);
 
-        if (Number(counter4.val())>=1){$('.dropdown__counter4 .decrementer').removeClass("decrementer_disabled");}
-            else {$('.dropdown__counter4 .decrementer').addClass("decrementer_disabled");}
-        if (Number(counter5.val())>=1){$('.dropdown__counter5 .decrementer').removeClass("decrementer_disabled");}
-            else {$('.dropdown__counter5 .decrementer').addClass("decrementer_disabled");}
-        if (Number(counter6.val())>=1){$('.dropdown__counter6 .decrementer').removeClass("decrementer_disabled");}    
-            else {$('.dropdown__counter6 .decrementer').addClass("decrementer_disabled");}
+        if (Number(counter4.val())>=1){$(this).parent().parent().parent().find('.dropdown__counter4 .decrementer').removeClass("decrementer_disabled");}
+            else {$(this).parent().parent().parent().find('.dropdown__counter4 .decrementer').addClass("decrementer_disabled");}
+        if (Number(counter5.val())>=1){$(this).parent().parent().parent().find('.dropdown__counter5 .decrementer').removeClass("decrementer_disabled");}
+            else {$(this).parent().parent().parent().find('.dropdown__counter5 .decrementer').addClass("decrementer_disabled");}
+        if (Number(counter6.val())>=1){$(this).parent().parent().parent().find('.dropdown__counter6 .decrementer').removeClass("decrementer_disabled");}    
+            else {$(this).parent().parent().parent().find('.dropdown__counter6 .decrementer').addClass("decrementer_disabled");}
     });
 });
 
+$(function(){
+    $(document).click(function(event) {
+      if ($(event.target).closest(".dropdown-facilities__expand-button, .dropdown-facilities__input, .dropdown-facilities__list").length) return;
+      $(".dropdown-facilities__list").addClass('dropdown-facilities__list_hidden');
+        $(".dropdown-facilities__expand-button").removeClass("dropdown-facilities__close-icon");
+      event.stopPropagation();
+    });
+  });
 

@@ -19,7 +19,7 @@ $('.filter-date-dropdown__input').datepicker({
     }
 });
 
-$('.datepicker--buttons').append('<span class="datepicker--button -apply">Применить</span>');
+// $('.datepicker--buttons').append('<span class="datepicker--button -apply">Применить</span>');
 
 $('.filter-date-dropdown__input').click(function(){
   $(this).data('datepicker').show();

@@ -1,6 +1,6 @@
 
 $(".exp-checkbox__title__container").click(function(){
-    $(".exp-checkbox__list").toggle();
-    $(".exp-checkbox__open-icon").toggleClass("exp-checkbox__close-icon");
+    $(this).parent().find(".exp-checkbox__list").toggle();
+    $(this).find(".exp-checkbox__open-icon").toggleClass("exp-checkbox__close-icon");
 });
 

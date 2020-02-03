@@ -118,37 +118,43 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"src/blocks/date-dropdown/date-dropdown.js":[function(require,module,exports) {
-var _$$datepicker;
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-$('<i class="material-icons date-dropdown__arrow">expand_more</i>').insertAfter(".date-dropdown__input"); //- for Datepicker plugin script should be added on the page: script(src="../../src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
+$('.date-dropdown__container').each(function () {
+  $(".date-dropdown__input").after('<i class="material-icons date-dropdown__arrow">expand_more</i>');
+  var startDate = $(this).find(".date-dropdown__input-start-date");
+  var endDate = $(this).find(".date-dropdown__input-end-date");
+  var inputDatepicker = $(this).find('.date-dropdown__input-start-date');
+  $(inputDatepicker).each(function () {
+    var _$$datepicker;
 
-$('.date-dropdown__input').datepicker((_$$datepicker = {
-  onSelect: function onSelect(fd, d, picker) {
-    $("#start_one").val(fd.split("-")[0]);
-    $("#end_one").val(fd.split("-")[1]);
-  },
-  clearButton: true,
-  autoClose: false,
-  showEvent: '',
-  position: "right bottom",
-  offset: 5,
-  inline: false,
-  prevHtml: '<i class="material-icons arrow_back">arrow_back</i>',
-  nextHtml: '<i class="material-icons arrow_forward">arrow_forward</i>'
-}, _defineProperty(_$$datepicker, "position", 'bottom left'), _defineProperty(_$$datepicker, "navTitles", {
-  days: 'MM <i>yyyy</i>',
-  months: 'yyyy',
-  years: 'yyyy1 - yyyy2'
-}), _$$datepicker));
-$('.datepicker--buttons').append('<span class="datepicker--button -apply">Применить</span>');
-$('.date-dropdown__input').click(function () {
-  $('.date-dropdown__input').data('datepicker').show();
-});
-$('.datepicker--button.-apply').click(function () {
-  $('.date-dropdown__input').data('datepicker').hide();
-});
+    $(this).datepicker((_$$datepicker = {
+      onSelect: function onSelect(fd, d, picker) {
+        startDate.val(fd.split("-")[0]);
+        endDate.val(fd.split("-")[1]);
+      },
+      clearButton: true,
+      multipleDates: 2,
+      // Boolean or Number
+      range: true,
+      autoClose: false,
+      showEvent: '',
+      position: "right bottom",
+      offset: 5,
+      inline: false,
+      prevHtml: '<i class="material-icons arrow_back">arrow_back</i>',
+      nextHtml: '<i class="material-icons arrow_forward">arrow_forward</i>'
+    }, _defineProperty(_$$datepicker, "position", 'bottom left'), _defineProperty(_$$datepicker, "navTitles", {
+      days: 'MM <i>yyyy</i>',
+      months: 'yyyy',
+      years: 'yyyy1 - yyyy2'
+    }), _$$datepicker));
+  });
+  var myDatepicker = $(this).find(inputDatepicker).data('datepicker');
+  $(this).find('.date-dropdown__input').click(function () {
+    myDatepicker.show();
+  });
+}); //- for Datepicker plugin script should be added on the page: script(src="src/blocks/datepicker/air-datepicker/dist/js/datepicker.min.js")
 },{}],"../../Users/alexi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -177,7 +183,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59873" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50699" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
