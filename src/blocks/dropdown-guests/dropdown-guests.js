@@ -55,7 +55,8 @@ $('.dropdown-guests__container').each(function(){
         $(this).parent().parent().parent().find(".dropdown__counter3 .number-input").val(0);
         $(this).addClass("invisible");
         $(this).parent().parent().parent().find('.dropdown__counter1 .decrementer, .dropdown__counter2 .decrementer, .dropdown__counter3 .decrementer').addClass("decrementer_disabled");
-    });    
+    });
+    return InputText;    
 });
 
 $(function(){
@@ -66,3 +67,4 @@ $(function(){
       event.stopPropagation();
     });
   });
+
