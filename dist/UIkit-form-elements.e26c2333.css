@@ -2331,6 +2331,11 @@ a.ui-button:active,
   background-color: white;
   cursor: pointer;
   outline: none;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .decrementer_disabled {
@@ -2550,6 +2555,11 @@ a.ui-button:active,
   background-color: white;
   cursor: pointer;
   outline: none;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .decrementer_disabled {
