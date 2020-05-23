@@ -9,7 +9,7 @@ Fullstack Development 2nd task.
 Макет состоит из UI Kit (набор всех элементов со всех страниц во всех состояниях) 
    и самих страниц по поиску номеров отеля.
    
-   **[Demo проекта](https://iea140777.github.io/FSD_parcel_IEA140777/)**
+   **[Demo проекта](https://iea140777.github.io/FSD_Toxin_pages/)**
 
 
 **Используемые технологии:**
