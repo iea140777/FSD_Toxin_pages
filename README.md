@@ -1,4 +1,4 @@
-# FSD_parcel_IEA140777
+# FSD_Toxin_pages
 Fullstack Development 2nd task.
 
 **Общее описание проекта**
