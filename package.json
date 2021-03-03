@@ -20,7 +20,7 @@
     "mask": "^0.2.2",
     "material-design-icons": "^3.0.1",
     "nouislider": "^14.1.1",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "sass": "^1.24.3",
     "src": "^1.1.2"
   },
